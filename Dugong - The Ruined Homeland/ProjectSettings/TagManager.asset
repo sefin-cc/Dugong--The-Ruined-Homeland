@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Shore
+    uniqueID: 1542960567
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
