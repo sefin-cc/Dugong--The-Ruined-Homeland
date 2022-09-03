@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour
 {
-    public Transform top;
-    public Transform bottom;
+    public Transform Obstacle;
+   // public Transform bottom;
 
     public float speed = 5f;
     private float leftEdge;
