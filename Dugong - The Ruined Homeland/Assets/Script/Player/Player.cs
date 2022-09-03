@@ -38,9 +38,7 @@ private void Update(){
     {
         if (other.gameObject.CompareTag("Obstacle")) {
             FindObjectOfType<GameManager>().GameOver();
-        } else if (other.gameObject.CompareTag("Scoring")) {
-            FindObjectOfType<GameManager>().IncreaseScore();
-        }
+        } 
     }
 
 

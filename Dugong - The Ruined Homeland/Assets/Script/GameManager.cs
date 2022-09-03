@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public GameObject playButton;
     public GameObject gameOver;
-    public int score ; //{ get; private set; }
+    public float score ; //{ get; private set; }
 
     // private void Awake()
     // {
@@ -58,10 +58,10 @@ public class GameManager : MonoBehaviour
     //     player.enabled = false;
     // }
 
-    public void IncreaseScore()
+     void Update()
     {
-          score++;
-          scoreText.text = score.ToString();
+          score += 1 * Time.deltaTime;
+          scoreText.text = ((int)score).ToString();
     }
 
 }

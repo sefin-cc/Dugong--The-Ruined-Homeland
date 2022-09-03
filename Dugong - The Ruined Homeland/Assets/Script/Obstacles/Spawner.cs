@@ -4,24 +4,27 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-   public GameObject prefab;
-    public float spawnRate = 0.3f;
-    public float minHeight = -1f;
-    public float maxHeight = 2f;
+   public GameObject[] prefab;
+    public float maxX;
+    public float minX;
+    public float maxY;
+    public float minY;
+    public float timeBetweenSpawn;
+    private float spawnTime;
 
-    private void OnEnable()
-    {
-        InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
-    }
 
-    private void OnDisable()
-    {
-        CancelInvoke(nameof(Spawn));
+    void Update (){
+        if(Time.time > spawnTime){
+            Spawn();
+            spawnTime = Time.time + timeBetweenSpawn;
+        }
     }
 
     private void Spawn()
     {
-        GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity);
-        pipes.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
+      float randomX = Random.Range(minX, maxX);
+      float randomY = Random.Range(minY, maxY);
+      int prefabIndex = Random.Range(0, prefab.Length);
+      Instantiate(prefab[prefabIndex], transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
     }
     }
