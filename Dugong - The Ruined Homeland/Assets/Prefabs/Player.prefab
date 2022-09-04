@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2451773642099731768}
   - component: {fileID: 2451773642099731751}
   - component: {fileID: 2451773642099731769}
+  - component: {fileID: 1575000961}
+  - component: {fileID: 1575000960}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -160,3 +162,29 @@ MonoBehaviour:
   gravity: -8.8
   strength: 5
   tilt: 4
+--- !u!114 &1575000961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2451773642099731747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170698aad60ed8f4584d527400c50e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2451773642099731748}
+--- !u!114 &1575000960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2451773642099731747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567c38c9ddf31054f8a1ad9a0b8a81ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2451773642099731748}
