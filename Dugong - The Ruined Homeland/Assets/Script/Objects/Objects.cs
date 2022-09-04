@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trash : MonoBehaviour
+public class Objects : MonoBehaviour
 {
     public Transform Obstacle;
    // public Transform bottom;
