@@ -5,16 +5,21 @@ using UnityEngine;
 public class PowerUpPickup : MonoBehaviour
 {
 public string objectPickUp ="";
+//public GameObject Player;
+private Player Player;
+
+
 //Excutes when the player collides with the GameObject (Weapons)
 private void OnTriggerEnter2D(Collider2D target){
  if (target.tag =="Player"){   
    
     if(objectPickUp == "doubler" ){
-        Debug.Log("doubler pickup");
       
+        Player.FindObjectOfType<Doubler>().DoublerBuffEffect();
     }
        if(objectPickUp == "invul" ){
-        Debug.Log("invul pickup");
+    
+        Player.FindObjectOfType<Invulnerability>().InvulBuffEffect();
    
     }
     

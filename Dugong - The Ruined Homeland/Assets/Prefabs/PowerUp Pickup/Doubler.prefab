@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPickUp: doubler
+  Player: {fileID: 2451773642099731747, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
 --- !u!114 &3257334278543424881
 MonoBehaviour:
   m_ObjectHideFlags: 0
