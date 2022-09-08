@@ -15,7 +15,7 @@ private void Update(){
     if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
         direction = Vector3.up * strength;
     }
-    Debug.Log(transform.position.y);
+
     if(Input.touchCount > 0 ){
         Touch touch = Input.GetTouch(0);
         if(touch.phase == TouchPhase.Began && transform.position.y <= topLimit){

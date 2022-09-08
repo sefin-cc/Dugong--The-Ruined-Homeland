@@ -5,6 +5,7 @@ using UnityEngine;
 public class Doubler : MonoBehaviour
 {
     public Animator animator;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +19,16 @@ public class Doubler : MonoBehaviour
     }
     public void DoublerBuffEffect(){
         Debug.Log("doubler pickup");
+        AddBonusScore();
         StartCoroutine(DoublerAnimation());
     }
+
     IEnumerator DoublerAnimation(){
         animator.SetBool("isDoubler", true);
         yield return new WaitForSeconds(5);
         animator.SetBool("isDoubler", false);
+    }
+    public void AddBonusScore(){
+         GameManager.score =  GameManager.score + 20;
     }
 }
