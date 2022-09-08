@@ -9,20 +9,18 @@ private Vector3 direction;
 public float gravity = -8.8f;
 public float strength = 5f;
 public float tilt = 4f;
-
-
+public float topLimit = 1f;
 
 private void Update(){
-    if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)){
+    if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
         direction = Vector3.up * strength;
     }
-    if(Input.touchCount > 0){
+    Debug.Log(transform.position.y);
+    if(Input.touchCount > 0 ){
         Touch touch = Input.GetTouch(0);
-
-        if(touch.phase == TouchPhase.Began){
+        if(touch.phase == TouchPhase.Began && transform.position.y <= topLimit){
             direction = Vector3.up * strength;
         }
-
     }
  // Apply gravity and update the position
         direction.y += gravity * Time.deltaTime;
