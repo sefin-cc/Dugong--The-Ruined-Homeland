@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainmenuManager : MonoBehaviour
 {
+     public GameObject highscorePanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +26,14 @@ public class MainmenuManager : MonoBehaviour
     public void GoSetting(){
        
     }
+    public void backSetting(){
+     
+    }
     public void GoLeaderboard(){
-       
+        highscorePanel.SetActive(true);
+    }
+     public void backLeaderboard(){
+        highscorePanel.SetActive(false);
     }
 
 
