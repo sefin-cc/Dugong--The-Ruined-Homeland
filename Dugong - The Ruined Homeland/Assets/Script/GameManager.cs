@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     {
         gameOver.SetActive(true);
         Time.timeScale = 0f;
+        HighscoreTable.GetPlayerScore((int)score);
         score = 0;
         Debug.Log("Game Over");
     }

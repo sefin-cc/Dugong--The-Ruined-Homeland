@@ -50,8 +50,10 @@ public class HighscoreTable : MonoBehaviour
             }
         }
 
- 
-       AddHighscoreEntry(1000, "Roge");
+
+
+        //Update DUGONG score
+       AddHighscoreEntry(playerScore, "DUGONG");
 
         // //Limit highscore entries to 5
         //   if (highscores.highscoreEntryList.Count > 5){
@@ -120,10 +122,10 @@ public class HighscoreTable : MonoBehaviour
                 highscoreEntryList = new List<HighscoreEntry>()
             };
         }
+     
 
-      // highscores.highscoreEntryList.Find(x => x.name == "DUGONG")
-
-    // Add new entry to Highscores
+        highscores.highscoreEntryList[0] = highscoreEntry ;  
+        // Add new entry to Highscores
        //  highscores.highscoreEntryList.Add(highscoreEntry);
 
         //highscores.highscoreEntryList.Clear();
