@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
      void Update()
     {
         score += 1 * Time.deltaTime;
-
+        BeatScore.GetPlayerScore((int)score);
         scoreText.text = ((int)score).ToString();
     }
 

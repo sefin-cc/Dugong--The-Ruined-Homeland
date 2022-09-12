@@ -11,7 +11,7 @@ public class HighscoreTable : MonoBehaviour
     private List<Transform> highscoreEntryTransformList;
     static int playerScore;
 
-    private void Awake() {
+    private void FixedUpdate() {
         entryContainer = transform.Find("highscoreEntryContainer");
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
@@ -35,7 +35,13 @@ public class HighscoreTable : MonoBehaviour
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
         }
-         
+    
+    //Set new highscore for Dugong if the current score is higher than the prev highscore
+      if( playerScore > highscores.highscoreEntryList[0].score){
+          Debug.Log("New HighScore ");
+          //Update DUGONG score
+          AddHighscoreEntry(playerScore, "DUGONG");
+      }
             
         // Sort entry list by Score
         for (int i = 0; i < highscores.highscoreEntryList.Count; i++) {
@@ -49,19 +55,6 @@ public class HighscoreTable : MonoBehaviour
                 }
             }
         }
-
-
-
-        //Update DUGONG score
-       AddHighscoreEntry(playerScore, "DUGONG");
-
-        // //Limit highscore entries to 5
-        //   if (highscores.highscoreEntryList.Count > 5){
-        //     for (int h = highscores.highscoreEntryList.Count; h>5; h--)
-        //      {
-        //         highscores.highscoreEntryList.RemoveAt(5);
-        //      }
-        //     }
 
         highscoreEntryTransformList = new List<Transform>();
 
@@ -78,7 +71,7 @@ public class HighscoreTable : MonoBehaviour
 
 
     private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList) {
-        float templateHeight = 25f;
+        float templateHeight = 60f;
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
@@ -130,13 +123,6 @@ public class HighscoreTable : MonoBehaviour
 
         //highscores.highscoreEntryList.Clear();
 
-        //Limit highscore entries to 5
-        //   if (highscores.highscoreEntryList.Count > 5){
-        //       for (int h = highscores.highscoreEntryList.Count; h>5; h--)
-        //      {
-        //         highscores.highscoreEntryList.RemoveAt(5);
-        //      }
-        //     }
 
         // Save updated Highscores
         string json = JsonUtility.ToJson(highscores);
