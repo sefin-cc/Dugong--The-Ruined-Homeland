@@ -6,36 +6,31 @@ using UnityEngine.SceneManagement;
 public class MainmenuManager : MonoBehaviour
 {
      public GameObject highscorePanel;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+     public GameObject settingsPanel;
+     public GameObject resetPanel;
 
     //Onclick Buttons from menu
     public void GoInGame(){
         SceneManager.LoadScene("InGame");
     }
     public void GoSetting(){
-       
+        settingsPanel.SetActive(true);
     }
     public void backSetting(){
-     
+        settingsPanel.SetActive(false);
     }
     public void GoLeaderboard(){
         highscorePanel.SetActive(true);
     }
-     public void backLeaderboard(){
+    public void backLeaderboard(){
         highscorePanel.SetActive(false);
     }
-
+    public void goresetPanel(){
+        resetPanel.SetActive(true);
+    }
+    public void cancelResetPanel(){
+        resetPanel.SetActive(false);
+    }
 
 
 }
