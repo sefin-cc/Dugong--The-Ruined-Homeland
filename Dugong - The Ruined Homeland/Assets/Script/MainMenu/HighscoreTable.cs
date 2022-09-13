@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class HighscoreTable : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class HighscoreTable : MonoBehaviour
     private List<Transform> highscoreEntryTransformList;
     static int playerScore;
 
-    private void FixedUpdate() {
+    private void Start() {
         entryContainer = transform.Find("highscoreEntryContainer");
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
@@ -21,7 +22,7 @@ public class HighscoreTable : MonoBehaviour
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
      
-        if (highscores == null) {
+        if (highscores == null ) {
             // There's no stored table, initialize
             Debug.Log("Initializing table with default values...");
             AddHighscoreEntry(0, "DUGONG");
@@ -35,14 +36,7 @@ public class HighscoreTable : MonoBehaviour
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
         }
-    
-    //Set new highscore for Dugong if the current score is higher than the prev highscore
-      if( playerScore > highscores.highscoreEntryList[0].score){
-          Debug.Log("New HighScore ");
-          //Update DUGONG score
-          AddHighscoreEntry(playerScore, "DUGONG");
-      }
-            
+
         // Sort entry list by Score
         for (int i = 0; i < highscores.highscoreEntryList.Count; i++) {
             for (int j = i + 1; j < highscores.highscoreEntryList.Count; j++) {
@@ -60,8 +54,20 @@ public class HighscoreTable : MonoBehaviour
 
         
         foreach (HighscoreEntry highscoreEntry in highscores.highscoreEntryList) {
+            Debug.Log(highscores.highscoreEntryList.Count);
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
         }
+    }
+    void FixedUpdate(){
+        string jsonString = PlayerPrefs.GetString("highscoreTable");
+        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+
+        //Set new highscore for Dugong if the current score is higher than the prev highscore
+      if( playerScore > highscores.highscoreEntryList[0].score){
+          Debug.Log("New HighScore ");
+          //Update DUGONG score
+         updatePlayerScore(playerScore, "DUGONG");
+      }
     }
 
     public static void GetPlayerScore(int score){
@@ -101,6 +107,13 @@ public class HighscoreTable : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
+    public void ResetGame(){
+        Debug.Log("Pressed");
+        playerScore = 0;
+        updatePlayerScore(0, "DUGONG");
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+    }
+
     private void AddHighscoreEntry(int score, string name) {
         // Create HighscoreEntry
         HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
@@ -116,12 +129,25 @@ public class HighscoreTable : MonoBehaviour
             };
         }
      
-
-        highscores.highscoreEntryList[0] = highscoreEntry ;  
         // Add new entry to Highscores
-       //  highscores.highscoreEntryList.Add(highscoreEntry);
+       highscores.highscoreEntryList.Add(highscoreEntry);
 
-        //highscores.highscoreEntryList.Clear();
+        // Save updated Highscores
+        string json = JsonUtility.ToJson(highscores);
+        PlayerPrefs.SetString("highscoreTable", json);
+        PlayerPrefs.Save();    
+        Debug.Log(  PlayerPrefs.GetString("highscoreTable") );
+       
+    }
+
+    private void updatePlayerScore(int score, string name) {
+        // Create HighscoreEntry
+        HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
+        
+        // Load saved Highscores
+        string jsonString = PlayerPrefs.GetString("highscoreTable");
+        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+        highscores.highscoreEntryList[0] = highscoreEntry ;  
 
 
         // Save updated Highscores
