@@ -1,0 +1,88 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System;
+
+public class locationText : MonoBehaviour
+{
+
+    public TMP_Text  locText;
+    public Animator animator;
+    public float typingSpeed = 0.1f;
+    List<Location> location;
+
+    static string currentLocation;
+    static int currentStartScore;
+    static int currentEndScore;
+    
+    public static int level = 0;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+       	location = new List<Location>() { 
+                new Location(){ location = "Freedom Island", startScore = 5, endScore = 110 },
+                new Location(){ location = "Lingayen Gulf", startScore = 110, endScore = 260 }
+            };
+    }
+
+    void FixedUpdate()
+    {
+      currentLocation = location[level].location;
+      currentStartScore = location[level].startScore;
+      currentEndScore = location[level].endScore;
+
+      Debug.Log("location: "+ location.Count);
+
+      Debug.Log("currentLocation: "+currentLocation+" currentStartScore: "+currentStartScore+" currentEndScore: "+currentEndScore);
+      Debug.Log("Level: "+ level);
+
+
+      if(GameManager.score >= currentStartScore && GameManager.score < currentEndScore ){
+        StartDisplay ();
+      }
+    }
+
+
+    public void StartDisplay (){
+        animator.SetBool("isOpen", true);
+    }
+
+
+    public void DisplayNextSentence(){
+        StartCoroutine(TypeSentence (currentLocation));
+        StartCoroutine(waitAnimation());
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        locText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            locText.text += letter;
+            yield return new WaitForSecondsRealtime(typingSpeed);
+        }
+         EndDialogue();
+    }
+    IEnumerator waitAnimation()
+    {
+        yield return new WaitForSeconds(0.4f);
+    }
+
+    void EndDialogue()
+    {
+        if(level<location.Count-1){
+            level++;
+        }
+        animator.SetBool("isOpen", false);
+        
+    }
+}
+public class Location
+{ 
+	public string location { get; set; }
+	public int startScore { get; set; }
+    public int endScore { get; set; }
+}
