@@ -8,14 +8,13 @@ using UnityEngine.SceneManagement;
 public class HighscoreTable : MonoBehaviour
 {
     private Transform entryContainer;
-    private Transform entryTemplate;
+    public Transform entryTemplate;
     private List<Transform> highscoreEntryTransformList;
     static int playerScore;
 
     private void Start() {
         entryContainer = transform.Find("highscoreEntryContainer");
-        entryTemplate = entryContainer.Find("highscoreEntryTemplate");
-
+ 
         entryTemplate.gameObject.SetActive(false);
 
         string jsonString = PlayerPrefs.GetString("highscoreTable");
@@ -59,6 +58,7 @@ public class HighscoreTable : MonoBehaviour
         }
     }
     void FixedUpdate(){
+         
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
