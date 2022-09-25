@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Information 
 {
-   public Image images; 
+   public Sprite images; 
    public string name;
 
    [TextArea(3,10)]
