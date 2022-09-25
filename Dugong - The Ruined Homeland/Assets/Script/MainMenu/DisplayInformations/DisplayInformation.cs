@@ -52,6 +52,7 @@ public class DisplayInformation : MonoBehaviour
     void displayPage(){
         Debug.Log("page count: "+ pageCount);
 
+        image.GetComponent<Image>().sprite = info[pageCount].images;
         nameText.text = info[pageCount].name;
         sentenceText.text = info[pageCount].sentences;
 
