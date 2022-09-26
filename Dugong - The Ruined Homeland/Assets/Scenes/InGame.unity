@@ -1433,7 +1433,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125429945}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2387,6 +2387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownTime: 3
   countdownDisplay: {fileID: 2068572102}
+  anim: {fileID: 2068572104}
 --- !u!114 &1901735265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2719,6 +2720,7 @@ GameObject:
   - component: {fileID: 2068572101}
   - component: {fileID: 2068572103}
   - component: {fileID: 2068572102}
+  - component: {fileID: 2068572104}
   m_Layer: 5
   m_Name: CountDown
   m_TagString: Untagged
@@ -2744,7 +2746,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2068572102
 MonoBehaviour:
@@ -2843,6 +2845,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068572100}
   m_CullTransparentMesh: 1
+--- !u!95 &2068572104
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068572100}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44c4f1540efd4c644a6681e194a33881, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2451773641670657352
 PrefabInstance:
   m_ObjectHideFlags: 0
