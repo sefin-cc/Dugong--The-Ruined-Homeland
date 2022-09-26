@@ -9,16 +9,20 @@ public class Countdown : MonoBehaviour
     public int countdownTime;
     public TMP_Text   countdownDisplay;
     public Animator anim;
+    public GameObject pauseButton;
 
     void Start()
     {
         Time.timeScale = 0f;
         StartCoroutine(CountdownToStart());
+        pauseButton.SetActive(false);
+        countdownDisplay.text = "";
     }
 
     IEnumerator CountdownToStart()
     {
-        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(0.5f);
+     
         while(countdownTime > 0)
         {
             anim.SetTrigger("playCountDown");
@@ -30,8 +34,9 @@ public class Countdown : MonoBehaviour
         anim.SetTrigger("playCountDown");
         countdownDisplay.text = "GO!";
         Time.timeScale = 1f;
+        
         yield return new WaitForSecondsRealtime(1f);
-
+        pauseButton.SetActive(true);
         countdownDisplay.gameObject.SetActive(false);
     }
 }

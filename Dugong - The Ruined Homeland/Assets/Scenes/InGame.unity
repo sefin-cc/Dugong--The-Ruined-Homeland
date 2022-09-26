@@ -496,7 +496,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.46624106}
+  m_Offset: {x: 0, y: -0.8278058}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -507,7 +507,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 0.06751791}
+  m_Size: {x: 1.0000001, y: 0.79064715}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -2388,6 +2388,7 @@ MonoBehaviour:
   countdownTime: 3
   countdownDisplay: {fileID: 2068572102}
   anim: {fileID: 2068572104}
+  pauseButton: {fileID: 1300305341}
 --- !u!114 &1901735265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,7 +2746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 706, y: 337}
+  m_AnchoredPosition: {x: 675, y: 337}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2068572102
