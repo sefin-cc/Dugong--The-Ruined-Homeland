@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2451773642099731769}
   - component: {fileID: 1575000961}
   - component: {fileID: 1575000960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -144,8 +144,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 17.279999, y: 8}
+  m_Offset: {x: 1.3936336, y: 0.50677073}
+  m_Size: {x: 14.492808, y: 6.986501}
   m_Direction: 1
 --- !u!114 &2451773642099731769
 MonoBehaviour:
@@ -162,6 +162,7 @@ MonoBehaviour:
   gravity: -8.8
   strength: 5
   tilt: 4
+  topLimit: 3
 --- !u!114 &1575000961
 MonoBehaviour:
   m_ObjectHideFlags: 0

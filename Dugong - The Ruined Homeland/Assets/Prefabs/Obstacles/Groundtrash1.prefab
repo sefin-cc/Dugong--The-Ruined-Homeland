@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 2569957577002594746}
-  speed: 5
+  speed: 2
 --- !u!60 &8827722760112311008
 PolygonCollider2D:
   m_ObjectHideFlags: 0
