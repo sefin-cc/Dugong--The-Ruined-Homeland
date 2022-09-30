@@ -6,15 +6,29 @@ public class Parallax : MonoBehaviour
 {   
     private MeshRenderer meshRenderer;
     public float animationSpeed = 0.1f;
+    float currentSpeed;
+    float superSpeed = 1; 
 
     private void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    private void Update()
+    private void Start()
     {
-        meshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
+         currentSpeed = animationSpeed; 
     }
 
+    private void Update()
+    {
+        meshRenderer.material.mainTextureOffset += new Vector2(currentSpeed * Time.deltaTime, 0);
+    }
+
+    public void superSpeedEffect(){
+        currentSpeed = superSpeed;
+    }
+
+    public void superSpeedEffectFinished(){
+        currentSpeed = animationSpeed;
+    }
 }
