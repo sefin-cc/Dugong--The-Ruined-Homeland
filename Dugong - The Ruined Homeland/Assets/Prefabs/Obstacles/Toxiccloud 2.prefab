@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 4905369596774879771}
+  maxSpeed: 2
   speed: 5
 --- !u!58 &1207700244612338674
 CircleCollider2D:

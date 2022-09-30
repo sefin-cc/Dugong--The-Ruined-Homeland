@@ -5,7 +5,7 @@ using UnityEngine;
 public class Objects : MonoBehaviour
 {
     public Transform Obstacle;
-   // public Transform bottom;
+   
 
     public float speed = 5f;
     private float leftEdge;
