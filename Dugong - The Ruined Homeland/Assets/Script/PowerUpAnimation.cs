@@ -12,13 +12,13 @@ public class PowerUpAnimation : MonoBehaviour
 
     public void callPowerUpAnimation()
     {
+        pauseButton.SetActive(false);
         cameraAnim.SetTrigger("isPowerUp");
         powerUpanim.SetTrigger("isPowerUp");
     }
 
     void startAnimPowerUpText ()
     {
-        pauseButton.SetActive(false);
         Time.timeScale = 0.2f;
     }
     void endAnimPowerUpText ()
