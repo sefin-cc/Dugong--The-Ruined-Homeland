@@ -13,10 +13,17 @@ public class GameManager : MonoBehaviour
     public GameObject playButton;
     public GameObject gameOver;
 
+    public static bool isGameOver;
+
     public static float score ;
+
+    void Start(){
+        isGameOver = false;
+    }
 
     public void GameOver()
     {
+        isGameOver = true;
         gameOver.SetActive(true);
         Time.timeScale = 0f;
         HighscoreTable.GetPlayerScore((int)score);

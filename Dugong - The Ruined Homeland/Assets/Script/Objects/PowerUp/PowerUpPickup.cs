@@ -13,10 +13,10 @@ private Player Player;
     private void OnTriggerEnter2D(Collider2D target){
         if (target.tag =="Player"){   
         
-            if(objectPickUp == "doubler" ){
+            if(objectPickUp == "doubler"  && GameManager.isGameOver == false ){
                 Player.FindObjectOfType<Doubler>().DoublerBuffEffect();
             }
-            if(objectPickUp == "invul" ){
+            if(objectPickUp == "invul"  && GameManager.isGameOver == false){
                 Player.FindObjectOfType<Invulnerability>().InvulBuffEffect();
             }
             
