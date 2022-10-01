@@ -13,13 +13,20 @@ public class GameManager : MonoBehaviour
     public GameObject playButton;
     public GameObject gameOver;
 
-    public GameObject powerUpAnimationText;    
+    public GameObject powerUpAnimationText;  
+    public GameObject camera;  
 
     public static float score ;
 
+    void Start(){
+        score = 0;
+        powerUpAnimationText.SetActive(true);
+        camera.GetComponent<Animator>().enabled = true;
+    }
 
     public void GameOver()
     {
+        camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
         gameOver.SetActive(true);
         Time.timeScale = 0f;
