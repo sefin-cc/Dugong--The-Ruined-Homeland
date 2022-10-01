@@ -3781,6 +3781,7 @@ MonoBehaviour:
   scoreText: {fileID: 1838282144}
   playButton: {fileID: 0}
   gameOver: {fileID: 1145632449}
+  powerUpAnimationText: {fileID: 1833537363}
 --- !u!114 &1901735266
 MonoBehaviour:
   m_ObjectHideFlags: 0

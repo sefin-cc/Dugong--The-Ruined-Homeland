@@ -9,17 +9,18 @@ private Player Player;
 
 
 
+
     //Excutes when the player collides with the GameObject (Weapons)
     private void OnTriggerEnter2D(Collider2D target){
         if (target.tag =="Player"){   
         
-            if(objectPickUp == "doubler"  && GameManager.isGameOver == false ){
+            if(objectPickUp == "doubler"  ){
                 Player.FindObjectOfType<Doubler>().DoublerBuffEffect();
             }
-            if(objectPickUp == "invul"  && GameManager.isGameOver == false){
+            if(objectPickUp == "invul"  ){
                 Player.FindObjectOfType<Invulnerability>().InvulBuffEffect();
             }
-            
+         
             // Removes the weapon on the ground
             Destroy(gameObject);
         }
