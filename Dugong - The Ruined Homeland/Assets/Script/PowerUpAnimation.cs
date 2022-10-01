@@ -5,12 +5,14 @@ using UnityEngine;
 public class PowerUpAnimation : MonoBehaviour
 {
     public Animator powerUpanim;
+    public Animator cameraAnim;
     public GameObject pauseButton;
 
 
 
     public void callPowerUpAnimation()
     {
+        cameraAnim.SetTrigger("isPowerUp");
         powerUpanim.SetTrigger("isPowerUp");
     }
 
