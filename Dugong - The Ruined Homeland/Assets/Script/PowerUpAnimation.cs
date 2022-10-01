@@ -7,7 +7,8 @@ public class PowerUpAnimation : MonoBehaviour
     public Animator powerUpanim;
     public GameObject pauseButton;
 
- 
+
+
     public void callPowerUpAnimation()
     {
         powerUpanim.SetTrigger("isPowerUp");
@@ -16,7 +17,7 @@ public class PowerUpAnimation : MonoBehaviour
     void startAnimPowerUpText ()
     {
         pauseButton.SetActive(false);
-        Time.timeScale = 0f;
+        Time.timeScale = 0.2f;
     }
     void endAnimPowerUpText ()
     {

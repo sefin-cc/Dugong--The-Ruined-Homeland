@@ -13,22 +13,19 @@ public class GameManager : MonoBehaviour
     public GameObject playButton;
     public GameObject gameOver;
 
-    public static bool isGameOver;
+    public GameObject powerUpAnimationText;    
 
     public static float score ;
 
-    void Start(){
-        isGameOver = false;
-    }
 
     public void GameOver()
     {
-        isGameOver = true;
+        Destroy(powerUpAnimationText);
         gameOver.SetActive(true);
         Time.timeScale = 0f;
         HighscoreTable.GetPlayerScore((int)score);
         score = 0;
-        Debug.Log("Game Over");
+        Debug.Log("Game Over: ");
     }
 
      void Update()
