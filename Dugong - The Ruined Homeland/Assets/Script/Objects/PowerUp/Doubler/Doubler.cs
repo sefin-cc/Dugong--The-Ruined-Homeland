@@ -7,7 +7,8 @@ public class Doubler : MonoBehaviour
 {
     public Animator animator;
     public TMP_Text powerUpText;
-
+    public GameObject ocean;
+    public GameObject seafloor;
 
     public void DoublerBuffEffect(){
         powerUpText.text = "DOUBLER!";
@@ -21,9 +22,11 @@ public class Doubler : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         animator.SetBool("isDoubler", true);
-        FindObjectOfType<Parallax>().superSpeedEffect();
+        ocean.GetComponent<Parallax>().superSpeedEffect();
+        seafloor.GetComponent<Parallax>().superSpeedEffect();
         yield return new WaitForSeconds(5);
-        FindObjectOfType<Parallax>().superSpeedEffectFinished();
+        ocean.GetComponent<Parallax>().superSpeedEffectFinished();
+        seafloor.GetComponent<Parallax>().superSpeedEffectFinished();
         animator.SetBool("isDoubler", false);
         AddBonusScore();
     }

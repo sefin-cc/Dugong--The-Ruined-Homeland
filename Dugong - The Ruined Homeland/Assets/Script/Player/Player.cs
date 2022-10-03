@@ -12,9 +12,10 @@ public float tilt = 4f;
 public float topLimit = 1f;
 
 
-private void FixedUpdate(){
+
+private void Update(){
     if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
-        direction = Vector3.up * strength;
+            direction = Vector3.up * strength;
     }
 
     if(Input.touchCount > 0 ){
@@ -23,6 +24,10 @@ private void FixedUpdate(){
             direction = Vector3.up * strength;
         }
     }
+}
+
+private void FixedUpdate(){
+    
  // Apply gravity and update the position
         direction.y += gravity * Time.deltaTime;
         transform.position += direction * Time.deltaTime;
