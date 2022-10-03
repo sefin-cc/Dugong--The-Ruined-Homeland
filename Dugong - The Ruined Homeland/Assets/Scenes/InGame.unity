@@ -4787,6 +4787,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1575000960, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
+      propertyPath: ocean
+      value: 
+      objectReference: {fileID: 580669878}
+    - target: {fileID: 1575000960, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
+      propertyPath: seafloor
+      value: 
+      objectReference: {fileID: 499975346}
+    - target: {fileID: 1575000960, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
       propertyPath: powerUpText
       value: 
       objectReference: {fileID: 1833537366}
