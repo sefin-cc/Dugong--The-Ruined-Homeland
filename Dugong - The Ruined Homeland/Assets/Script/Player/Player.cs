@@ -11,7 +11,8 @@ public float strength = 5f;
 public float tilt = 4f;
 public float topLimit = 1f;
 
-private void Update(){
+
+private void FixedUpdate(){
     if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
         direction = Vector3.up * strength;
     }
@@ -26,18 +27,17 @@ private void Update(){
         direction.y += gravity * Time.deltaTime;
         transform.position += direction * Time.deltaTime;
 
-// Tilt the bird based on the direction
+        // Tilt the bird based on the direction
         Vector3 rotation = transform.eulerAngles;
         rotation.z = direction.y * tilt;
         transform.eulerAngles = rotation;
 }
 
- private void OnTriggerEnter2D(Collider2D other)
+private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Obstacle")) {
             FindObjectOfType<GameManager>().GameOver();
         } 
     }
-
 
 }
