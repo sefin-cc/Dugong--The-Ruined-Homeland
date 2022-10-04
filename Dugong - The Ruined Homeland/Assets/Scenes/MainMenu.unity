@@ -2806,8 +2806,8 @@ MonoBehaviour:
     sentences: ' Free divers catch Octopus vulgaris, the common Philippine octopus.'
   - images: {fileID: 0}
     name: Kabibe
-    sentences: "Seashells or Kabibe in tagalog are frequently used in the Philippines
-      to embellish clothing, home d\xE9cor, and other products. "
+    sentences: 'Seashells or Kabibe in tagalog are frequently used in the Philippines
+      to embellish clothing, home decor, and other products. '
   - images: {fileID: 0}
     name: Mameng
     sentences: 'One of the largest, most vibrant, Mameng are long-lived reef fish
