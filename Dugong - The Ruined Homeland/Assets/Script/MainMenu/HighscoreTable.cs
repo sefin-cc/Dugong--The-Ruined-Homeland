@@ -57,16 +57,17 @@ public class HighscoreTable : MonoBehaviour
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
         }
     }
-    void FixedUpdate(){
+    void Update(){
          
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
         //Set new highscore for Dugong if the current score is higher than the prev highscore
       if( playerScore > highscores.highscoreEntryList[0].score){
-          Debug.Log("New HighScore ");
-          //Update DUGONG score
-         updatePlayerScore(playerScore, "DUGONG");
+        Debug.Log("New HighScore ");
+        //Update DUGONG score
+        updatePlayerScore(playerScore, "DUGONG");
+        FindObjectOfType<BeatScore>().sortHighScores();
       }
     }
 
