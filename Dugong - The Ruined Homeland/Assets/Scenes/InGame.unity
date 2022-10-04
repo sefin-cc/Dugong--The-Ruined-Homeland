@@ -587,6 +587,7 @@ GameObject:
   - component: {fileID: 276120573}
   - component: {fileID: 276120575}
   - component: {fileID: 276120574}
+  - component: {fileID: 276120576}
   m_Layer: 5
   m_Name: background
   m_TagString: Untagged
@@ -611,8 +612,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -104.437, y: -28.353}
-  m_SizeDelta: {x: 509.223, y: 138.246}
+  m_AnchoredPosition: {x: -27.419085, y: -7.058378}
+  m_SizeDelta: {x: 404.953, y: 150.223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276120574
 MonoBehaviour:
@@ -634,7 +635,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 38fc600afc1b3604d971c4ee493bf1a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 049d9066dfcd418408e7c273e0a1e683, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -652,6 +653,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276120572}
   m_CullTransparentMesh: 1
+--- !u!95 &276120576
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276120572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf794c48b32572347804ec592165d6c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &302677230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499975346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.01000023, z: -2}
+  m_LocalPosition: {x: 0, y: -0.01000023, z: -0.2}
   m_LocalScale: {x: 34.974735, y: 9.888592, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2633,8 +2654,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -81.036, y: -23.389}
-  m_SizeDelta: {x: 373.924, y: 70.768}
+  m_AnchoredPosition: {x: -27.419085, y: -7.058378}
+  m_SizeDelta: {x: 337.449, y: 64.689}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939998126
 MonoBehaviour:
@@ -2665,8 +2686,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282143845
-  m_fontColor: {r: 0.3962264, g: 0.33118546, b: 0.23362406, a: 1}
+    rgba: 4281118425
+  m_fontColor: {r: 0.85098046, g: 0.68235296, b: 0.17254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2719,7 +2740,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 67.38462, y: 0, z: 0, w: -13.491589}
+  m_margin: {x: -0.5167618, y: -5.736805, z: -3.7543182, w: -4.2966614}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3111,7 +3132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -100}
+  m_AnchoredPosition: {x: -100, y: -73}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1125429947
