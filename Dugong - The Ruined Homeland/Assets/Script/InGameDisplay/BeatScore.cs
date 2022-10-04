@@ -33,7 +33,7 @@ public class BeatScore : MonoBehaviour
             }
     }
  
-    private void sortHighScores(){
+    public void sortHighScores(){
           
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
