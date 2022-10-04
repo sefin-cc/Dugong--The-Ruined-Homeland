@@ -41,10 +41,12 @@ public class MainmenuManager : MonoBehaviour
 
     public void goresetPanel(){
         resetPanel.SetActive(true);
+        settingsPanel.SetActive(false);
     }
 
     public void cancelResetPanel(){
         resetPanel.SetActive(false);
+        settingsPanel.SetActive(true);
     }
 
 
