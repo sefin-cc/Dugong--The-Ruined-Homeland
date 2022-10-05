@@ -7,7 +7,7 @@ public class Parallax : MonoBehaviour
     private MeshRenderer meshRenderer;
     public float animationSpeed = 0.1f;
     float currentSpeed;
-    float superSpeed = 1; 
+    float superSpeed = 0.5f; 
 
     private void Awake()
     {

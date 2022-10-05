@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "646384a8",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 9799,
+        "processId": 13050,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,12 @@
             "deviceId": "646384a8",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 9799,
+            "exited": false
+        },
+        {
+            "deviceId": "646384a8",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 13050,
             "exited": false
         }
     ],

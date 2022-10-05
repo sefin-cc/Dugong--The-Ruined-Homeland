@@ -5939,14 +5939,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 56607081d8d012146a0b5e63658ad82a, type: 2}
-  m_sharedMaterial: {fileID: 820748169796040358, guid: 56607081d8d012146a0b5e63658ad82a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4ef3f9b36c339b42934cf50b4106cc2, type: 2}
+  m_sharedMaterial: {fileID: 7772689843160284283, guid: e4ef3f9b36c339b42934cf50b4106cc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281216558
+    rgba: 4281025108
   m_fontColor: {r: 0.3301887, g: 0.2574641, b: 0.16976683, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -5964,18 +5964,18 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: -5
+  m_characterSpacing: -10
+  m_wordSpacing: -20
   m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -6209,8 +6209,8 @@ MonoBehaviour:
   info:
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
     name: Freedom Island
-    sentences: 'The Las Pias-Paraaque Critical Habitat and Ecotourism Area (LPPCHEA)
-      is a nature reserve south of Manila Bay '
+    sentences: "The Las Pi\xF1as-Para\xF1aque Critical Habitat and Ecotourism Area
+      (LPPCHEA) is a nature reserve south of Manila Bay "
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
     name: Freedom Island
     sentences: that covers approximately 175 hectares of wetland ecosystem. The largest
@@ -8097,8 +8097,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 56607081d8d012146a0b5e63658ad82a, type: 2}
-  m_sharedMaterial: {fileID: 820748169796040358, guid: 56607081d8d012146a0b5e63658ad82a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4ef3f9b36c339b42934cf50b4106cc2, type: 2}
+  m_sharedMaterial: {fileID: 7772689843160284283, guid: e4ef3f9b36c339b42934cf50b4106cc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8122,18 +8122,18 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: -5
+  m_characterSpacing: -10
+  m_wordSpacing: -20
   m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
