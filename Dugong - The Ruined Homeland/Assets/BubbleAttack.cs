@@ -5,7 +5,7 @@ using UnityEngine;
 public class BubbleAttack : MonoBehaviour
 {
     public float speed = 10f;
-    public int attackDamage = 20;
+    public int attackDamage = 5;
 
     float movement;
 
@@ -24,9 +24,10 @@ public class BubbleAttack : MonoBehaviour
    //Deletes the projectile when it hits something
     private void OnCollisionEnter2D(Collision2D collision){
 
-    //   if(collision.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent)){
-    //      enemyComponent.TakeDamage(attackDamage);
-    //   }
+        if(collision.gameObject.TryGetComponent<Obstacle>(out Obstacle obstacleComponent)){
+            obstacleComponent.TakeDamage(attackDamage);
+        }
+
         Destroy(gameObject);
     }
 }

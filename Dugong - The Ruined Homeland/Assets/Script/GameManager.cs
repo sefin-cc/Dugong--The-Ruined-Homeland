@@ -19,9 +19,11 @@ public class GameManager : MonoBehaviour
     public GameObject pauseManager;
 
     public static float score ;
+    public static float doubleScore ;
 
     void Start(){
         score = 0;
+        doubleScore = 1;
         powerUpAnimationText.SetActive(true);
         camera.GetComponent<Animator>().enabled = true;
     }
@@ -30,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
-        
+
         //Hide btns
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
 
@@ -41,11 +43,17 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over: ");
     }
 
-     void Update()
+     void FixedUpdate()
     {
-        score += 1 * Time.deltaTime;
+        //score += 1 * Time.deltaTime;
         BeatScore.GetPlayerScore((int)score);
         scoreText.text = ((int)score).ToString();
+    }
+    public void doubleScoreAdd(int doubleScoreAdd){
+         doubleScore = doubleScoreAdd;
+    }
+    public void updateScore(int points){
+         score += (points * doubleScore);
     }
 
 }
