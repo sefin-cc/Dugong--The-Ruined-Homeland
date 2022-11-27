@@ -6,13 +6,13 @@ public class PowerUpAnimation : MonoBehaviour
 {
     public Animator powerUpanim;
     public Animator cameraAnim;
-    public GameObject pauseButton;
+    public GameObject pauseManager;
 
 
 
     public void callPowerUpAnimation()
     {
-        pauseButton.SetActive(false);
+        pauseManager.GetComponent<PauseManager>().hidePaused(); 
         cameraAnim.SetTrigger("isPowerUp");
         powerUpanim.SetTrigger("isPowerUp");
     }
@@ -23,7 +23,7 @@ public class PowerUpAnimation : MonoBehaviour
     }
     void endAnimPowerUpText ()
     {
-        pauseButton.SetActive(true);
+        pauseManager.GetComponent<PauseManager>().showUI(); 
         Time.timeScale = 1f;
     }
 }

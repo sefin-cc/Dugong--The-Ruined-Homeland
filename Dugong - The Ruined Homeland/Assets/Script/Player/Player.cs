@@ -14,23 +14,23 @@ public float topLimit = 1f;
 
 
 private void Update(){
-    if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
-            direction = Vector3.up * strength;
-    }
+    // if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
+    //         direction = Vector3.up * strength;
+    // }
 
-    if(Input.touchCount > 0 ){
-        Touch touch = Input.GetTouch(0);
-        if(touch.phase == TouchPhase.Began && transform.position.y <= topLimit){
-            direction = Vector3.up * strength;
-        }
-    }
+    // if(Input.touchCount > 0 ){
+    //     Touch touch = Input.GetTouch(0);
+    //     if(touch.phase == TouchPhase.Began && transform.position.y <= topLimit){
+    //         direction = Vector3.up * strength;
+    //     }
+    // }
 }
 
 private void FixedUpdate(){
     
- // Apply gravity and update the position
-        direction.y += gravity * Time.deltaTime;
-        transform.position += direction * Time.deltaTime;
+//  // Apply gravity and update the position
+//         direction.y += gravity * Time.deltaTime;
+//         transform.position += direction * Time.deltaTime;
 
         // Tilt the bird based on the direction
         Vector3 rotation = transform.eulerAngles;

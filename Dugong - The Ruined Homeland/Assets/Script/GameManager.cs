@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject powerUpAnimationText;  
     public GameObject camera;  
+    
+    public GameObject pauseManager;
 
     public static float score ;
 
@@ -28,6 +30,10 @@ public class GameManager : MonoBehaviour
     {
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
+        
+        //Hide btns
+        pauseManager.GetComponent<PauseManager>().hidePaused(); 
+
         gameOver.SetActive(true);
         Time.timeScale = 0f;
         HighscoreTable.GetPlayerScore((int)score);

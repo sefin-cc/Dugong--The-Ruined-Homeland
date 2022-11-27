@@ -9,13 +9,13 @@ public class Countdown : MonoBehaviour
     public int countdownTime;
     public TMP_Text   countdownDisplay;
     public Animator anim;
-    public GameObject pauseButton;
+    public GameObject pauseManager;
 
     void Start()
     {
         Time.timeScale = 0f;
         StartCoroutine(CountdownToStart());
-        pauseButton.SetActive(false);
+        pauseManager.GetComponent<PauseManager>().hidePaused(); 
         countdownDisplay.text = "";
     }
 
@@ -36,7 +36,7 @@ public class Countdown : MonoBehaviour
         Time.timeScale = 1f;
         
         yield return new WaitForSecondsRealtime(1f);
-        pauseButton.SetActive(true);
+        pauseManager.GetComponent<PauseManager>().showUI(); 
         countdownDisplay.gameObject.SetActive(false);
     }
 }
