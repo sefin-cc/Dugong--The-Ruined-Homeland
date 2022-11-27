@@ -8125,6 +8125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125429946}
   - component: {fileID: 1125429947}
+  - component: {fileID: 1125429948}
   m_Layer: 5
   m_Name: Beat Score
   m_TagString: Untagged
@@ -8165,8 +8166,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd53eebf28d03a4bac513d21200fa7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1125429948}
   beatName: {fileID: 1976573441}
   beatScore: {fileID: 1169321118}
+  goalBeatScore: 250
+  currentBeatName: Kabibe
+--- !u!95 &1125429948
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125429945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 688a9d67cd51eea4a904b3aca582b7cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1145632449
 GameObject:
   m_ObjectHideFlags: 0

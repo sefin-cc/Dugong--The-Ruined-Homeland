@@ -67,7 +67,7 @@ public class HighscoreTable : MonoBehaviour
         Debug.Log("New HighScore ");
         //Update DUGONG score
         updatePlayerScore(playerScore, "DUGONG");
-        FindObjectOfType<BeatScore>().sortHighScores();
+        //FindObjectOfType<BeatScore>().sortHighScores();
       }
     }
 
