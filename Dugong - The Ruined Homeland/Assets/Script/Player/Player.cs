@@ -8,9 +8,13 @@ public class Player : MonoBehaviour
 private Vector3 direction;
 public float gravity = -8.8f;
 public float strength = 5f;
-public float tilt = 4f;
+public float tilt = 10f;
 public float topLimit = 1f;
 
+public Joystick joystick;
+public float speed = 3;
+
+Vector2 movement;
 
 
 private void Update(){
@@ -24,17 +28,23 @@ private void Update(){
     //         direction = Vector3.up * strength;
     //     }
     // }
-}
 
+  
+
+    }
+    
 private void FixedUpdate(){
     
 //  // Apply gravity and update the position
-//         direction.y += gravity * Time.deltaTime;
+           // direction.y += gravity * Time.deltaTime;
 //         transform.position += direction * Time.deltaTime;
+
+        movement.y  = joystick.Vertical * speed;
+        transform.position += new Vector3(0, movement.y, 0) * Time.deltaTime * 2;
 
         // Tilt the bird based on the direction
         Vector3 rotation = transform.eulerAngles;
-        rotation.z = direction.y * tilt;
+        rotation.z =  movement.y * tilt;
         transform.eulerAngles = rotation;
 }
 
