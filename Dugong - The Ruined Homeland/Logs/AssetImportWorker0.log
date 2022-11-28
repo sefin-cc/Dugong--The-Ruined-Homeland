@@ -15,7 +15,7 @@ C:/Users/ACER/GitHub/Dugong--The-Ruined-Homeland/Dugong - The Ruined Homeland
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64278
+60093
 Successfully changed project path to: C:/Users/ACER/GitHub/Dugong--The-Ruined-Homeland/Dugong - The Ruined Homeland
 C:/Users/ACER/GitHub/Dugong--The-Ruined-Homeland/Dugong - The Ruined Homeland
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/ACER/GitHub/Dugong--The-Ruined-Homeland/Dugong - The Ruined Homeland
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 1815.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 214.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -63,47 +63,911 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.020016 seconds.
+Registered in 0.021734 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 211.03 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 225.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.438 seconds
+- Completed reload, in  1.444 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2439ms)
-		BeginReloadAssembly (381ms)
+	ReloadAssembly (1445ms)
+		BeginReloadAssembly (151ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1490ms)
-			LoadAssemblies (378ms)
+		EndReloadAssembly (1052ms)
+			LoadAssemblies (147ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (645ms)
+			SetupTypeCache (217ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (671ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (667ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (120ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (211ms)
+				InitializePlatformSupportModulesInManaged (141ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (225ms)
 				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (120ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.023207 seconds.
-Android Extension - Scanning For ADB Devices 6258 ms
+Registered in 0.021289 seconds.
+Android Extension - Scanning For ADB Devices 962 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 198.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+Package Manager log level set to [2]
+- Completed reload, in  3.738 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3740ms)
+		BeginReloadAssembly (397ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (21ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (2841ms)
+			LoadAssemblies (448ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1163ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (1000ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (199ms)
+				BeforeProcessingInitializeOnLoad (222ms)
+				ProcessInitializeOnLoadAttributes (456ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4177 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (225.7 KB). Loaded Objects now: 4623.
+Memory consumption went from 231.7 MB to 231.5 MB.
+Total: 6.747200 ms (FindLiveObjects: 0.531500 ms CreateObjectMapping: 0.510200 ms MarkObjects: 5.449200 ms  DeleteObjects: 0.254200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 598918.481827 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-04.png
+  artifactKey: Guid(79946d0bdd9c49c43a05d163bb7c91bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-04.png using Guid(79946d0bdd9c49c43a05d163bb7c91bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2292672da58393ad5ab2962c823523b8') in 0.403051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-06.png
+  artifactKey: Guid(952fa625986ab044d8dfd8bee169bf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-06.png using Guid(952fa625986ab044d8dfd8bee169bf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd452555bd7ec546bf1e5618609cb604e') in 0.192405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-05.png
+  artifactKey: Guid(32359dbb38560f44f91a43272b02d5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-05.png using Guid(32359dbb38560f44f91a43272b02d5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0074352b2f5ee87e398d31d51969bc8') in 0.173776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-07.png
+  artifactKey: Guid(9e294771ffc857642983e0a5f21479a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-07.png using Guid(9e294771ffc857642983e0a5f21479a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f9645f337b7d3e1632c09ca327027e') in 0.165791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-08.png
+  artifactKey: Guid(c8ffdaf0e9ceda141841c8ad5943e31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-08.png using Guid(c8ffdaf0e9ceda141841c8ad5943e31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c0015696b4f85817d54bbedf3807bd') in 0.175568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-02.png
+  artifactKey: Guid(439865a43c8895d4fa108e113a4f10dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-02.png using Guid(439865a43c8895d4fa108e113a4f10dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4319dd71a6933ecf7fb2ceb39d86ab8') in 0.139918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-01.png
+  artifactKey: Guid(60edb5530dcda0b4dae5463e4fda2cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-01.png using Guid(60edb5530dcda0b4dae5463e4fda2cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb3ab645025897c10a240f414720f2d') in 0.178771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-03.png
+  artifactKey: Guid(5646b2d6af6d745499473fc8bbc14146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming/invulnerabledugong-swim-03.png using Guid(5646b2d6af6d745499473fc8bbc14146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0feddc9d1b0f6c64e3afcde2028cbc') in 0.131465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Images/Player/Invulnerable/swimming
+  artifactKey: Guid(1441a89f82e8fe447afedac7ed6c5a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/swimming using Guid(1441a89f82e8fe447afedac7ed6c5a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d885292502d03db1b282987f5055a5') in 0.029581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.586924 seconds.
+  path: Assets/Images/Player/Doubler/swimming
+  artifactKey: Guid(18eecc2e2652606429503aa1e461bc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming using Guid(18eecc2e2652606429503aa1e461bc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82f900152e4bbc01b0d1b7d95321d79') in 0.024198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.049056 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-01.png
+  artifactKey: Guid(3a5a6268fe4557c4497831aeb422131b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-01.png using Guid(3a5a6268fe4557c4497831aeb422131b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23983cb68f646971dba41b6eccf797ce') in 0.207303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-06.png
+  artifactKey: Guid(e7e0882a773a7494e835a0a9c8ba3e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-06.png using Guid(e7e0882a773a7494e835a0a9c8ba3e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bec4242c7695191547887e37b9508cf') in 0.141038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-02.png
+  artifactKey: Guid(aa3919b33c140bf4a847cc0c90d546fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-02.png using Guid(aa3919b33c140bf4a847cc0c90d546fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e368f4616e0e3e12fd854a9d604560c2') in 0.130544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-04.png
+  artifactKey: Guid(b2cbe65ed06362d46862ad208ab0d6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-04.png using Guid(b2cbe65ed06362d46862ad208ab0d6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67d38a3ed8044f30287de2fb7487940') in 0.137008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-03.png
+  artifactKey: Guid(2b9a7b6d6891ce3429c531d71dfcda08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-03.png using Guid(2b9a7b6d6891ce3429c531d71dfcda08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391983160248c411c10a544e5bbe6d7a') in 0.133635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-05.png
+  artifactKey: Guid(f2f2574e7019acb4d9e41b3072dd5f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-05.png using Guid(f2f2574e7019acb4d9e41b3072dd5f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab5076b88411fb42a3cdd353d8dc24f') in 0.152330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-07.png
+  artifactKey: Guid(028d09377ee3e2745831e3b819d0a275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-07.png using Guid(028d09377ee3e2745831e3b819d0a275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1360c26c67ef8fe272afe697394e86') in 0.147624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Images/Player/Doubler/swimming/doublerdugong-swim-08.png
+  artifactKey: Guid(a7d40b03553d5e14db34d1eeec26b127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/swimming/doublerdugong-swim-08.png using Guid(a7d40b03553d5e14db34d1eeec26b127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eafe06fa59d6eb00786341e4ab501a1') in 0.145147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 155.777711 seconds.
+  path: Assets/Images/Player/Doubler/atk
+  artifactKey: Guid(f560c6a8257de9b4a8b6bdeeb05f6b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk using Guid(f560c6a8257de9b4a8b6bdeeb05f6b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331865e3262609cde45e1cb389b881e9') in 0.039275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-04.png
+  artifactKey: Guid(a5a5df8859d3a624dab386eaecaae1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-04.png using Guid(a5a5df8859d3a624dab386eaecaae1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd599bf2f5db7183d5899c1f2fb15c34f') in 0.238694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-08.png
+  artifactKey: Guid(884da73f0f8acb2488d06a8641e1f6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-08.png using Guid(884da73f0f8acb2488d06a8641e1f6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722e3abde722fe60bb633768249e3aa3') in 0.141526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-01.png
+  artifactKey: Guid(1f27915f133d9214a80d6bf16bc720c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-01.png using Guid(1f27915f133d9214a80d6bf16bc720c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c00298285464a46f310cb51ebbccbf8') in 0.136545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-06.png
+  artifactKey: Guid(b337b16ef9718c045a62f249821f67ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-06.png using Guid(b337b16ef9718c045a62f249821f67ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0996d49fc55f80c89a03e1007225c7') in 0.135319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-05.png
+  artifactKey: Guid(66d8299db1c3ca9429a6a97d8269df9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-05.png using Guid(66d8299db1c3ca9429a6a97d8269df9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9349d318b60d1de41d7e9e2e6e8fb12d') in 0.145311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-07.png
+  artifactKey: Guid(e61d398a44e16944085fec1fd5476cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-07.png using Guid(e61d398a44e16944085fec1fd5476cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595f117667242ecddb6baa8db50a859a') in 0.143869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-02.png
+  artifactKey: Guid(2bd1a4020c552224f81e336ffe4dbe36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-02.png using Guid(2bd1a4020c552224f81e336ffe4dbe36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27a75a42fee6d70d11b481f33bb2942') in 0.141577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk-03.png
+  artifactKey: Guid(37de6349ab2d14242ba01226b2966e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk-03.png using Guid(37de6349ab2d14242ba01226b2966e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8ba7a09d4d06370725989f1e99198c') in 0.144770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 146.367202 seconds.
+  path: Assets/Images/Player/Invulnerable/atk
+  artifactKey: Guid(dbe3cf1ce40eca043ba0903f30fb8dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk using Guid(dbe3cf1ce40eca043ba0903f30fb8dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b977029eb3eb645c41c88873909a4457') in 0.019068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 489.216618 seconds.
+  path: Assets/Images/Player/Swimming/SwimmingAnimation.anim
+  artifactKey: Guid(023100a75c54b3d4e846ce238d59e401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Swimming/SwimmingAnimation.anim using Guid(023100a75c54b3d4e846ce238d59e401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18e9556b8000d2ad555d214a1801ab5') in 0.042701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 694.530060 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-01.png
+  artifactKey: Guid(a0e22c087e18d124691959847a6ed8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-01.png using Guid(a0e22c087e18d124691959847a6ed8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805aabdebe5cb0fdb31c1f8997c7a441') in 0.179164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-05.png
+  artifactKey: Guid(dd1c75c693103e54e8f3f5bd133d6a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-05.png using Guid(dd1c75c693103e54e8f3f5bd133d6a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4e88b7ec6c8258d22fda684d9e5c8d') in 0.197991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-06.png
+  artifactKey: Guid(d6ad070a702be8647885f86596f0b181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-06.png using Guid(d6ad070a702be8647885f86596f0b181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8f0fbbba21b7e226e45b0ca1a50e1c') in 0.230400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-04.png
+  artifactKey: Guid(961a5574d1b18c74b93ecb44518d3bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-04.png using Guid(961a5574d1b18c74b93ecb44518d3bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7769b615bec6dc6da5de2524407e77aa') in 0.152777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-07.png
+  artifactKey: Guid(5dbffa17455ca5f4086323c164f0c296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-07.png using Guid(5dbffa17455ca5f4086323c164f0c296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9e8c92fd1133fd4f33d71d9dbdab1b') in 0.182882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-03.png
+  artifactKey: Guid(bfea61bf5ba772b47be0351a15118ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-03.png using Guid(bfea61bf5ba772b47be0351a15118ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46ac584fc70d46e40207933fe2dd7e9') in 0.218454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-08.png
+  artifactKey: Guid(d00822a5c8c15324aae8f04ccc3d7568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-08.png using Guid(d00822a5c8c15324aae8f04ccc3d7568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681ba657e3e2ad6c89b5a506ece80454') in 0.161331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000746 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-02.png
+  artifactKey: Guid(e0c47fab87813a84e98351edf95b5ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk-02.png using Guid(e0c47fab87813a84e98351edf95b5ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e677b108e1bd430efa3ee95e52a2c1') in 0.207831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1104.238124 seconds.
+  path: Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk.anim
+  artifactKey: Guid(318dd307f60d3cc4081addfab9162f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Invulnerable/atk/invulnerabledugong-atk.anim using Guid(318dd307f60d3cc4081addfab9162f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1173d1e3f06eb5c7b07661a146e7bc') in 0.041046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.240817 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk.anim
+  artifactKey: Guid(3b809aed541a435488115bee46229172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk.anim using Guid(3b809aed541a435488115bee46229172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523d07f70883555890dd602087f78951') in 0.029249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.271822 seconds.
+  path: Assets/Images/Player/Doubler/doublerDugong.anim
+  artifactKey: Guid(f932a76962510b148974003dcf5fea1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/doublerDugong.anim using Guid(f932a76962510b148974003dcf5fea1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fcb4e8e9ca76da43ceb9e5751442693') in 0.027256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.365510 seconds.
+  path: Assets/Images/Player/Doubler/atk/doublerdugong-atk.anim
+  artifactKey: Guid(9facd596f60ed3a4186129061741fd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Doubler/atk/doublerdugong-atk.anim using Guid(9facd596f60ed3a4186129061741fd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32acfec6e31c1e529b13db39eb134866') in 0.024295 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017429 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.490 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8492ms)
+		BeginReloadAssembly (2067ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (196ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (590ms)
+		EndReloadAssembly (5423ms)
+			LoadAssemblies (1439ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (2918ms)
+			ReleaseScriptCaches (11ms)
+			RebuildScriptCaches (336ms)
+			SetupLoadedEditorAssemblies (1211ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (129ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (379ms)
+				ProcessInitializeOnLoadAttributes (583ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (192.6 KB). Loaded Objects now: 4632.
+Memory consumption went from 234.7 MB to 234.5 MB.
+Total: 7.966500 ms (FindLiveObjects: 0.489700 ms CreateObjectMapping: 0.372600 ms MarkObjects: 6.876100 ms  DeleteObjects: 0.226200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 199.636259 seconds.
+  path: Assets/Images/Player/dugong-00.controller
+  artifactKey: Guid(908a93e7cb62b0d469379656d518de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/dugong-00.controller using Guid(908a93e7cb62b0d469379656d518de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a238a51d1610dbc8fb79a0c571bc3d3') in 0.085912 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.437380 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.252 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4254ms)
+		BeginReloadAssembly (1030ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (72ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (260ms)
+		EndReloadAssembly (2418ms)
+			LoadAssemblies (692ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (864ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (198ms)
+			SetupLoadedEditorAssemblies (849ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (86ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (236ms)
+				ProcessInitializeOnLoadAttributes (434ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (192.8 KB). Loaded Objects now: 4635.
+Memory consumption went from 234.7 MB to 234.5 MB.
+Total: 6.254600 ms (FindLiveObjects: 0.680200 ms CreateObjectMapping: 0.523700 ms MarkObjects: 4.807900 ms  DeleteObjects: 0.241400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017513 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 65.135 seconds
+Domain Reload Profiling:
+	ReloadAssembly (65147ms)
+		BeginReloadAssembly (550ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (153ms)
+		EndReloadAssembly (64064ms)
+			LoadAssemblies (548ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (9950ms)
+			ReleaseScriptCaches (118ms)
+			RebuildScriptCaches (7863ms)
+			SetupLoadedEditorAssemblies (34309ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2648ms)
+				SetLoadedEditorAssemblies (32ms)
+				RefreshPlugins (35ms)
+				BeforeProcessingInitializeOnLoad (7975ms)
+				ProcessInitializeOnLoadAttributes (21503ms)
+				ProcessInitializeOnLoadMethodAttributes (1796ms)
+				AfterProcessingInitializeOnLoad (318ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (558ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 443.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (193.5 KB). Loaded Objects now: 4638.
+Memory consumption went from 234.7 MB to 234.5 MB.
+Total: 131.725900 ms (FindLiveObjects: 8.626400 ms CreateObjectMapping: 2.748500 ms MarkObjects: 118.766800 ms  DeleteObjects: 1.579300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 712.939068 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-01.png
+  artifactKey: Guid(30b905a9774dccf4081a5880d2a43eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-01.png using Guid(30b905a9774dccf4081a5880d2a43eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1f84f0b2f690103268eea9a8c878ac') in 0.281081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-08.png
+  artifactKey: Guid(b181a71659571e54c8b781bf7755170c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-08.png using Guid(b181a71659571e54c8b781bf7755170c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e8c57de6d16635534267dc92a8d47f') in 0.152087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-05.png
+  artifactKey: Guid(a529dd7c37ef29440844dec5fc354a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-05.png using Guid(a529dd7c37ef29440844dec5fc354a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5365e4535181d06505b7734828e1b2') in 0.141414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-03.png
+  artifactKey: Guid(a191ae9b705bb8947bc6f62b211d3829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-03.png using Guid(a191ae9b705bb8947bc6f62b211d3829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91cc289f114940592cec4d66d11c536') in 0.146240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-07.png
+  artifactKey: Guid(c90e9018614129245b2084afbf253364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-07.png using Guid(c90e9018614129245b2084afbf253364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f617d090335ce83dd630f06b60dc3e7') in 0.174778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-06.png
+  artifactKey: Guid(bf9e11275eb1c5041914023b27336403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-06.png using Guid(bf9e11275eb1c5041914023b27336403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd174280a5365c943588907af78827fd') in 0.174009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-02.png
+  artifactKey: Guid(13d8ea441a56e57439322e1e49e611bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-02.png using Guid(13d8ea441a56e57439322e1e49e611bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a14f75527a230b93a716864f743fcc') in 0.145021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-04.png
+  artifactKey: Guid(37082ff33888ad54d8cd857387b6d404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Swimming(NEW)/dugong-swim-04.png using Guid(37082ff33888ad54d8cd857387b6d404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775e6847b70fcb642fec8b8fe5dff3e3') in 0.149413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.442606 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-01.png
+  artifactKey: Guid(dc1c97b6992fb3d40b8fbfc2172f6aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-01.png using Guid(dc1c97b6992fb3d40b8fbfc2172f6aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab39323aed0da90023726e0cc15a30b') in 0.178969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-07.png
+  artifactKey: Guid(65ef85fe47a0c084ca0b110a4c0f8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-07.png using Guid(65ef85fe47a0c084ca0b110a4c0f8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f00c99e7d3cf520478d96c06f5b6c42') in 0.154983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-03.png
+  artifactKey: Guid(6c0ef446cb903474697d7761de61911d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-03.png using Guid(6c0ef446cb903474697d7761de61911d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21dd56add2686feb5ab3012630410251') in 0.142098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-04.png
+  artifactKey: Guid(29e545d59d0f6f744900bd78416e9fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-04.png using Guid(29e545d59d0f6f744900bd78416e9fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee72896b3e367a765290f60e3acc4db7') in 0.142565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-02.png
+  artifactKey: Guid(0b23441d0c23104419d9d230789a7dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-02.png using Guid(0b23441d0c23104419d9d230789a7dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1af00de1eff0a9bdf436e5b3be5b93') in 0.140388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-05.png
+  artifactKey: Guid(2f3db544db42c104883904f977dcbf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-05.png using Guid(2f3db544db42c104883904f977dcbf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42ca3c777d5d8dbe1a5b2d8a8e302a2') in 0.160266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-06.png
+  artifactKey: Guid(3359419473a4f5745a958c62e68d9cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-06.png using Guid(3359419473a4f5745a958c62e68d9cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3fc0ff5a89a88bce0ea6d9046bf1ed') in 0.163990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-08.png
+  artifactKey: Guid(132b3ae5bc1123e4d9000fe54610a852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-08.png using Guid(132b3ae5bc1123e4d9000fe54610a852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e461a5774d7d1720a0fbfd0eb848a45') in 0.159462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Images/Player/Dugong - Attack/dugong-atk-09.png
+  artifactKey: Guid(dcba30bfe2265054bbaee660dbeb7209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/Dugong - Attack/dugong-atk-09.png using Guid(dcba30bfe2265054bbaee660dbeb7209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce2e172f3ffd07ba012148780fd00bd') in 0.148075 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020783 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4923ms)
+		BeginReloadAssembly (308ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (4301ms)
+			LoadAssemblies (381ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1266ms)
+			ReleaseScriptCaches (11ms)
+			RebuildScriptCaches (379ms)
+			SetupLoadedEditorAssemblies (1840ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (112ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (444ms)
+				ProcessInitializeOnLoadAttributes (1041ms)
+				ProcessInitializeOnLoadMethodAttributes (182ms)
+				AfterProcessingInitializeOnLoad (54ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (52ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 27.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (193.7 KB). Loaded Objects now: 4641.
+Memory consumption went from 234.7 MB to 234.6 MB.
+Total: 14.244500 ms (FindLiveObjects: 1.432100 ms CreateObjectMapping: 1.716600 ms MarkObjects: 10.482900 ms  DeleteObjects: 0.608600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016742 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.747 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4750ms)
+		BeginReloadAssembly (310ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (85ms)
+		EndReloadAssembly (4173ms)
+			LoadAssemblies (277ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1405ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (242ms)
+			SetupLoadedEditorAssemblies (1836ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (132ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (405ms)
+				ProcessInitializeOnLoadAttributes (1049ms)
+				ProcessInitializeOnLoadMethodAttributes (217ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (78ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 25.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (193.9 KB). Loaded Objects now: 4644.
+Memory consumption went from 234.8 MB to 234.6 MB.
+Total: 21.535700 ms (FindLiveObjects: 1.078200 ms CreateObjectMapping: 3.556300 ms MarkObjects: 16.257900 ms  DeleteObjects: 0.640300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014795 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The Ruined Homeland\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.825 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5827ms)
+		BeginReloadAssembly (616ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (21ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (181ms)
+		EndReloadAssembly (4595ms)
+			LoadAssemblies (533ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1311ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (260ms)
+			SetupLoadedEditorAssemblies (2153ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (173ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (413ms)
+				ProcessInitializeOnLoadAttributes (1241ms)
+				ProcessInitializeOnLoadMethodAttributes (258ms)
+				AfterProcessingInitializeOnLoad (61ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (57ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 11.96 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (193.7 KB). Loaded Objects now: 4647.
+Memory consumption went from 234.8 MB to 234.6 MB.
+Total: 9.040800 ms (FindLiveObjects: 0.478800 ms CreateObjectMapping: 0.636900 ms MarkObjects: 7.585200 ms  DeleteObjects: 0.336500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 614.901809 seconds.
+  path: Assets/Images/Player/dugong-00.controller
+  artifactKey: Guid(908a93e7cb62b0d469379656d518de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/dugong-00.controller using Guid(908a93e7cb62b0d469379656d518de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f66fe030ad7e3eee1a453298d9294d7') in 0.114334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.532616 seconds.
+  path: Assets/Images/Player/dugong-00.controller
+  artifactKey: Guid(908a93e7cb62b0d469379656d518de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Player/dugong-00.controller using Guid(908a93e7cb62b0d469379656d518de57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b280c63ecbd77846fc8ef19fa2614a1a') in 0.016437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.403844 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-00.png
+  artifactKey: Guid(9495cf8b00bde224692a32171fdf9021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-00.png using Guid(9495cf8b00bde224692a32171fdf9021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db196e939d36619df31cf04af03241d') in 0.301334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-09.png
+  artifactKey: Guid(1903eeec196c012478c93a1ee9a50b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-09.png using Guid(1903eeec196c012478c93a1ee9a50b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f462748224a591c25538ae7b930eadb') in 0.137549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-11.png
+  artifactKey: Guid(4797ec8501f130e4cb4221ecf0e211bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-11.png using Guid(4797ec8501f130e4cb4221ecf0e211bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56091c04925d0be46f9a24f589c1a2d') in 0.172461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-06.png
+  artifactKey: Guid(29a57ce0f1bdc2a4f8c972a7951bb806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-06.png using Guid(29a57ce0f1bdc2a4f8c972a7951bb806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be8070ed6fea1cdc42cfc2bb77054be') in 0.143156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-05.png
+  artifactKey: Guid(dcdd1882a2d4877479e3bf1b764f1faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-05.png using Guid(dcdd1882a2d4877479e3bf1b764f1faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca19161420a6e47620a649d24a20edec') in 0.156046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-02.png
+  artifactKey: Guid(576f71a394f1313489a39f27d584db9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-02.png using Guid(576f71a394f1313489a39f27d584db9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfe47e66c2eabdfdd6d17c687977784') in 0.284035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-07.png
+  artifactKey: Guid(36adf9ccd18e43148999d244d0ae0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-07.png using Guid(36adf9ccd18e43148999d244d0ae0bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba62b1fd2cbb44e8a714498db557f31') in 0.274592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-04.png
+  artifactKey: Guid(c21e88e9d2914614e9fb3baa2879565b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-04.png using Guid(c21e88e9d2914614e9fb3baa2879565b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a221e38266a7c3c81304f335767567') in 0.312022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-13.png
+  artifactKey: Guid(cbb2e669aa43b0c44bdf15b7da48c787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-13.png using Guid(cbb2e669aa43b0c44bdf15b7da48c787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28bcb24905b3301febc701696048b9b') in 0.141246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-03.png
+  artifactKey: Guid(be3fe6b1f3a9fbb418f244224353a37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-03.png using Guid(be3fe6b1f3a9fbb418f244224353a37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff08b2e810d52386594c245a4aa559c') in 0.116717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-01.png
+  artifactKey: Guid(96e3037dcec6c5c44a22c17ffba0181c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-01.png using Guid(96e3037dcec6c5c44a22c17ffba0181c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0719a6479ddb9bed54b831cd70bc9be2') in 0.142901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-10.png
+  artifactKey: Guid(46b6753f08ceec84ba15c94fd3a44cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-10.png using Guid(46b6753f08ceec84ba15c94fd3a44cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f821b5efe68920f769bf4b8bdab1312b') in 0.110636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Images/Obstacle/t/toxiccloud-08.png
+  artifactKey: Guid(732772cf5db475249becfaa00302087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Obstacle/t/toxiccloud-08.png using Guid(732772cf5db475249becfaa00302087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0795bf78c59a2997869bf358fd12f0c4') in 0.189825 seconds 
