@@ -11,41 +11,42 @@ public class locationText : MonoBehaviour
     public TMP_Text  locText;
     public Animator animator;
     public float typingSpeed = 0.1f;
-    List<Location> location;
+    // List<Location> location;
 
-    static string currentLocation;
-    static int currentStartScore;
-    static int currentEndScore;
+    public string currentLocation;
+    // static int currentStartScore;
+    // static int currentEndScore;
     
-    public static int level;
+    // public static int level;
 
     // Start is called before the first frame update
     void Start()
     {
-        level = 1;
-       	location = new List<Location>() { 
-                new Location(){ location = "Dead Island", startScore = -5, endScore = -1 },
-                new Location(){ location = "Freedom Island", startScore = 5, endScore = 110 }
-                // new Location(){ location = "Lingayen Gulf", startScore = 110, endScore = 260 }
-            };
+        // level = 1;
+       	// location = new List<Location>() { 
+        //         new Location(){ location = "Dead Island", startScore = -5, endScore = -1 },
+        //         new Location(){ location = "Freedom Island", startScore = 5, endScore = 110 }
+        //         // new Location(){ location = "Lingayen Gulf", startScore = 110, endScore = 260 }
+        //     };
+        StartDisplay();
     }
 
-    void FixedUpdate()
-    {
-        currentLocation = location[level].location;
-        currentStartScore = location[level].startScore;
-        currentEndScore = location[level].endScore;
+    // void FixedUpdate()
+    // {
+    //     currentLocation = location[level].location;
+    //     currentStartScore = location[level].startScore;
+    //     currentEndScore = location[level].endScore;
 
-        Debug.Log("location: "+ location.Count);
+    //     Debug.Log("location: "+ location.Count);
 
-        Debug.Log("currentLocation: "+currentLocation+" currentStartScore: "+currentStartScore+" currentEndScore: "+currentEndScore);
-        Debug.Log("Level: "+ level);
+    //     Debug.Log("currentLocation: "+currentLocation+" currentStartScore: "+currentStartScore+" currentEndScore: "+currentEndScore);
+    //     Debug.Log("Level: "+ level);
 
-        //Check if the player score passes the designated score  
-        if(GameManager.score >= currentStartScore && GameManager.score < currentEndScore ){
-            StartDisplay();
-        }
-    }
+    //     //Check if the player score passes the designated score  
+    //     if(GameManager.score >= currentStartScore && GameManager.score < currentEndScore ){
+    //         StartDisplay();
+    //     }
+    // }
 
 
     public void StartDisplay (){
@@ -77,19 +78,19 @@ public class locationText : MonoBehaviour
 
     void EndDialogue()
     {
-        if(level<location.Count-1){
-            level++;
-        }else{
-            level = 0;
-        }
+        // if(level<location.Count-1){
+        //     level++;
+        // }else{
+        //     level = 0;
+        // }
         animator.SetBool("isOpen", false);
     }
 }
 
 
-public class Location
-{ 
-	public string location { get; set; }
-	public int startScore { get; set; }
-    public int endScore { get; set; }
-}
+// public class Location
+// { 
+// 	public string location { get; set; }
+// 	public int startScore { get; set; }
+//     public int endScore { get; set; }
+// }
