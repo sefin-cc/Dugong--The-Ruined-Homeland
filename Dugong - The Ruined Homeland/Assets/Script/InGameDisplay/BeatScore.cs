@@ -14,12 +14,14 @@ public class BeatScore : MonoBehaviour
     public string currentBeatName;
 
     static int playerScore;
+    static bool beat;
    
     void Start(){
         // sortHighScores();
         // beatName.text = currentBeatName;
         // beatScore.text = currentBeatScore.ToString();
         beatName.text = currentBeatName;
+        beat = false;
         beatScore.text = goalBeatScore.ToString();
     }
 
@@ -35,9 +37,13 @@ public class BeatScore : MonoBehaviour
             // }
             if (playerScore > goalBeatScore) {
                 anim.SetTrigger("hideBeatScore");
+                beat = true;
             }
     }
  
+    public bool scoreBeaten(){
+        return beat;
+    }
     // public void sortHighScores(){
           
     //     string jsonString = PlayerPrefs.GetString("highscoreTable");
