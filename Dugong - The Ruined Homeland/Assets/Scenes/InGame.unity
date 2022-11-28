@@ -7963,6 +7963,7 @@ MonoBehaviour:
   locText: {fileID: 939998126}
   animator: {fileID: 1001863824}
   typingSpeed: 0.1
+  currentLocation: Freedom Island
 --- !u!95 &1001863824
 Animator:
   serializedVersion: 4
