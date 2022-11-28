@@ -8041,7 +8041,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -86.172, y: -182.046, z: 182.299}
 --- !u!1 &1001863820
 GameObject:
@@ -8810,7 +8810,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 12.470142, y: -0.48952818}
+  m_Offset: {x: 12.470142, y: -0.3294437}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8821,7 +8821,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.940285, y: 1.9790564}
+  m_Size: {x: 25.940285, y: 1.6588874}
   m_EdgeRadius: 0
 --- !u!4 &1379765372
 Transform:
@@ -11928,7 +11928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2451773642099731750, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2451773642099731750, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
       propertyPath: m_LocalScale.x

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1977269600844508073}
   - component: {fileID: 1977269600844508072}
   - component: {fileID: -6701669324301256712}
+  - component: {fileID: 1567045425}
   m_Layer: 8
   m_Name: ExplodingTrash
   m_TagString: Obstacle
@@ -123,9 +124,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.20030627}
+  m_Offset: {x: 0, y: 0.585564}
   serializedVersion: 2
-  m_Radius: 1.1782521
+  m_Radius: 1.9641222
 --- !u!114 &1977269600844508073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,8 +166,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76316531503210e43b89238b08e58346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1977269600844508068}
   currentHealth: 0
   maxHealth: 5
+  point: 5
+--- !u!58 &1567045425
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977269600844508071}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.585564}
+  serializedVersion: 2
+  m_Radius: 1.9641222
 --- !u!1 &1977269601129422180
 GameObject:
   m_ObjectHideFlags: 0

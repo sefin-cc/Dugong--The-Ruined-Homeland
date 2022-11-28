@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-   // public Animator animator;
+    public Animator animator;
 
     public int currentHealth;
     public int maxHealth = 5;
     public int point = 5;
+
+    CircleCollider2D  collider;
    
     
     // Start is called before the first frame update
     void Start()
     {
+       collider = gameObject.GetComponent<CircleCollider2D>();
        currentHealth = maxHealth; 
     }
 
@@ -27,7 +30,8 @@ public class Obstacle : MonoBehaviour
         }else{
             //PLAY DEATH ANIMATION  
             //animator.SetTrigger("dead");
-            destroyObstacle();
+            collider.enabled = false;;
+            animator.SetTrigger("isDestroy");
         }
     }
     

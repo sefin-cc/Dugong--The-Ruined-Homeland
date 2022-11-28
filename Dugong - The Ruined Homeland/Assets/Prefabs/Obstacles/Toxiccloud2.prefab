@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 3734452546555946261}
   speed: 1
-  range: 6
+  range: 3
 --- !u!114 &7431791145217908960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,8 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76316531503210e43b89238b08e58346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 3258622023233984072}
   currentHealth: 0
   maxHealth: 5
+  point: 5
 --- !u!50 &8577691155607104660
 Rigidbody2D:
   serializedVersion: 4

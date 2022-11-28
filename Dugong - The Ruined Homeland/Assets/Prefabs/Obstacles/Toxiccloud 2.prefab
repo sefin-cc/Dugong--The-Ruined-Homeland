@@ -152,8 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76316531503210e43b89238b08e58346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 7796595469010866578}
   currentHealth: 0
   maxHealth: 5
+  point: 5
 --- !u!50 &-6893904156535438509
 Rigidbody2D:
   serializedVersion: 4
