@@ -8,37 +8,43 @@ public class Doubler : MonoBehaviour
     public Animator animator;
     public TMP_Text powerUpText;
     
-    public GameObject background;
-    public GameObject middleground;
-    public GameObject foreground;
-    public GameObject ground;
+    // public GameObject background;
+    // public GameObject middleground;
+    // public GameObject foreground;
+    // public GameObject ground;
 
 
     public void DoublerBuffEffect(){
         powerUpText.text = "DOUBLER!";
         FindObjectOfType<PowerUpAnimation>().callPowerUpAnimation();
    
-        StartCoroutine(DoublerAnimation());
+        StartCoroutine(DoublerEffect());
     }
    
 
-    IEnumerator DoublerAnimation(){
+    IEnumerator DoublerEffect(){
         yield return new WaitForSeconds(0.5f);
 
         animator.SetBool("isDoubler", true);
-        background.GetComponent<Parallax>().superSpeedEffect();
-        middleground.GetComponent<Parallax>().superSpeedEffect();
-        foreground.GetComponent<Parallax>().superSpeedEffect();
-        ground.GetComponent<Parallax>().superSpeedEffect();
-        yield return new WaitForSeconds(5);
-        background.GetComponent<Parallax>().superSpeedEffectFinished();
-        middleground.GetComponent<Parallax>().superSpeedEffectFinished();
-        foreground.GetComponent<Parallax>().superSpeedEffectFinished();
-        ground.GetComponent<Parallax>().superSpeedEffectFinished();
+        addBonusScore();
+        StartCoroutine(ignoreCollision());
+        yield return new WaitForSeconds(10);
+       
         animator.SetBool("isDoubler", false);
-        AddBonusScore();
+        removeBonusScore();
     }
-    public void AddBonusScore(){
-         GameManager.score =  GameManager.score + 20;
+    public void addBonusScore(){
+        FindObjectOfType<GameManager>().doubleScoreAdd(2);
+    }
+    public void removeBonusScore(){
+        FindObjectOfType<GameManager>().doubleScoreAdd(1);
+    }
+
+    IEnumerator ignoreCollision(){
+        yield return new WaitForSeconds(2.5f);
+        Debug.Log("ENDDNDNDNDN");
+        GetComponent<Animator>().SetLayerWeight(1,0);
+        Physics2D.IgnoreLayerCollision(6,8, false);
+      
     }
 }
