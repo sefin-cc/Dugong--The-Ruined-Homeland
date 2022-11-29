@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 3734452546555946261}
   - component: {fileID: 1487225764557727249}
   - component: {fileID: 3258622023233984072}
-  - component: {fileID: 1258059794563518374}
+  - component: {fileID: -8724188115379636444}
   - component: {fileID: 6008136976025894541}
   - component: {fileID: 557071470091823007}
   - component: {fileID: 7431791145217908960}
   - component: {fileID: 8577691155607104660}
-  - component: {fileID: -8724188115379636444}
   m_Layer: 8
   m_Name: Toxiccloud2
   m_TagString: Obstacle
@@ -35,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 3.0884, y: 2.1084, z: 0}
   m_LocalScale: {x: 0.24125177, y: 0.24125177, z: 0.24125177}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1386224123933046192}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -111,7 +111,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &1258059794563518374
+--- !u!58 &-8724188115379636444
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.2847278}
@@ -172,6 +172,7 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 5
   point: 5
+  collider2: {fileID: 4486614677049311631}
 --- !u!50 &8577691155607104660
 Rigidbody2D:
   serializedVersion: 4
@@ -193,17 +194,49 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &-8724188115379636444
+--- !u!1 &4192338701206438480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386224123933046192}
+  - component: {fileID: 4486614677049311631}
+  m_Layer: 8
+  m_Name: collider
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1386224123933046192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4192338701206438480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3734452546555946261}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4486614677049311631
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905390402521498653}
+  m_GameObject: {fileID: 4192338701206438480}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.2847278}

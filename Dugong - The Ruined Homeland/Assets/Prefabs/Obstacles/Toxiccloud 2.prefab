@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2204753981919554586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3366622829975604111}
+  - component: {fileID: 8198972536150455851}
+  m_Layer: 8
+  m_Name: collider
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3366622829975604111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204753981919554586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4905369596774879771}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8198972536150455851
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2204753981919554586}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.891587
 --- !u!1 &4757641061228809767
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,10 +60,9 @@ GameObject:
   - component: {fileID: 7349581076798633378}
   - component: {fileID: 7796595469010866578}
   - component: {fileID: 5302101744503167748}
-  - component: {fileID: 1207700244612338674}
+  - component: {fileID: -4377684412660971202}
   - component: {fileID: -4848450633440520530}
   - component: {fileID: -6893904156535438509}
-  - component: {fileID: -4377684412660971202}
   m_Layer: 8
   m_Name: Toxiccloud 2
   m_TagString: Obstacle
@@ -34,7 +81,8 @@ Transform:
   m_LocalPosition: {x: -3.1142, y: 0.30947804, z: 0}
   m_LocalScale: {x: 0.1977, y: 0.1977, z: 0.1977}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3366622829975604111}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -124,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 4905369596774879771}
   speed: 5
---- !u!58 &1207700244612338674
+--- !u!58 &-4377684412660971202
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,12 +182,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.13752392, y: 0.02024146}
   serializedVersion: 2
-  m_Radius: 2.891587
+  m_Radius: 3.0139525
 --- !u!114 &-4848450633440520530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +204,7 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 5
   point: 5
+  collider2: {fileID: 8198972536150455851}
 --- !u!50 &-6893904156535438509
 Rigidbody2D:
   serializedVersion: 4
@@ -177,19 +226,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &-4377684412660971202
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4757641061228809767}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.2847278}
-  serializedVersion: 2
-  m_Radius: 2.3100574

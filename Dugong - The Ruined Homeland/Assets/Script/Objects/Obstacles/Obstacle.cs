@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour
     public int point = 5;
 
     CircleCollider2D  collider;
-   
+    public CircleCollider2D  collider2;
     
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,8 @@ public class Obstacle : MonoBehaviour
         }else{
             //PLAY DEATH ANIMATION  
             //animator.SetTrigger("dead");
-            collider.enabled = false;;
+            collider.enabled = false;
+            collider2.enabled = false;
             animator.SetTrigger("isDestroy");
         }
     }
