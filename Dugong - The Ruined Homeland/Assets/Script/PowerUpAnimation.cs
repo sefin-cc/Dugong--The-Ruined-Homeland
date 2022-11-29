@@ -8,6 +8,7 @@ public class PowerUpAnimation : MonoBehaviour
     public Animator cameraAnim;
     public GameObject pauseManager;
 
+    public Animator playerAnim;
     public Joystick joystick;
 
 
@@ -15,7 +16,8 @@ public class PowerUpAnimation : MonoBehaviour
 
     public void callPowerUpAnimation()
     {
-        
+        Physics2D.IgnoreLayerCollision(6,8);
+        playerAnim.GetComponent<Animator>().SetLayerWeight(1,1);
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
         cameraAnim.SetTrigger("isPowerUp");
         powerUpanim.SetTrigger("isPowerUp");
@@ -31,4 +33,5 @@ public class PowerUpAnimation : MonoBehaviour
         pauseManager.GetComponent<PauseManager>().showUI(); 
         Time.timeScale = 1f;
     }
+    
 }
