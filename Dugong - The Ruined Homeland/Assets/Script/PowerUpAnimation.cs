@@ -12,8 +12,6 @@ public class PowerUpAnimation : MonoBehaviour
     public Joystick joystick;
 
 
-
-
     public void callPowerUpAnimation()
     {
         Physics2D.IgnoreLayerCollision(6,8);
@@ -32,6 +30,8 @@ public class PowerUpAnimation : MonoBehaviour
         joystick.handleCenter();
         pauseManager.GetComponent<PauseManager>().showUI(); 
         Time.timeScale = 1f;
+       
+        
     }
     
 }
