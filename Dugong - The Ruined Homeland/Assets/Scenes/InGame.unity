@@ -10423,6 +10423,7 @@ MonoBehaviour:
   powerUpanim: {fileID: 1833537365}
   cameraAnim: {fileID: 519420033}
   pauseManager: {fileID: 1901735260}
+  joystick: {fileID: 1459905868}
 --- !u!1 &1838282142
 GameObject:
   m_ObjectHideFlags: 0
