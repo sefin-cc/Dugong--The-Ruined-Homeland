@@ -50,7 +50,6 @@ public class Doubler : MonoBehaviour
 
     IEnumerator ignoreCollision(){
         yield return new WaitForSeconds(2.5f);
-        Debug.Log("ENDDNDNDNDN");
         GetComponent<Animator>().SetLayerWeight(1,0);
         Physics2D.IgnoreLayerCollision(6,8, false);
       

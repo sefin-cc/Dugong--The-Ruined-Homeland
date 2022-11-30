@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dugong-atk
+  m_Name: powerup-sonar
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,23 +20,23 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: dc1c97b6992fb3d40b8fbfc2172f6aff, type: 3}
+      value: {fileID: 21300000, guid: f4502b1820eb590438d8444b137286cb, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: 0b23441d0c23104419d9d230789a7dbc, type: 3}
+      value: {fileID: 21300000, guid: 307ce19c3308010459f040add201f608, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: 6c0ef446cb903474697d7761de61911d, type: 3}
+      value: {fileID: 21300000, guid: 9e4a5eee522299d41a86dfbd9ad31520, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: 29e545d59d0f6f744900bd78416e9fbf, type: 3}
+      value: {fileID: 21300000, guid: e7803c094d636fe439365c40da7acb62, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 2f3db544db42c104883904f977dcbf88, type: 3}
+      value: {fileID: 21300000, guid: b1586537e71fce547aa4c9c037bb6e22, type: 3}
     - time: 0.41666666
-      value: {fileID: 21300000, guid: 3359419473a4f5745a958c62e68d9cfb, type: 3}
+      value: {fileID: 21300000, guid: d0f4521e9a1b58b4996ae9291137e288, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 65ef85fe47a0c084ca0b110a4c0f8f29, type: 3}
+      value: {fileID: 21300000, guid: d6f5948fa5299884cae9abccf5047d2d, type: 3}
     - time: 0.5833333
-      value: {fileID: 21300000, guid: 132b3ae5bc1123e4d9000fe54610a852, type: 3}
+      value: {fileID: 21300000, guid: ec71f91a7e5332e44a484958d88fe03c, type: 3}
     - time: 0.6666667
-      value: {fileID: 21300000, guid: dcba30bfe2265054bbaee660dbeb7209, type: 3}
+      value: {fileID: 21300000, guid: 046f8d1fc8f265c49bc6b933da104ec4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,15 +56,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: dc1c97b6992fb3d40b8fbfc2172f6aff, type: 3}
-    - {fileID: 21300000, guid: 0b23441d0c23104419d9d230789a7dbc, type: 3}
-    - {fileID: 21300000, guid: 6c0ef446cb903474697d7761de61911d, type: 3}
-    - {fileID: 21300000, guid: 29e545d59d0f6f744900bd78416e9fbf, type: 3}
-    - {fileID: 21300000, guid: 2f3db544db42c104883904f977dcbf88, type: 3}
-    - {fileID: 21300000, guid: 3359419473a4f5745a958c62e68d9cfb, type: 3}
-    - {fileID: 21300000, guid: 65ef85fe47a0c084ca0b110a4c0f8f29, type: 3}
-    - {fileID: 21300000, guid: 132b3ae5bc1123e4d9000fe54610a852, type: 3}
-    - {fileID: 21300000, guid: dcba30bfe2265054bbaee660dbeb7209, type: 3}
+    - {fileID: 21300000, guid: f4502b1820eb590438d8444b137286cb, type: 3}
+    - {fileID: 21300000, guid: 307ce19c3308010459f040add201f608, type: 3}
+    - {fileID: 21300000, guid: 9e4a5eee522299d41a86dfbd9ad31520, type: 3}
+    - {fileID: 21300000, guid: e7803c094d636fe439365c40da7acb62, type: 3}
+    - {fileID: 21300000, guid: b1586537e71fce547aa4c9c037bb6e22, type: 3}
+    - {fileID: 21300000, guid: d0f4521e9a1b58b4996ae9291137e288, type: 3}
+    - {fileID: 21300000, guid: d6f5948fa5299884cae9abccf5047d2d, type: 3}
+    - {fileID: 21300000, guid: ec71f91a7e5332e44a484958d88fe03c, type: 3}
+    - {fileID: 21300000, guid: 046f8d1fc8f265c49bc6b933da104ec4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -75,7 +75,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -89,11 +89,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.5
-    functionName: spawnAttack
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
