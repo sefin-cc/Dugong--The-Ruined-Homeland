@@ -11,7 +11,7 @@ public class PowerUpTimer : MonoBehaviour
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
        if(seconds > 0 || miliseconds > 0){
             if(miliseconds <= 0){

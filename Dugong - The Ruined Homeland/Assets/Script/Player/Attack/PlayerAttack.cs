@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public BubbleAttack ProjectilePrefab;
+    public BubbleAttack basicProjectile;
+    public SonarAttack sonarProjectile;
+
+    public Transform sonarAttackPoint;
     public Transform attackPoint;
+
     public Animator anim;
   
-    public float attackRate = 2f;
+    float attackRate = 3f;
     float nextAttackTime = 0f;
 
     bool pressedAttack = false;
+    static bool basicAttack = false;
+    static bool sonarAttack = false;
 
     void FixedUpdate()
     {  
@@ -26,13 +32,28 @@ public class PlayerAttack : MonoBehaviour
         }
     }
     
-    public void spawnBasicAttack(){
-        Instantiate(ProjectilePrefab, attackPoint.position, transform.rotation ); 
+    public void spawnAttack(){
+        if(basicAttack){
+            Instantiate(basicProjectile, attackPoint.position, transform.rotation ); 
+        } else if(sonarAttack){
+            Instantiate(sonarProjectile, sonarAttackPoint.position, sonarAttackPoint.transform.rotation ); 
+        }
+       
     }
 
     //Onclick Basic Attack
-    public void basicAttack(){
-        
+    public void onClickBasicAttack(){
         pressedAttack = true;
+        basicAttack = true;
+        sonarAttack = false;
+        attackRate = 3;
+    }
+
+    //Onclick Basic Attack
+    public void onClicksonarAttack(){
+        pressedAttack = true;
+        sonarAttack = true;
+        basicAttack = false;
+        attackRate = 0.4f;
     }
 }

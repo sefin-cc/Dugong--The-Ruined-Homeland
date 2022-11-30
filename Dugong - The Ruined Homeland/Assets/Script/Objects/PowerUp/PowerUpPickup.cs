@@ -20,6 +20,9 @@ private Player Player;
             if(objectPickUp == "invul"  ){
                 Player.FindObjectOfType<Invulnerability>().InvulBuffEffect();
             }
+            if(objectPickUp == "sonar"  ){
+                Player.FindObjectOfType<Sonar>().sonarAttackEffect();
+            }
          
             // Removes the weapon on the ground
             Destroy(gameObject);

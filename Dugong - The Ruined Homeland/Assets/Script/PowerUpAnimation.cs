@@ -28,8 +28,8 @@ public class PowerUpAnimation : MonoBehaviour
     void endAnimPowerUpText ()
     {
         joystick.handleCenter();
-        pauseManager.GetComponent<PauseManager>().showUI(); 
         Time.timeScale = 1f;
+        pauseManager.GetComponent<PauseManager>().showUI(); 
        
         
     }
