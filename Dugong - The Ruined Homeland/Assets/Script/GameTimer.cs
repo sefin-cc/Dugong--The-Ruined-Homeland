@@ -30,8 +30,7 @@ public class GameTimer : MonoBehaviour
         //Display GameOver or Level Complete Panel
        
         if(FindObjectOfType<BeatScore>().scoreBeaten()){
-            FindObjectOfType<GameManager>().GameOver();
-             Debug.Log("GAME  DONE NICE");
+            FindObjectOfType<GameManager>().levelCleared();
         }else{
             FindObjectOfType<GameManager>().GameOver();
         }
