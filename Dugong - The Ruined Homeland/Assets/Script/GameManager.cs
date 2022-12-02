@@ -6,15 +6,18 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    private Player player;
-    private Spawner spawner;
 
     public TMP_Text scoreText;
     public GameObject playButton;
     public GameObject gameOver;
+    public GameObject levelClearedPanel;
+
 
     public GameObject powerUpAnimationText;  
-    public GameObject camera;  
+    public GameObject camera;
+      
+    public Animator playerAnim;
+    public GameObject Player;
     
     public GameObject pauseManager;
 
@@ -25,7 +28,9 @@ public class GameManager : MonoBehaviour
         score = 0;
         doubleScore = 1;
         powerUpAnimationText.SetActive(true);
+        levelClearedPanel.SetActive(false);
         camera.GetComponent<Animator>().enabled = true;
+        Player.GetComponent<CapsuleCollider2D>().enabled = true;
     }
 
     public void GameOver()
@@ -42,6 +47,31 @@ public class GameManager : MonoBehaviour
         score = 0;
         Debug.Log("Game Over: ");
     }
+    
+       public void levelCleared()
+    {
+        camera.GetComponent<Animator>().enabled = false;
+        Destroy(powerUpAnimationText);
+
+        //Hide btns
+        pauseManager.GetComponent<PauseManager>().hidePaused(); 
+        
+        Player.GetComponent<CapsuleCollider2D>().enabled = false;
+        playerAnim.SetTrigger("isComplete");
+        
+        HighscoreTable.GetPlayerScore((int)score);
+        score = 0;
+        Debug.Log("Level Cleared ");
+
+
+        // sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;  
+        // //Save scene
+        // PlayerPrefs.SetInt("Level", sceneIndex);
+        // PlayerPrefs.Save();
+        // Debug.Log(sceneIndex +" Save scene");
+    }
+
+
 
      void FixedUpdate()
     {
@@ -55,5 +85,7 @@ public class GameManager : MonoBehaviour
     public void updateScore(int points){
          score += (points * doubleScore);
     }
+
+
 
 }
