@@ -7,7 +7,10 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
 
+    public TMP_Text finalScoreText;
     public TMP_Text scoreText;
+    public GameObject scoreTextPanel;
+
     public GameObject playButton;
     public GameObject gameOver;
     public GameObject levelClearedPanel;
@@ -16,8 +19,8 @@ public class GameManager : MonoBehaviour
     public GameObject powerUpAnimationText;  
     public GameObject camera;
       
-    public Animator playerAnim;
     public GameObject Player;
+    public Joystick joystick;
     
     public GameObject pauseManager;
 
@@ -27,10 +30,14 @@ public class GameManager : MonoBehaviour
     void Start(){
         score = 0;
         doubleScore = 1;
+        
         powerUpAnimationText.SetActive(true);
         levelClearedPanel.SetActive(false);
+
         camera.GetComponent<Animator>().enabled = true;
         Player.GetComponent<CapsuleCollider2D>().enabled = true;
+        Player.GetComponent<PlayerAnimation>().enabled = false;  
+        scoreTextPanel.SetActive(true);
     }
 
     public void GameOver()
@@ -47,23 +54,33 @@ public class GameManager : MonoBehaviour
         score = 0;
         Debug.Log("Game Over: ");
     }
-    
+
        public void levelCleared()
     {
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
+        
+        //Center Joystick para hindi baswig
+        joystick.handleCenter();
 
         //Hide btns
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
-        
-        Player.GetComponent<CapsuleCollider2D>().enabled = false;
-        playerAnim.SetTrigger("isComplete");
-        
+        scoreTextPanel.SetActive(false);
+
+        finalScoreText.text = ((int)score).ToString();
         HighscoreTable.GetPlayerScore((int)score);
+        
         score = 0;
+        Player.GetComponent<CapsuleCollider2D>().enabled = false;
+        Player.GetComponent<PlayerAnimation>().enabled = true;   
+       
+       
+
+
+        
         Debug.Log("Level Cleared ");
 
-
+  
         // sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;  
         // //Save scene
         // PlayerPrefs.SetInt("Level", sceneIndex);
