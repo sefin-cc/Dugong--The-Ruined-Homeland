@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject camera;
       
     public GameObject Player;
+    public Joystick joystick;
     
     public GameObject pauseManager;
 
@@ -58,21 +59,28 @@ public class GameManager : MonoBehaviour
     {
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
+        
+        //Center Joystick para hindi baswig
+        joystick.handleCenter();
 
         //Hide btns
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
-        
-        Player.GetComponent<CapsuleCollider2D>().enabled = false;
-        Player.GetComponent<PlayerAnimation>().enabled = true;   
         scoreTextPanel.SetActive(false);
-        //lagyan mo ng centered joystick ito
 
         finalScoreText.text = ((int)score).ToString();
         HighscoreTable.GetPlayerScore((int)score);
+        
         score = 0;
+        Player.GetComponent<CapsuleCollider2D>().enabled = false;
+        Player.GetComponent<PlayerAnimation>().enabled = true;   
+       
+       
+
+
+        
         Debug.Log("Level Cleared ");
 
-
+  
         // sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;  
         // //Save scene
         // PlayerPrefs.SetInt("Level", sceneIndex);
