@@ -169,7 +169,7 @@ MonoBehaviour:
   animator: {fileID: 1977269600844508068}
   currentHealth: 0
   maxHealth: 5
-  point: 5
+  point: 10
   collider2: {fileID: 2195361153913099379}
 --- !u!1 &1977269601129422180
 GameObject:
