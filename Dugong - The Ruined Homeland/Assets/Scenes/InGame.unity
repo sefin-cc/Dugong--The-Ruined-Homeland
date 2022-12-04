@@ -12227,7 +12227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 1977269600844508071, guid: ad1b6ffcc0e2e8e4fb547494b9eaa2e6, type: 3}
-  maxX: 1.5
+  maxX: 0.99
   minX: -3.38
   maxY: 4
   minY: -3
