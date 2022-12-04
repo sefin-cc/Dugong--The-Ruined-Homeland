@@ -11,6 +11,8 @@ public class PowerUpAnimation : MonoBehaviour
     public Animator playerAnim;
     public Joystick joystick;
 
+    public GameObject PowerUpTimer;
+
 
     public void callPowerUpAnimation()
     {
@@ -29,9 +31,8 @@ public class PowerUpAnimation : MonoBehaviour
     {
         joystick.handleCenter();
         Time.timeScale = 1f;
+        PowerUpTimer.SetActive(true);
         pauseManager.GetComponent<PauseManager>().showUI(); 
-       
-        
     }
     
 }

@@ -32,7 +32,7 @@ public class Sonar : MonoBehaviour
         StartCoroutine(ignoreCollision());
         
         PowerUpTimer.GetComponent<PowerUpTimer>().setTimer(duration,0);
-        PowerUpTimer.SetActive(true);
+       // PowerUpTimer.SetActive(true);
         yield return new WaitForSeconds(duration);
 
         sonarAttackBtn.SetActive(false);

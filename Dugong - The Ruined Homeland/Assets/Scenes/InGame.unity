@@ -10557,7 +10557,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 9
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11598,6 +11598,7 @@ MonoBehaviour:
   pauseManager: {fileID: 1901735260}
   playerAnim: {fileID: 24282231}
   joystick: {fileID: 1459905868}
+  PowerUpTimer: {fileID: 1572328569}
 --- !u!1 &1838282142
 GameObject:
   m_ObjectHideFlags: 0
