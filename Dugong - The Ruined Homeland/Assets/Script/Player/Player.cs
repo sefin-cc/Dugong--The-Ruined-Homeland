@@ -5,40 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-private Vector3 direction;
-public float gravity = -8.8f;
-public float strength = 5f;
 public float tilt = 10f;
-public float topLimit = 1f;
-
 public Joystick joystick;
 public float speed = 3;
 
 Vector2 movement;
 
-
-private void Update(){
-    // if( Input.GetMouseButtonDown(0) && transform.position.y <=topLimit ){
-    //         direction = Vector3.up * strength;
-    // }
-
-    // if(Input.touchCount > 0 ){
-    //     Touch touch = Input.GetTouch(0);
-    //     if(touch.phase == TouchPhase.Began && transform.position.y <= topLimit){
-    //         direction = Vector3.up * strength;
-    //     }
-    // }
-
-  
-
-    }
     
 private void FixedUpdate(){
     
-//  // Apply gravity and update the position
-           // direction.y += gravity * Time.deltaTime;
-//         transform.position += direction * Time.deltaTime;
-
         movement.y  = joystick.Vertical * speed;
         transform.position += new Vector3(0, movement.y, 0) * Time.deltaTime * 2;
 

@@ -26,10 +26,10 @@ public class Obstacle : MonoBehaviour
         currentHealth -= damage;
         if(currentHealth> 0){
             //PLAY HIT ANIMATION
-            //animator.SetTrigger("damage");
+
         }else{
             //PLAY DEATH ANIMATION  
-            //animator.SetTrigger("dead");
+
             collider.enabled = false;
             collider2.enabled = false;
             animator.SetTrigger("isDestroy");

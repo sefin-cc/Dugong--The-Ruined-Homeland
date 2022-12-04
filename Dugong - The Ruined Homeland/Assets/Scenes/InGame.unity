@@ -10968,7 +10968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hardObstacles: {fileID: 1967498853}
-  hardObstaclesScore: 30
+  hardObstaclesScore: 20
 --- !u!4 &1744228467
 Transform:
   m_ObjectHideFlags: 0
@@ -12171,6 +12171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1967498856}
   - component: {fileID: 1967498855}
+  - component: {fileID: 1967498857}
   m_Layer: 0
   m_Name: MoreObstaclesSpawner
   m_TagString: Untagged
@@ -12192,12 +12193,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 905390402521498653, guid: f2c3dc7b5245c2f41a70fa09fc649d6a, type: 3}
-  - {fileID: 1977269600844508071, guid: ad1b6ffcc0e2e8e4fb547494b9eaa2e6, type: 3}
-  maxX: -3.2918
-  minX: -3.2918
-  maxY: -3.2918
-  minY: -3.2918
-  timeBetweenSpawn: 15
+  maxX: 2
+  minX: -3.38
+  maxY: -2.9
+  minY: -2.9
+  timeBetweenSpawn: 10
 --- !u!4 &1967498856
 Transform:
   m_ObjectHideFlags: 0
@@ -12213,6 +12213,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1967498857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967498853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd09fcdf938de47b851d6f9adfb427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab:
+  - {fileID: 1977269600844508071, guid: ad1b6ffcc0e2e8e4fb547494b9eaa2e6, type: 3}
+  maxX: 0.99
+  minX: -3.38
+  maxY: 4
+  minY: -3
+  timeBetweenSpawn: 15
 --- !u!1 &1976573439
 GameObject:
   m_ObjectHideFlags: 0
