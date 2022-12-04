@@ -11,12 +11,6 @@ public class Doubler : MonoBehaviour
     public GameObject PowerUpTimer;
     public float duration = 10; 
 
-    
-    // public GameObject background;
-    // public GameObject middleground;
-    // public GameObject foreground;
-    // public GameObject ground;
-
 
     public void DoublerBuffEffect(){
         powerUpText.text = "SCORE X2!";
@@ -25,7 +19,6 @@ public class Doubler : MonoBehaviour
         StartCoroutine(DoublerEffect());
     }
    
-
     IEnumerator DoublerEffect(){
         yield return new WaitForSeconds(1f);
 
@@ -33,17 +26,19 @@ public class Doubler : MonoBehaviour
         addBonusScore();
         StartCoroutine(ignoreCollision());
 
-  
+        //Set powerupTimer bar value
         PowerUpTimer.GetComponent<PowerUpTimer>().setTimer(duration,0);
-        PowerUpTimer.SetActive(true);
+        
         yield return new WaitForSeconds(duration);
        
         animator.SetBool("isDoubler", false);
         removeBonusScore();
     }
+
     public void addBonusScore(){
         FindObjectOfType<GameManager>().doubleScoreAdd(2);
     }
+
     public void removeBonusScore(){
         FindObjectOfType<GameManager>().doubleScoreAdd(1);
     }

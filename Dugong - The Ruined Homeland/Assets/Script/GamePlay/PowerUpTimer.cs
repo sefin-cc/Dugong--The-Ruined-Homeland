@@ -23,13 +23,14 @@ public class PowerUpTimer : MonoBehaviour
         
                 miliseconds -= Time.deltaTime * 100; 
 
-                Debug.Log(string.Format("{0}:{1}", seconds, (int)miliseconds));
+               // Debug.Log(string.Format("{0}:{1}", seconds, (int)miliseconds));
                 if( ( miliseconds >= 25 && miliseconds <= 35 ) || (miliseconds >= 75 && miliseconds <= 85)){
                     timerContainer.value = float.Parse(string.Format("{0}.{1}", seconds, (int)miliseconds));
                 }
        }else{
             gameObject.SetActive(false);
-
+            timerContainer.value = 10f;
+            Debug.Log("timer abot pala dito");
        }
     }
 
