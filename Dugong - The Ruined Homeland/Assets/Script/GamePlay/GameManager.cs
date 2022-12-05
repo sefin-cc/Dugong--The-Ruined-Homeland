@@ -45,13 +45,15 @@ public class GameManager : MonoBehaviour
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
 
+        HighscoreTable.GetPlayerScore((int)score);
+        score = 0;
+        
         //Hide btns
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
 
         gameOver.SetActive(true);
         Time.timeScale = 0f;
-        HighscoreTable.GetPlayerScore((int)score);
-        score = 0;
+        
         Debug.Log("Game Over: ");
     }
 
