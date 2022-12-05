@@ -11,9 +11,7 @@ public class MainmenuManager : MonoBehaviour
      public GameObject handBookPanel;
 
     //Onclick Buttons from menu
-    public void GoInGame(){
-        SceneManager.LoadScene("InGame");
-    }
+   
 
     public void GoSetting(){
         settingsPanel.SetActive(true);
