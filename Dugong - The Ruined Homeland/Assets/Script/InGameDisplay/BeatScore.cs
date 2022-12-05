@@ -17,9 +17,7 @@ public class BeatScore : MonoBehaviour
     static bool beat;
    
     void Start(){
-        // sortHighScores();
-        // beatName.text = currentBeatName;
-        // beatScore.text = currentBeatScore.ToString();
+        playerScore = 0;
         beatName.text = currentBeatName;
         beat = false;
         beatScore.text = goalBeatScore.ToString();
@@ -28,13 +26,7 @@ public class BeatScore : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-            // if (playerScore > currentBeatScore && countPlayer >= 0) {
-            //     countPlayer--;
-            //     sortHighScores();
-            //     beatName.text = currentBeatName;
-            //     beatScore.text = currentBeatScore.ToString();
-             
-            // }
+
             if (playerScore > goalBeatScore) {
                 anim.SetTrigger("hideBeatScore");
                 beat = true;
@@ -44,41 +36,10 @@ public class BeatScore : MonoBehaviour
     public bool scoreBeaten(){
         return beat;
     }
-    // public void sortHighScores(){
-          
-    //     string jsonString = PlayerPrefs.GetString("highscoreTable");
-    //     Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
-       
-
-    //      // Sort entry list by Score
-    //     for (int i = 0; i < highscores.highscoreEntryList.Count; i++) {
-    //         for (int j = i + 1; j < highscores.highscoreEntryList.Count; j++) {
-    //             if (highscores.highscoreEntryList[j].score > highscores.highscoreEntryList[i].score) {
-    //                 // Swap
-    //                 HighscoreEntry tmp = highscores.highscoreEntryList[i];
-    //                 highscores.highscoreEntryList[i] = highscores.highscoreEntryList[j];
-    //                 highscores.highscoreEntryList[j] = tmp;
-
-    //             }
-    //         }
-    //     }
-    //     currentBeatScore = highscores.highscoreEntryList[countPlayer].score;
-    //     currentBeatName =  highscores.highscoreEntryList[countPlayer].name;
-    //     Debug.Log(" currentBeatName: "+ currentBeatName);
-       
-    // }
+ 
 
     public static void GetPlayerScore(int score){
         playerScore = score;
     }
 
-    // private class Highscores {
-    //     public List<HighscoreEntry> highscoreEntryList;
-    // }
-
-    // [System.Serializable] 
-    // private class HighscoreEntry {
-    //     public int score;
-    //     public string name;
-    // }
 }

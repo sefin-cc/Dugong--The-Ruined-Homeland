@@ -28,15 +28,15 @@ public class LevelSelector : MonoBehaviour
         lvl3Btn.interactable = false;
         lvl4Btn.interactable = false;
  
-        if(savedScene >= 3){
+        if(savedScene >= 2){
             lvl2Btn.interactable = true;
         }
 
-        if(savedScene >= 4){
+        if(savedScene >= 3){
             lvl3Btn.interactable = true;
         }
 
-        if(savedScene >= 5){
+        if(savedScene >= 4){
             lvl4Btn.interactable = true;
         }
     }
