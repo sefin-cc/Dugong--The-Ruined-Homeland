@@ -128,11 +128,15 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2451773642099731747, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
   m_PrefabInstance: {fileID: 2451773641670657352}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &24282224
+--- !u!95 &24282231 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2451773642099731748, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
+  m_PrefabInstance: {fileID: 2451773641670657352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &24282234 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 24282224, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
+  m_PrefabInstance: {fileID: 2451773641670657352}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24282215}
   m_Enabled: 1
@@ -140,46 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99204f8b63d20a0428c600b0f0133825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicProjectile: {fileID: 6076275195357783577, guid: 3b45239eb11e01d4bb956207a0d78822, type: 3}
-  sonarProjectile: {fileID: 4577504031720372438, guid: 9886e15379b4e274abc414362baeb441, type: 3}
-  sonarAttackPoint: {fileID: 1015938423}
-  attackPoint: {fileID: 2451773641670657353}
-  anim: {fileID: 24282231}
---- !u!95 &24282231 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2451773642099731748, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
-  m_PrefabInstance: {fileID: 2451773641670657352}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &24282239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24282215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4199ba2fc138cc74ba2e7f7c58b0bd10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basicAttackBtn: {fileID: 322311989}
-  sonarAttackBtn: {fileID: 1284816211}
-  powerUpText: {fileID: 1833537366}
-  PowerUpTimer: {fileID: 1572328569}
-  duration: 10
---- !u!114 &24282247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24282215}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45177361ca7f27544bde55c1049d9b74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelClearedPanel: {fileID: 1263666901}
 --- !u!1 &44083324
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 24282224}
+      - m_Target: {fileID: 24282234}
         m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
         m_MethodName: onClickBasicAttack
         m_Mode: 1
@@ -8631,7 +8595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 24282224}
+      - m_Target: {fileID: 24282234}
         m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
         m_MethodName: onClicksonarAttack
         m_Mode: 1
@@ -12112,8 +12076,3 @@ PrefabInstance:
       objectReference: {fileID: 1459905868}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
---- !u!4 &2451773641670657353 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 360610656154756379, guid: 338e96110dd97644a9da3408f1a82910, type: 3}
-  m_PrefabInstance: {fileID: 2451773641670657352}
-  m_PrefabAsset: {fileID: 0}
