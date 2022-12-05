@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    int sceneIndex;
     
     //OnClick 
     public void ReplayLevel(){
@@ -18,8 +19,8 @@ public class GameOver : MonoBehaviour
 
     }
      public void NextLevel(){
-       //Time.timeScale = 1f;
-       // SceneManager.LoadScene("MainMenu");
+       sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;  
+       SceneManager.LoadSceneAsync(sceneIndex);   
        Debug.Log("Next Level"); 
 
     }

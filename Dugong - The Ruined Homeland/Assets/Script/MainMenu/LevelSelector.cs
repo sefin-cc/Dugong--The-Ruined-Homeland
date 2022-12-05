@@ -24,19 +24,23 @@ public class LevelSelector : MonoBehaviour
 
         Debug.Log("savedScene: "+ savedScene);
 
+        lvl1Btn.interactable = false;
         lvl2Btn.interactable = false;
         lvl3Btn.interactable = false;
         lvl4Btn.interactable = false;
  
         if(savedScene >= 2){
+            lvl1Btn.interactable = true;
+        }
+        if(savedScene >= 3){
             lvl2Btn.interactable = true;
         }
 
-        if(savedScene >= 3){
+        if(savedScene >= 4){
             lvl3Btn.interactable = true;
         }
 
-        if(savedScene >= 4){
+        if(savedScene >= 5){
             lvl4Btn.interactable = true;
         }
     }
@@ -52,24 +56,35 @@ public class LevelSelector : MonoBehaviour
         LevelSelectorPanel.SetActive(false);
     }
 
-    public void levelOne(){
+    
+    public void tutorialLevel(){
         // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
         // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
         SceneManager.LoadSceneAsync(1);
 
     }
-    
-    // public void levelTwo(){
-    //     FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
-    //     FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
-    // }
 
-    // public void levelThree(){
-    //     FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
-    //     FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
-    // } 
-    // public void levelFour(){
-    //     FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
-    //     FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
-    // }
+    public void levelOne(){
+        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
+        SceneManager.LoadSceneAsync(2);
+
+    }
+    
+    public void levelTwo(){
+        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
+        SceneManager.LoadSceneAsync(3);
+    }
+
+    public void levelThree(){
+        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
+        SceneManager.LoadSceneAsync(4);
+    } 
+    public void levelFour(){
+        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
+        SceneManager.LoadSceneAsync(5);
+    }
 }
