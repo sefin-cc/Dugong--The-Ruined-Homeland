@@ -112,6 +112,7 @@ public class HighscoreTable : MonoBehaviour
         Debug.Log("Pressed");
         playerScore = 0;
         updatePlayerScore(0, "DUGONG");
+        PlayerPrefs.SetInt("Saved", 1);
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 

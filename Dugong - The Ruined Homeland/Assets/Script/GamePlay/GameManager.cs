@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +28,12 @@ public class GameManager : MonoBehaviour
     public static float score ;
     public static float doubleScore ;
 
+    int sceneIndex;
+    
+
+
     void Start(){
+        //Reset values
         score = 0;
         doubleScore = 1;
         
@@ -42,9 +48,11 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        //Disable power up animation
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
 
+        //Reset and save highscore
         HighscoreTable.GetPlayerScore((int)score);
         score = 0;
         
@@ -57,8 +65,9 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over: ");
     }
 
-       public void levelCleared()
+    public void levelCleared()
     {
+        //Disable power up animation
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
         
@@ -69,38 +78,38 @@ public class GameManager : MonoBehaviour
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
         scoreTextPanel.SetActive(false);
 
+        //Reset, Display and save highscore
         finalScoreText.text = ((int)score).ToString();
         HighscoreTable.GetPlayerScore((int)score);
-        
         score = 0;
+
+        //Disable player collision and trigger the swim away animation 
         Player.GetComponent<CapsuleCollider2D>().enabled = false;
         Player.GetComponent<PlayerAnimation>().enabled = true;   
-       
-       
 
-
-        
+       
         Debug.Log("Level Cleared ");
 
-  
-        // sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;  
-        // //Save scene
-        // PlayerPrefs.SetInt("Level", sceneIndex);
-        // PlayerPrefs.Save();
-        // Debug.Log(sceneIndex +" Save scene");
+        sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;       
+
+        //Only save progress when the saved scene is lower or equal to the current scene
+        if(PlayerPrefs.GetInt("Saved") <= sceneIndex){
+            PlayerPrefs.SetInt("Saved", sceneIndex);
+            PlayerPrefs.Save();
+            Debug.Log(sceneIndex +" Save scene");
+        }
     }
-
-
 
      void FixedUpdate()
     {
-        //score += 1 * Time.deltaTime;
         BeatScore.GetPlayerScore((int)score);
         scoreText.text = ((int)score).ToString();
     }
+
     public void doubleScoreAdd(int doubleScoreAdd){
          doubleScore = doubleScoreAdd;
     }
+
     public void updateScore(int points){
          score += (points * doubleScore);
     }
