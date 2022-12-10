@@ -1413,8 +1413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 176.71, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3274,52 +3274,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
   - images: {fileID: 21300000, guid: 30b905a9774dccf4081a5880d2a43eb0, type: 3}
+    height: 115.552
+    width: 220
     name: Dugong
     sentences: Dugongs, also known as "sea cows," peacefully graze on sea grasses
     indentifiers: 1
   - images: {fileID: 21300000, guid: 30b905a9774dccf4081a5880d2a43eb0, type: 3}
+    height: 115.552
+    width: 220
     name: Dugong
     sentences: ' in shallow coastal waters of the Indian and western Pacific Oceans.'
     indentifiers: 1
   - images: {fileID: 21300000, guid: 55d9d187a32a1ac4da8de016a56b192a, type: 3}
+    height: 172.1339
+    width: 258.1918
     name: Pugita
     sentences: 'The octopus, also known as the pugita has a large bulbous head, large
       eyes, and eight distinct arms. '
     indentifiers: 1
   - images: {fileID: 21300000, guid: 55d9d187a32a1ac4da8de016a56b192a, type: 3}
+    height: 172.1339
+    width: 258.1918
     name: Pugita
     sentences: ' Free divers catch Octopus vulgaris, the common Philippine octopus.'
     indentifiers: 1
-  - images: {fileID: 21300000, guid: dde5584e6af4350498aaec1109ca197e, type: 3}
+  - images: {fileID: 21300000, guid: 8593e492ada90ed4786259660a72d266, type: 3}
+    height: 125
+    width: 135
     name: Kabibe
     sentences: 'Seashells or Kabibe in tagalog are frequently used in the Philippines
       to embellish clothing, home decor, and other products. '
     indentifiers: 1
   - images: {fileID: 21300000, guid: 1ea5881eec80bfa499cb67940eff5ba2, type: 3}
+    height: 115.552
+    width: 173.322
     name: Mameng
     sentences: 'One of the largest, most vibrant, Mameng are long-lived reef fish
       that '
     indentifiers: 2
   - images: {fileID: 21300000, guid: 1ea5881eec80bfa499cb67940eff5ba2, type: 3}
+    height: 115.552
+    width: 173.322
     name: Mameng
     sentences: 'can reach heights of six feet with a life expectancy of almost 30
       years. '
     indentifiers: 2
   - images: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
+    height: 115.552
+    width: 0
     name: Pawikan
     sentences: 'In the Philippines, there are 27 species of whales and dolphins belonging
       to five different families. '
     indentifiers: 3
   - images: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
+    height: 115.552
+    width: 0
     name: Pawikan
     sentences: One of the endangered species is the pygmy blue.
     indentifiers: 3
-  - images: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
+  - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
+    height: 115.552
+    width: 214.37
     name: Balyena
     sentences: 'Pawikan, or Hawksbill Turtle, is one of the Philippines'' most critically
       endangered species. '
     indentifiers: 4
-  - images: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
+  - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
+    height: 115.552
+    width: 214.37
     name: Balyena
     sentences: "The pawikan prefers to live in or near coral reefs in the ocean.\r"
     indentifiers: 4
@@ -3329,6 +3351,8 @@ MonoBehaviour:
   leftButton: {fileID: 1451652544}
   rightButton: {fileID: 1476323583}
   lockedImg: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
+  heightLocked: 115.552
+  widthLocked: 173.322
 --- !u!1 &762333178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,8 +3409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 176.71, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5048,8 +5072,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 176.71, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6041,7 +6065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1389079574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6835,34 +6859,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
+    height: 140.91
+    width: 389.849
     name: Freedom Island
     sentences: "The Las Pi\xF1as-Para\xF1aque Critical Habitat and Ecotourism Area
       (LPPCHEA) is a nature reserve south of Manila Bay "
     indentifiers: 1
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
+    height: 140.91
+    width: 389.849
     name: Freedom Island
     sentences: that covers approximately 175 hectares of wetland ecosystem. The largest
       issue with Freedom Islands is the massive amount
     indentifiers: 1
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
+    height: 140.91
+    width: 389.849
     name: Freedom Island
     sentences: ' of trash that covers it. All of the garbage washed up on Freedom
       Island by the waves endangers not only the birds,'
     indentifiers: 1
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
+    height: 140.91
+    width: 389.849
     name: Freedom Island
     sentences: "who may mistake it for food, but also the fish and other marine life.
       The massive fish kill has been blamed on polluted water.\r"
     indentifiers: 1
   - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
+    height: 140.91
+    width: 389.849
     name: Lingayen Gulf
     sentences: a
     indentifiers: 2
   - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
+    height: 140.91
+    width: 389.849
     name: Boracay Beach
     sentences: v
     indentifiers: 3
   - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
+    height: 140.91
+    width: 389.849
     name: Dolomite Beach
     sentences: c
     indentifiers: 4
@@ -6872,6 +6910,8 @@ MonoBehaviour:
   leftButton: {fileID: 687578703}
   rightButton: {fileID: 1776109816}
   lockedImg: {fileID: 21300000, guid: aa0153577b991f349ba356e818b4c17d, type: 3}
+  heightLocked: 140.91
+  widthLocked: 389.849
 --- !u!1 &1473394993
 GameObject:
   m_ObjectHideFlags: 0
