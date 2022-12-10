@@ -11,4 +11,7 @@ public class Information
 
    [TextArea(3,10)]
    public string sentences;
+
+   public int indentifiers ;
+
 }
