@@ -14,7 +14,10 @@ public class DisplayInformation : MonoBehaviour
     public Button leftButton;
     public Button rightButton;
 
+    public Sprite lockedImg;
+
     int pageCount =0;
+    int savedScene;
 
     // Start is called before the first frame update
     void Start()
@@ -50,12 +53,35 @@ public class DisplayInformation : MonoBehaviour
     }
 
     void displayPage(){
+        savedScene = PlayerPrefs.GetInt("Saved");
         Debug.Log("page count: "+ pageCount);
 
         image.GetComponent<Image>().sprite = info[pageCount].images;
         nameText.text = info[pageCount].name;
         sentenceText.text = info[pageCount].sentences;
 
+        if(savedScene <= 2){
+          //  lvl1
+            if(info[pageCount].indentifiers > 1){
+                image.GetComponent<Image>().sprite = lockedImg;
+                nameText.text = "???";
+                sentenceText.text = "To be Unlocked";
+            }
+        } else if(savedScene == 3){
+          //  lvl2
+            if(info[pageCount].indentifiers > 2){
+                image.GetComponent<Image>().sprite = lockedImg;
+                nameText.text = "???";
+                sentenceText.text = "To be Unlocked";
+            }
+        } else if(savedScene == 4){
+          //  lvl3
+            if(info[pageCount].indentifiers > 3){
+                image.GetComponent<Image>().sprite = lockedImg;
+                nameText.text = "???";
+                sentenceText.text = "To be Unlocked";
+            }
+        }
     }
 
 
