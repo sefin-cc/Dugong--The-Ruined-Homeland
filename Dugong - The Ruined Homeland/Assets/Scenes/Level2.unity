@@ -446,7 +446,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf3908e915150c841bcdb554f685a283, type: 2}
+  - {fileID: 2100000, guid: 40dfafe016dfdba4f8f43d2bb75cd67a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1179,7 +1179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 372a6c740248c66499371e2db8913e35, type: 2}
+  - {fileID: 2100000, guid: cb30f761ccbf5024f8f24e05dfc6ad2f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1483,7 +1483,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 66d824fda1c0337478ed7275794a4e35, type: 2}
+  - {fileID: 2100000, guid: ba0e7a10074f8f749b04994583c9d782, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2585,7 +2585,7 @@ SpriteRenderer:
   m_SortingLayerID: 1542960567
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3f66149d73fd9c244b3decb6a04d9c5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a2251a7a8b58784b8682fe648230916, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9477,7 +9477,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 480be2f11c1e398478113b763620b0a9, type: 2}
+  - {fileID: 2100000, guid: 36db962ab1b1f1f40b5949915fa02ee5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9719,7 +9719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab:
-  - {fileID: 4757641061228809767, guid: 612f4f73c0222ce489c2bc54eba32970, type: 3}
+  - {fileID: 4757641061228809767, guid: 5fa4414c43f28cb40b7af21cd102a013, type: 3}
   maxX: 2
   minX: -3.38
   maxY: 2.9
@@ -10961,7 +10961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab:
-  - {fileID: 905390402521498653, guid: f2c3dc7b5245c2f41a70fa09fc649d6a, type: 3}
+  - {fileID: 905390402521498653, guid: b7c30cb876c310a41afec7dbb6eadaf6, type: 3}
   maxX: 2
   minX: -3.38
   maxY: -2.9
