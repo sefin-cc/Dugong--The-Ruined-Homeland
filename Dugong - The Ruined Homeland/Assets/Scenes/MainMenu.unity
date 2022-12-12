@@ -3319,31 +3319,31 @@ MonoBehaviour:
     sentences: 'can reach heights of six feet with a life expectancy of almost 30
       years. '
     indentifiers: 2
-  - images: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
-    height: 115.552
-    width: 0
-    name: Pawikan
-    sentences: 'In the Philippines, there are 27 species of whales and dolphins belonging
-      to five different families. '
-    indentifiers: 3
-  - images: {fileID: 21300000, guid: 2bed84b811647a941802d86f1eaf5189, type: 3}
-    height: 115.552
-    width: 0
-    name: Pawikan
-    sentences: One of the endangered species is the pygmy blue.
-    indentifiers: 3
   - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
     height: 115.552
     width: 214.37
     name: Balyena
     sentences: 'Pawikan, or Hawksbill Turtle, is one of the Philippines'' most critically
       endangered species. '
-    indentifiers: 4
+    indentifiers: 3
   - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
     height: 115.552
     width: 214.37
     name: Balyena
     sentences: "The pawikan prefers to live in or near coral reefs in the ocean.\r"
+    indentifiers: 3
+  - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
+    height: 115.552
+    width: 159.58
+    name: Pawikan
+    sentences: 'In the Philippines, there are 27 species of whales and dolphins belonging
+      to five different families. '
+    indentifiers: 4
+  - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
+    height: 115.552
+    width: 159.58
+    name: Pawikan
+    sentences: One of the endangered species is the pygmy blue.
     indentifiers: 4
   nameText: {fileID: 1060314689}
   sentenceText: {fileID: 1439340143}
@@ -6890,19 +6890,80 @@ MonoBehaviour:
     height: 140.91
     width: 389.849
     name: Lingayen Gulf
-    sentences: a
+    sentences: 'A semi-enclosed body of water located in the northern part of the
+      Philippines is a major fishing and tourism area in the country. '
+    indentifiers: 2
+  - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Lingayen Gulf
+    sentences: Pollution coming from point and nonpoint sources is identified and
+      includes high microbial levels from domestic sewage, trace metals from mining
+      activities
+    indentifiers: 2
+  - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Lingayen Gulf
+    sentences: 'and siltation and sedimentation resulting from logging and mining
+      operations and explorations.
+
+'
     indentifiers: 2
   - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
     height: 140.91
     width: 389.849
     name: Boracay Beach
-    sentences: v
+    sentences: One of the best tourist destinations in the Visayas and has the best
+      beaches in the Philippines.
+    indentifiers: 3
+  - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Boracay Beach
+    sentences: It is known for its white sand, crystal clear and turquoise waters,
+      breathtaking sunset, and more.
+    indentifiers: 3
+  - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Boracay Beach
+    sentences: 'One of the issues on the island of Boracay has been pollution due
+      to poor sewage and waste control system. '
     indentifiers: 3
   - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
     height: 140.91
     width: 389.849
     name: Dolomite Beach
-    sentences: c
+    sentences: 'It is a man-made beach developed by beach nourishment along Manila
+      in Manila Bay, Philippines. '
+    indentifiers: 4
+  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Dolomite Beach
+    sentences: It is designed to protect the coastal area for the Manila Bay Rehabilitation
+      project.
+    indentifiers: 4
+  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Dolomite Beach
+    sentences: 'Dolomite sand washing off the beach is comparable to dumping foreign
+      sediments, which are the most prevalent contaminants in any marine environment. '
+    indentifiers: 4
+  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Dolomite Beach
+    sentences: 'By potentially burying marine life and plants, reducing the amount
+      of oxygen in the water, and obstructing their '
+    indentifiers: 4
+  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
+    height: 140.91
+    width: 389.849
+    name: Dolomite Beach
+    sentences: ability to get sunlight, they can disrupt their natural ecosystems.
     indentifiers: 4
   nameText: {fileID: 894903718}
   sentenceText: {fileID: 1910589203}
