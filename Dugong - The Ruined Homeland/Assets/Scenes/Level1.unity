@@ -7728,8 +7728,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8228282395318245762}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+      - m_Target: {fileID: 1901735263}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
@@ -11984,14 +11984,3 @@ PrefabInstance:
       objectReference: {fileID: 894364712}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
---- !u!114 &8228282395318245762 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3385198256312495565, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
-  m_PrefabInstance: {fileID: 8228282395318245761}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901735260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdda4d4b9d542224eb6700fff9384653, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
