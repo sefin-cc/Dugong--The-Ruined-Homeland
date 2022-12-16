@@ -25,16 +25,18 @@ public class HighscoreTable : MonoBehaviour
             // There's no stored table, initialize
             Debug.Log("Initializing table with default values...");
             AddHighscoreEntry(0, "DUGONG");
-            AddHighscoreEntry(100, "PUGITA");
-            AddHighscoreEntry(250, "KABIBE");
-            AddHighscoreEntry(450, "MAMENG");
-            AddHighscoreEntry(700, "BALYENA");
-            AddHighscoreEntry(1000, "PAWIKAN");
+            AddHighscoreEntry(20, "PUGITA");
+            AddHighscoreEntry(80, "KABIBE");
+            AddHighscoreEntry(150, "MAMENG");
+            AddHighscoreEntry(200, "BALYENA");
+            AddHighscoreEntry(300, "PAWIKAN");
             
             // Reload
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
         }
+    
+        
 
         // Sort entry list by Score
         for (int i = 0; i < highscores.highscoreEntryList.Count; i++) {
@@ -62,14 +64,17 @@ public class HighscoreTable : MonoBehaviour
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
+        if(highscores.highscoreEntryList != null){
         //Set new highscore for Dugong if the current score is higher than the prev highscore
-      if( playerScore > highscores.highscoreEntryList[0].score){
-        Debug.Log("New HighScore ");
-        //Update DUGONG score
-        updatePlayerScore(playerScore, "DUGONG");
-        //FindObjectOfType<BeatScore>().sortHighScores();
-      }
+            if( playerScore > highscores.highscoreEntryList[0].score){
+                Debug.Log("New HighScore ");
+                //Update DUGONG score
+                updatePlayerScore(playerScore, "DUGONG");
+                //FindObjectOfType<BeatScore>().sortHighScores();
+            }
+        }
     }
+       
 
     public static void GetPlayerScore(int score){
         playerScore = score;
@@ -111,7 +116,26 @@ public class HighscoreTable : MonoBehaviour
     public void ResetGame(){
         Debug.Log("Pressed");
         playerScore = 0;
-        updatePlayerScore(0, "DUGONG");
+//        updatePlayerScore(0, "DUGONG");
+
+
+            string jsonString = PlayerPrefs.GetString("highscoreTable");
+            Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+            highscores = new Highscores() {
+                highscoreEntryList = new List<HighscoreEntry>()
+            };
+            string json = JsonUtility.ToJson(highscores);
+            PlayerPrefs.SetString("highscoreTable", json);
+            PlayerPrefs.Save();    
+
+            AddHighscoreEntry(0, "DUGONG");
+            AddHighscoreEntry(20, "PUGITA");
+            AddHighscoreEntry(80, "KABIBE");
+            AddHighscoreEntry(150, "MAMENG");
+            AddHighscoreEntry(200, "BALYENA");
+            AddHighscoreEntry(300, "PAWIKAN");
+            
+        
         PlayerPrefs.SetInt("Saved", 1);
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
