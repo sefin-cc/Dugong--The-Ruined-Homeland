@@ -8,11 +8,14 @@ public class GameTimer : MonoBehaviour
 {
     public int countdownTime;
     public TMP_Text   countdownDisplay;
+    public GameObject seaCreature;
+
 
     // Start is called before the first frame update
     void Start()
     {
         countdownDisplay.text = "";
+        seaCreature.SetActive(false);
         StartCoroutine(gameTimer());
     }
 
@@ -31,6 +34,7 @@ public class GameTimer : MonoBehaviour
        
         if(FindObjectOfType<BeatScore>().scoreBeaten()){
             FindObjectOfType<GameManager>().levelCleared();
+            seaCreature.SetActive(true);
         }else{
             FindObjectOfType<GameManager>().GameOver();
         }

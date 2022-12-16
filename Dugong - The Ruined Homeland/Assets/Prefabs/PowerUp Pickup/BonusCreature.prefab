@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3804138968464268233}
   - component: {fileID: 3804138968464268234}
   - component: {fileID: 3804138968464268235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BonusCreature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
