@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4146866436599080482}
   - component: {fileID: -8051740363592587658}
   - component: {fileID: 3257334278543424881}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Doubler
   m_TagString: Untagged
   m_Icon: {fileID: 0}

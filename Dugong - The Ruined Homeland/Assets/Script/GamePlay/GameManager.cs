@@ -84,7 +84,10 @@ public class GameManager : MonoBehaviour
         score = 0;
 
         //Disable player collision and trigger the swim away animation 
-        Player.GetComponent<CapsuleCollider2D>().enabled = false;
+
+
+        
+       // Player.GetComponent<CapsuleCollider2D>().enabled = false;
         Player.GetComponent<PlayerAnimation>().enabled = true;   
 
        

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 781167372247972283}
   - component: {fileID: 6375379987449504599}
   - component: {fileID: 3779887549550630503}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sonar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
