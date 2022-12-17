@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         Destroy(powerUpAnimationText);
 
         //Reset and save highscore
-        HighscoreTable.GetPlayerScore((int)score);
+        // HighscoreTable.GetPlayerScore((int)score);
         score = 0;
         
         //Hide btns
@@ -80,12 +80,8 @@ public class GameManager : MonoBehaviour
 
         //Reset, Display and save highscore
         finalScoreText.text = ((int)score).ToString();
-        HighscoreTable.GetPlayerScore((int)score);
+        HighScoreChecker.GetPlayerScore((int)score);
         score = 0;
-
-        //Disable player collision and trigger the swim away animation 
-
-
         
        // Player.GetComponent<CapsuleCollider2D>().enabled = false;
         Player.GetComponent<PlayerAnimation>().enabled = true;   
