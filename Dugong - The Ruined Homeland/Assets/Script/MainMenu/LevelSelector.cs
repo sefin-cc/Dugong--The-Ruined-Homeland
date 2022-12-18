@@ -46,44 +46,44 @@ public class LevelSelector : MonoBehaviour
     }
 
     public void levelSelectorOpen(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         LevelSelectorPanel.SetActive(true);
 
     }
     
     public void levelSelectorClosed(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         LevelSelectorPanel.SetActive(false);
     }
 
     
     public void tutorialLevel(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
         SceneManager.LoadSceneAsync(1);
 
     }
 
     public void levelOne(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
         SceneManager.LoadSceneAsync(2);
 
     }
     
     public void levelTwo(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
         SceneManager.LoadSceneAsync(3);
     }
 
     public void levelThree(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
         SceneManager.LoadSceneAsync(4);
     } 
     public void levelFour(){
-        // FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
         SceneManager.LoadSceneAsync(5);
     }

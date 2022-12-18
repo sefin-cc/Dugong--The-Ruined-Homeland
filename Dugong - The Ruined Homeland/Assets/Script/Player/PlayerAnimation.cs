@@ -43,6 +43,7 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     void showLevelCleared(){
+        FindObjectOfType<AudioManagerUI>().uiPlay("LevelComplete");
         levelClearedPanel.SetActive(true);
         Time.timeScale = 0f;
     }

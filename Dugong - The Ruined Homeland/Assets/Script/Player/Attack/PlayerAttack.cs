@@ -35,8 +35,10 @@ public class PlayerAttack : MonoBehaviour
     public void spawnAttack(){
         if(basicAttack){
             Instantiate(basicProjectile, attackPoint.position, transform.rotation ); 
+            FindObjectOfType<AudioManager>().Play("DugongBubbleAtk");
         } else if(sonarAttack){
             Instantiate(sonarProjectile, sonarAttackPoint.position, sonarAttackPoint.transform.rotation ); 
+            FindObjectOfType<AudioManager>().Play("DugongSpecialAtk");
         }
        
     }

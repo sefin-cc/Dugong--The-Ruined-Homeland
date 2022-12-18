@@ -13,9 +13,11 @@ public class SettingsManager : MonoBehaviour
 
     public void openSettingsPanel(){
         settingsPanel.SetActive(true);
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
     }
 
     public void closeSettingsPanel(){
         settingsPanel.SetActive(false);
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
     }
 }

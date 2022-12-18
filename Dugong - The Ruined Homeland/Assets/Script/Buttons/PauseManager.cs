@@ -35,6 +35,7 @@ public class PauseManager : MonoBehaviour
     }
 //OnClick Pause and calls the hidePaused( hide the buttons)
     public void PauseButton(){
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         pauseButton = true;
         hidePaused();
     }
@@ -46,6 +47,7 @@ public class PauseManager : MonoBehaviour
     }
 //Disables the pause panel and continues the game
     public void ResumeGame(){
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
          showUI();
@@ -53,6 +55,7 @@ public class PauseManager : MonoBehaviour
     }
 //Onclick go to main menu
     public void GoMainMenu(){
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         Time.timeScale = 1f;
         isPaused = false;
         SceneManager.LoadScene("MainMenu");

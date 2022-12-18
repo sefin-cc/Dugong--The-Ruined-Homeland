@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        FindObjectOfType<AudioManagerUI>().uiPlay("GameOver");
         //Disable power up animation
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
@@ -67,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void levelCleared()
     {
+        
         //Disable power up animation
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
