@@ -16,14 +16,13 @@ public class GameOver : MonoBehaviour
     //OnClick 
     public void MainMenu(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(0);
 
     }
      public void NextLevel(){
        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
        sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;  
-       SceneManager.LoadSceneAsync(sceneIndex);   
+       FindObjectOfType<LoadingScreenManager>().startLoadingScreen(sceneIndex);
        Debug.Log("Next Level"); 
 
     }
