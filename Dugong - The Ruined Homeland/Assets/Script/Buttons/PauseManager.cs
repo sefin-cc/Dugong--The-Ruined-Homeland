@@ -58,7 +58,7 @@ public class PauseManager : MonoBehaviour
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         Time.timeScale = 1f;
         isPaused = false;
-        SceneManager.LoadScene("MainMenu");
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(0);
     }
 
 

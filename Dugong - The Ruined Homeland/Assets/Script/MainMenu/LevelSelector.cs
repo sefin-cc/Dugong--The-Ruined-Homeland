@@ -59,32 +59,32 @@ public class LevelSelector : MonoBehaviour
     
     public void tutorialLevel(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
-        SceneManager.LoadSceneAsync(1);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
+       
 
     }
 
     public void levelOne(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(1);
-        SceneManager.LoadSceneAsync(2);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(2);
+
 
     }
     
     public void levelTwo(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
-        SceneManager.LoadSceneAsync(3);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
+   
     }
 
     public void levelThree(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
-        SceneManager.LoadSceneAsync(4);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
+ 
     } 
     public void levelFour(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        // FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
-        SceneManager.LoadSceneAsync(5);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
+      
     }
 }
