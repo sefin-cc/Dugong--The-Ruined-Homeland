@@ -16,7 +16,6 @@ public class GameOver : MonoBehaviour
     //OnClick 
     public void MainMenu(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        Time.timeScale = 1f;
         FindObjectOfType<LoadingScreenManager>().startLoadingScreen(0);
 
     }

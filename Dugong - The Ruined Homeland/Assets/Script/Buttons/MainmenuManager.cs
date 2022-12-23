@@ -10,9 +10,11 @@ public class MainmenuManager : MonoBehaviour
      public GameObject resetPanel;
      public GameObject handBookPanel;
 
-    //Onclick Buttons from menu
-   
+    void Start(){
+        Time.timeScale = 1f;
+    }
 
+    //Onclick Buttons from menu
     public void GoSetting(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         settingsPanel.SetActive(true);

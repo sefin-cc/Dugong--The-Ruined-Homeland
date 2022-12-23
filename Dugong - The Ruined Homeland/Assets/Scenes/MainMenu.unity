@@ -981,11 +981,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322577133}
   m_CullTransparentMesh: 1
---- !u!224 &323808768 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
-  m_PrefabInstance: {fileID: 773952091598815817}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &401845957
 GameObject:
   m_ObjectHideFlags: 0
@@ -9868,7 +9863,6 @@ RectTransform:
   - {fileID: 784721467}
   - {fileID: 1389079574}
   - {fileID: 1626310235}
-  - {fileID: 323808768}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10177,7 +10171,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2041459191}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_Pivot.x
@@ -10189,7 +10183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_AnchorMax.x
@@ -10233,15 +10227,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_AnchoredPosition.x

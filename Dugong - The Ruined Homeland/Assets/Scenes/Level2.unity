@@ -1221,7 +1221,6 @@ RectTransform:
   - {fileID: 1145632450}
   - {fileID: 1459905867}
   - {fileID: 1263666902}
-  - {fileID: 758134193}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2312,7 +2311,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 437424233}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_Pivot.x
@@ -2368,15 +2367,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2402,13 +2401,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingManager
       objectReference: {fileID: 0}
+    - target: {fileID: 773952092961435064, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
---- !u!224 &758134193 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 773952091913186377, guid: e28a3bb196ea5cf41a0313b3789f8105, type: 3}
-  m_PrefabInstance: {fileID: 758134192}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &771334608
 GameObject:
   m_ObjectHideFlags: 0

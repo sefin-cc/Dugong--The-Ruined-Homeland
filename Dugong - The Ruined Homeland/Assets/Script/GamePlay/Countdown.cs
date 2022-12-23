@@ -21,7 +21,7 @@ public class Countdown : MonoBehaviour
 
     IEnumerator CountdownToStart()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(1f);
      
         while(countdownTime > 0)
         {

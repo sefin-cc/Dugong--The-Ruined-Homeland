@@ -50,7 +50,7 @@ public class LoadingScreenManager : MonoBehaviour
 
     IEnumerator loadLoadingPanel(){
  
-
+        
         fadeImage.gameObject.SetActive(true);
         fadeImage.canvasRenderer.SetAlpha(0);
 
@@ -67,7 +67,7 @@ public class LoadingScreenManager : MonoBehaviour
         float elapsedLoadTime = 0f;
         while(!op.isDone)
         {
-            elapsedLoadTime += Time.deltaTime;
+            elapsedLoadTime += Time.unscaledDeltaTime;
             yield return null;
         } 
         if(op.isDone){
@@ -75,7 +75,7 @@ public class LoadingScreenManager : MonoBehaviour
         }
 
         while(elapsedLoadTime <  minLoadTime){
-            elapsedLoadTime += Time.deltaTime;
+            elapsedLoadTime += Time.unscaledDeltaTime;
             yield return null;
         }
   
@@ -107,7 +107,7 @@ public class LoadingScreenManager : MonoBehaviour
             float index = Random.Range(0, information.Length  - 1);
             Debug.Log("index: "+ index);
             informationText.text = information[(int)index];
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSecondsRealtime(1.5f);
         }  
     }
 }

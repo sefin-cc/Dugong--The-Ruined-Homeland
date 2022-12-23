@@ -56,7 +56,6 @@ public class PauseManager : MonoBehaviour
 //Onclick go to main menu
     public void GoMainMenu(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        Time.timeScale = 1f;
         isPaused = false;
         FindObjectOfType<LoadingScreenManager>().startLoadingScreen(0);
     }
