@@ -199,6 +199,11 @@ MonoBehaviour:
   - Dugong's sonar attack can destroy all obstacles in range.
   - The Immunity power-up allows the player to be invincible until the timer runs
     out.
+  - Timing and aiming play a big role in accomplishing the level.
+  - Don't forget to accomplish the target score before the timer runs out.
+  - 'One of the beaches has a poor drainage system. Watch your guard! '
+  - The higher the level, the harder the obstacles and the goal score.
+  - You cannot spam the attack, so aim carefully!
 --- !u!1 &773952092206102854
 GameObject:
   m_ObjectHideFlags: 0
