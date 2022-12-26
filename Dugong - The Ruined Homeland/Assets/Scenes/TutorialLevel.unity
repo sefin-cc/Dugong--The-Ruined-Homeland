@@ -11520,7 +11520,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 123418637}
   pauseButton: 0
-  playerUI: []
+  playerUI:
+  - {fileID: 1300305341}
+  - {fileID: 1354241884}
+  - {fileID: 1560220905}
 --- !u!114 &1901735263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13137,6 +13140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SeaCreature
       objectReference: {fileID: 0}
+    - target: {fileID: 6713278357239419961, guid: 41389c6963509d84aaf3360a2e1456cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41389c6963509d84aaf3360a2e1456cd, type: 3}
 --- !u!1001 &6971786069993955703
@@ -13193,6 +13200,34 @@ PrefabInstance:
     - target: {fileID: 6971786070927706570, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: m_Name
       value: EndLevel Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Oh, thank goodness! Nice save, big guy! Wait what\u2019s your name?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Dugong? Thanks really, for clearing out the way for me, I need to go
+        back home to my family.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: You see, I got stranded here while looking for new places to live. Turns
+        out this place is no good.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: It needs more cleaning, honestly. I also think there are other creatures
+        stranded around here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Anyways, thanks again big guy. I\u2019ll be on my way, and I\u2019ll
+        tell my kids about you."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}

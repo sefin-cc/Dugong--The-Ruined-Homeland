@@ -2355,6 +2355,30 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: Pawikan
       objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Hello, we meet again. You\u2019ve finally made it here, one of the
+        worst waters of this archipelago.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "I can\u2019t see much in these waters, young child. It must be their
+        fake sand getting into the water.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "But it\u2019s thanks to you again, that these waters are a bit clearer
+        than before.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "I\u2019ll always be grateful to you, even though you\u2019ve lost your
+        family, you never lost hope.\r\n"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
 --- !u!4 &866069565 stripped
@@ -9713,12 +9737,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   m_PrefabInstance: {fileID: 1459905866}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1459905869}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1459905869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  m_PrefabInstance: {fileID: 1459905866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541690633
 GameObject:
   m_ObjectHideFlags: 0
@@ -11286,7 +11315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 123418637}
   pauseButton: 0
-  playerUI: []
+  playerUI:
+  - {fileID: 1300305341}
+  - {fileID: 1560220905}
+  - {fileID: 1459905869}
 --- !u!114 &1901735263
 MonoBehaviour:
   m_ObjectHideFlags: 0

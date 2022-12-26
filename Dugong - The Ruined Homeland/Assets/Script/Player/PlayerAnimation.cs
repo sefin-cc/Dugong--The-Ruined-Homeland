@@ -12,8 +12,8 @@ public class PlayerAnimation : MonoBehaviour
     void Start(){
         Physics2D.IgnoreLayerCollision(6,8);
         Physics2D.IgnoreLayerCollision(6,10);
-        seaCreature.SetActive(true);
-
+     
+        StartCoroutine(showCreature());
         seaCreature.GetComponent<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
@@ -40,6 +40,10 @@ public class PlayerAnimation : MonoBehaviour
          seaCreature.GetComponent<Animator>().updateMode = AnimatorUpdateMode.Normal;
         showLevelCleared();
         
+    }
+    IEnumerator showCreature(){
+        yield return new WaitForSecondsRealtime(1);
+        seaCreature.SetActive(true);
     }
 
     void showLevelCleared(){
