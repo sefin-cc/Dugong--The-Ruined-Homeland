@@ -9647,12 +9647,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   m_PrefabInstance: {fileID: 1459905866}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1459905869}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1459905869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  m_PrefabInstance: {fileID: 1459905866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541690633
 GameObject:
   m_ObjectHideFlags: 0
@@ -12266,6 +12271,33 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: Kabibe
       objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hi!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "I\u2019m eating trash you say? Om-nom\u2013 oh yeah, what is this?!\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "I\u2019d normally eat algae but yeah, trash is the only stuff available
+        around here lately. Gross right?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "I do wish it gets better around here though\u2026 You say you\u2019re
+        trying to clean up this place?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Gee, that\u2019s tough. I can see that it\u2019s cleaner than before
+        though. Thank you! I wish you the best!"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
 --- !u!4 &2116920459 stripped
@@ -12517,6 +12549,22 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 123418637}
+    - target: {fileID: 8228282395071182047, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
+      propertyPath: playerUI.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228282395071182047, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
+      propertyPath: playerUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 1300305341}
+    - target: {fileID: 8228282395071182047, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
+      propertyPath: playerUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 1459905869}
+    - target: {fileID: 8228282395071182047, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
+      propertyPath: playerUI.Array.data[2]
+      value: 
+      objectReference: {fileID: 1560220905}
     - target: {fileID: 8228282395071182048, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
       propertyPath: Player
       value: 

@@ -16,7 +16,6 @@ public class PauseManager : MonoBehaviour
     void Start()
     {
        pauseMenu.SetActive(false);
-       playerUI = GameObject.FindGameObjectsWithTag("PlayerButtons");
     }
 
     // Update is called once per frame
@@ -33,6 +32,7 @@ public class PauseManager : MonoBehaviour
             }
             }
     }
+
 //OnClick Pause and calls the hidePaused( hide the buttons)
     public void PauseButton(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");

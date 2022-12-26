@@ -9581,12 +9581,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   m_PrefabInstance: {fileID: 1459905866}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1459905869}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1459905869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  m_PrefabInstance: {fileID: 1459905866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541690633
 GameObject:
   m_ObjectHideFlags: 0
@@ -11238,6 +11243,44 @@ PrefabInstance:
       propertyPath: dialogue.name
       value: Mameng
       objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "The waters around here are clouded with that nasty thing they\u2019re
+        getting out of the ground."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "That stuff is under the ground, for a reason! I don\u2019t know why
+        these big metal machines keep on pounding at the ground for it!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "One thing I know is that the coral where I\u2019ve put my kids in have
+        been damaged!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "Thanks for coming around though, if it weren\u2019t for you the whole
+        thing would collapse. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "My kids are safe, thanks to you. I\u2019ll never know how to repay
+        you.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: "But, I\u2019ll let other of fishkind to know about your initiative
+        to clean the beach. I hope others will follow your example.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: Farewell Mr. Dugong. Good luck on your journey
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
 --- !u!4 &1883571250 stripped
@@ -11335,7 +11378,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 123418637}
   pauseButton: 0
-  playerUI: []
+  playerUI:
+  - {fileID: 1300305341}
+  - {fileID: 1560220905}
+  - {fileID: 1459905869}
 --- !u!114 &1901735263
 MonoBehaviour:
   m_ObjectHideFlags: 0
