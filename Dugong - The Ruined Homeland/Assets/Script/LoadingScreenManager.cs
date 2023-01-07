@@ -53,7 +53,7 @@ public class LoadingScreenManager : MonoBehaviour
         
         fadeImage.gameObject.SetActive(true);
         fadeImage.canvasRenderer.SetAlpha(0);
-
+        FindObjectOfType<AudioManagerUI>().uiPlay("LoadingScreen");
 
         while(!fade(1))
             yield return null;

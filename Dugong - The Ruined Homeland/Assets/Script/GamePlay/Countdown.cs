@@ -27,11 +27,12 @@ public class Countdown : MonoBehaviour
         {
             anim.SetTrigger("playCountDown");
             countdownDisplay.text = countdownTime.ToString();
-           
+            FindObjectOfType<AudioManagerUI>().uiPlay("Countdown123");
             yield return new WaitForSecondsRealtime(1f);
             countdownTime--;
         }
         anim.SetTrigger("playCountDown");
+        FindObjectOfType<AudioManagerUI>().uiPlay("CountdownGo");
         countdownDisplay.text = "GO!";
         Time.timeScale = 1f;
         

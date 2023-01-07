@@ -46,17 +46,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiSounds:
   - name: ButtonPress
-    clip: {fileID: 8300000, guid: 3257f8a9608b62b4991fae4986661621, type: 3}
+    clip: {fileID: 8300000, guid: c37ab33caae04f94184564bf5d9c4721, type: 3}
     volume: 3
     loop: 0
     source: {fileID: 0}
   - name: LevelComplete
     clip: {fileID: 8300000, guid: 28a55b798718f2e42865ce2a3b4ce514, type: 3}
-    volume: 3
+    volume: 2.39
     loop: 0
     source: {fileID: 0}
   - name: GameOver
     clip: {fileID: 8300000, guid: a35f543246ddf9e48bc558945c716c70, type: 3}
-    volume: 3
+    volume: 2.48
+    loop: 0
+    source: {fileID: 0}
+  - name: LoadingScreen
+    clip: {fileID: 8300000, guid: e4cc76d37f0e096478d8b8eeff059c21, type: 3}
+    volume: 2.48
+    loop: 0
+    source: {fileID: 0}
+  - name: Countdown123
+    clip: {fileID: 8300000, guid: 4fd5370458acdaf4aa66e38d2a82ada7, type: 3}
+    volume: 2.48
+    loop: 0
+    source: {fileID: 0}
+  - name: CountdownGo
+    clip: {fileID: 8300000, guid: aa2c9313b41f56d48b25ecc9ff50347d, type: 3}
+    volume: 2.48
     loop: 0
     source: {fileID: 0}

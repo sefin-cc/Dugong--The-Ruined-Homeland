@@ -60,6 +60,26 @@ MonoBehaviour:
     volume: 3
     loop: 0
     source: {fileID: 0}
+  - name: DestroyObstacle
+    clip: {fileID: 8300000, guid: 06cb0277df419394284b26dca91fb2ef, type: 3}
+    volume: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: TurningPageLeft
+    clip: {fileID: 8300000, guid: 805fca6f489aa1641bab563c99de651c, type: 3}
+    volume: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: TurningPageRight
+    clip: {fileID: 8300000, guid: 00088a11b8b0ce44089e967d33750522, type: 3}
+    volume: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: ClockTick
+    clip: {fileID: 8300000, guid: ada48f15388ea264385625834a2a4d2c, type: 3}
+    volume: 3
+    loop: 0
+    source: {fileID: 0}
   bgm: []
   volumeSliderSounds: {fileID: 0}
   volumeSliderBgm: {fileID: 0}

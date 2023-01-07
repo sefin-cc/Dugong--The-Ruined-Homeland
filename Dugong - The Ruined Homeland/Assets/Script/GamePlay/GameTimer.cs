@@ -23,6 +23,9 @@ public class GameTimer : MonoBehaviour
     {
         while(countdownTime > 0)
         {
+            if(countdownTime == 10){
+                FindObjectOfType<AudioManager>().Play("ClockTick");
+            }
             countdownDisplay.text = countdownTime.ToString();
            
             yield return new WaitForSeconds(1f);
