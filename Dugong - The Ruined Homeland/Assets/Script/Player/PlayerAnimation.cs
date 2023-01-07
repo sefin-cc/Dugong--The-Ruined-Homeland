@@ -6,6 +6,8 @@ public class PlayerAnimation : MonoBehaviour
 {
     public GameObject levelClearedPanel;
     public GameObject seaCreature;
+    public GameObject portalEffects;
+
 
     public Transform swimPoint;
 
@@ -15,6 +17,7 @@ public class PlayerAnimation : MonoBehaviour
      
         StartCoroutine(showCreature());
         seaCreature.GetComponent<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
+        portalEffects.GetComponent<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
    
@@ -38,12 +41,14 @@ public class PlayerAnimation : MonoBehaviour
         Physics2D.IgnoreLayerCollision(6,8, false);
         Physics2D.IgnoreLayerCollision(6,10, false);
          seaCreature.GetComponent<Animator>().updateMode = AnimatorUpdateMode.Normal;
+         portalEffects.GetComponent<Animator>().updateMode = AnimatorUpdateMode.Normal;
         showLevelCleared();
         
     }
     IEnumerator showCreature(){
         yield return new WaitForSecondsRealtime(1);
         seaCreature.SetActive(true);
+        portalEffects.SetActive(true);
     }
 
     void showLevelCleared(){
