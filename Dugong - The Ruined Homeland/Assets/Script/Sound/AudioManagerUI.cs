@@ -1,7 +1,7 @@
 using UnityEngine.Audio;
 using UnityEngine;
 using System;
-
+using UnityEngine.UI;  
 
 public class AudioManagerUI : MonoBehaviour
 {
@@ -39,4 +39,22 @@ public class AudioManagerUI : MonoBehaviour
        ui.source.Play();
        ui.source.ignoreListenerPause = true;
     }
+
+    //Called in AudioManager
+    public void changeVolumeUIsounds(float value)
+    { 
+        foreach (Sound ui in uiSounds)
+        {
+           ui.source.volume = value;
+        } 
+   
+    }  
+    public void loadVolumeUIsounds()
+    { 
+        foreach (Sound ui in uiSounds)
+        {
+           ui.source.volume = PlayerPrefs.GetFloat("soundsVolume");
+        } 
+   
+    }  
 }

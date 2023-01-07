@@ -35,17 +35,19 @@ public class AudioManager : MonoBehaviour
         //Sets default value for sound volume if the key doesn't exist
         if(!PlayerPrefs.HasKey("soundsVolume"))
         {
-            PlayerPrefs.SetFloat("soundsVolume", 2);
+            PlayerPrefs.SetFloat("soundsVolume", 1);
             LoadSound();
         }
         else{
+            //Change volume of the UI
+            FindObjectOfType<AudioManagerUI>().loadVolumeUIsounds();
             LoadSound();
         }
 
         //Sets default value for bgm volume if the key doesn't exist
         if(!PlayerPrefs.HasKey("bgmVolume"))
         {
-            PlayerPrefs.SetFloat("bgmVolume", 2);
+            PlayerPrefs.SetFloat("bgmVolume", 1);
             LoadBGM();
         }
         else{
@@ -94,10 +96,15 @@ public class AudioManager : MonoBehaviour
     //Onchange Slider
     public void changeVolumesounds()
     { 
+        //Change volume of the In game SFX
         foreach (Sound s in sounds)
         {
            s.source.volume = volumeSliderSounds.value;
         } 
+
+        //Change volume of the UI
+        FindObjectOfType<AudioManagerUI>().changeVolumeUIsounds(volumeSliderSounds.value);
+
         SaveSound();
     }
     //Onchange Slider
