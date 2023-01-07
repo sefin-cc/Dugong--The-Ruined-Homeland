@@ -36,7 +36,7 @@ public class DisplayInformation : MonoBehaviour
 
     public void nextPageRight(){
         if(pageCount < info.Length-1){
-            FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
+            FindObjectOfType<AudioManager>().Play("TurningPageRight");
             pageCount++;
             leftButton.gameObject.SetActive(true);
             displayPage();
@@ -49,7 +49,7 @@ public class DisplayInformation : MonoBehaviour
 
     public void nextPageLeft(){
       if(pageCount > 0){
-            FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
+            FindObjectOfType<AudioManager>().Play("TurningPageLeft");
             pageCount--;
             rightButton.gameObject.SetActive(true);
             displayPage();

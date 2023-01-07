@@ -29,7 +29,7 @@ public class Obstacle : MonoBehaviour
 
         }else{
             //PLAY DEATH ANIMATION  
-
+            FindObjectOfType<AudioManager>().Play("DestroyObstacle");
             collider.enabled = false;
             collider2.enabled = false;
             animator.SetTrigger("isDestroy");
