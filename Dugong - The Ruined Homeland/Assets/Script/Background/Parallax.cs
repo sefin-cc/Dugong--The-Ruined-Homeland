@@ -22,6 +22,7 @@ public class Parallax : MonoBehaviour
     private void Update()
     {
         meshRenderer.material.mainTextureOffset += new Vector2(currentSpeed * Time.deltaTime, 0);
+        //Debug.Log( meshRenderer.material.mainTextureOffset );
     }
 
     public void superSpeedEffect(){
