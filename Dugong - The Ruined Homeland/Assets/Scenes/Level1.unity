@@ -292,6 +292,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6976269353581336785, guid: 50e10d1a00f156342951f431d66ed431, type: 3}
   m_PrefabInstance: {fileID: 47319619}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &47319621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6976269353802234818, guid: 50e10d1a00f156342951f431d66ed431, type: 3}
+  m_PrefabInstance: {fileID: 47319619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &77476256
 GameObject:
   m_ObjectHideFlags: 0
@@ -12655,6 +12660,10 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 123418637}
+    - target: {fileID: 8228282395071182047, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
+      propertyPath: dialogPanel
+      value: 
+      objectReference: {fileID: 47319621}
     - target: {fileID: 8228282395071182047, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
       propertyPath: playerUI.Array.size
       value: 3

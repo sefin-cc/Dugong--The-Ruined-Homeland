@@ -15,7 +15,7 @@ public class DialogManager : MonoBehaviour
     float typingSpeed = 0.05f;
   
     private Queue<string> sentences;
-    public GameObject GameManager;
+    public GameObject background;
     public Joystick joystick;
 
 
@@ -41,7 +41,7 @@ public class DialogManager : MonoBehaviour
 
 
     public void DisplayNextSentence(){
-      //  FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         if(sentences.Count == 0){
             EndDialogue();
             return;
@@ -64,13 +64,13 @@ public class DialogManager : MonoBehaviour
     IEnumerator waitAnimation()
     {
         yield return new WaitForSeconds(0.4f);
-       // GameManager.GetComponent<PauseManager>().hidePaused();
+        background.SetActive(true);
         Time.timeScale = 0f;
     }
 
     void EndDialogue(){
         animator.SetBool("IsOpen", false);
-       // GameManager.GetComponent<PauseManager>().showUI();
+        background.SetActive(false);
         joystick.handleCenter();
  
         Time.timeScale = 1f;
