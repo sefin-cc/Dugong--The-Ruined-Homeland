@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-   public GameObject[] prefab;
+    public GameObject[] prefab;
     public float maxX;
     public float minX;
     public float maxY;
@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
 
 
     void Update (){
-        if(Time.time > spawnTime){
+        if(Time.time >= spawnTime){
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;
         }
@@ -27,4 +27,4 @@ public class Spawner : MonoBehaviour
       int prefabIndex = Random.Range(0, prefab.Length);
       Instantiate(prefab[prefabIndex], transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
     }
-    }
+  }
