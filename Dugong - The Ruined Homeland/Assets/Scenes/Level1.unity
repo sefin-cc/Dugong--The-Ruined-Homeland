@@ -10268,8 +10268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 4757641061228809767, guid: 612f4f73c0222ce489c2bc54eba32970, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -3
   timeBetweenSpawn: 2
@@ -10308,8 +10308,8 @@ MonoBehaviour:
   - {fileID: 1107936743422284044, guid: d720a2ed2a622da4ebdace4aca66f46f, type: 3}
   - {fileID: 3804138968464268237, guid: d2a1422dbbeddae4e905b7ad9d0acd84, type: 3}
   - {fileID: 4146866436599080494, guid: 98f620182ce8bcb4aaf2f7a6accb29a7, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -4
   timeBetweenSpawn: 20
@@ -11493,8 +11493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 905390402521498653, guid: f2c3dc7b5245c2f41a70fa09fc649d6a, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: -2.9
   minY: -2.9
   timeBetweenSpawn: 10
@@ -11527,8 +11527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 1977269600844508071, guid: ad1b6ffcc0e2e8e4fb547494b9eaa2e6, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -3
   timeBetweenSpawn: 15
