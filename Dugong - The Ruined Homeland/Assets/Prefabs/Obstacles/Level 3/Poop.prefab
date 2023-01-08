@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bee4f26e293db04d82e7b3bb430b9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minRange: -3.182906
+  minRange: -2.07
   maxRange: 2.77
   speed: 5
   Obstacle: {fileID: 3071091059831319910}

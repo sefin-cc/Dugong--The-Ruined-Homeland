@@ -10263,11 +10263,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 3436585974190207608, guid: 4aeeba661f0d0884cb1d76f55a1e795c, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: -1.3
+  minX: -1.3
   maxY: -1.9689
   minY: -1.9689
-  timeBetweenSpawn: 19.9
+  timeBetweenSpawn: 10
 --- !u!1 &1644253282
 GameObject:
   m_ObjectHideFlags: 0
