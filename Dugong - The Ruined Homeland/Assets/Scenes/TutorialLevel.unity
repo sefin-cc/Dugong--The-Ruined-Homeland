@@ -9713,8 +9713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 4757641061228809767, guid: 612f4f73c0222ce489c2bc54eba32970, type: 3}
-  maxX: 2
-  minX: 2
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -3
   timeBetweenSpawn: 7
@@ -10514,11 +10514,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 4757641061228809767, guid: 612f4f73c0222ce489c2bc54eba32970, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -3
-  timeBetweenSpawn: 2
+  timeBetweenSpawn: 3
 --- !u!4 &1611531084
 Transform:
   m_ObjectHideFlags: 0
@@ -10548,14 +10548,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 1107936743422284044, guid: d720a2ed2a622da4ebdace4aca66f46f, type: 3}
+  - {fileID: 3804138968464268237, guid: d2a1422dbbeddae4e905b7ad9d0acd84, type: 3}
   - {fileID: 4146866436599080494, guid: 98f620182ce8bcb4aaf2f7a6accb29a7, type: 3}
   - {fileID: 3804138968464268237, guid: d2a1422dbbeddae4e905b7ad9d0acd84, type: 3}
-  - {fileID: 4422667944947216848, guid: a3d4780f545a8db42834f785e2c2078e, type: 3}
   - {fileID: 1107936743422284044, guid: d720a2ed2a622da4ebdace4aca66f46f, type: 3}
-  - {fileID: 3804138968464268237, guid: d2a1422dbbeddae4e905b7ad9d0acd84, type: 3}
-  - {fileID: 4146866436599080494, guid: 98f620182ce8bcb4aaf2f7a6accb29a7, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -4
   timeBetweenSpawn: 20

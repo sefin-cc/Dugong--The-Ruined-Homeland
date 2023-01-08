@@ -10262,8 +10262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 4757641061228809767, guid: ce90ed39e07968f499f98f676109bc33, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -3
   timeBetweenSpawn: 3
@@ -10302,8 +10302,8 @@ MonoBehaviour:
   - {fileID: 1107936743422284044, guid: d720a2ed2a622da4ebdace4aca66f46f, type: 3}
   - {fileID: 3804138968464268237, guid: d2a1422dbbeddae4e905b7ad9d0acd84, type: 3}
   - {fileID: 4146866436599080494, guid: 98f620182ce8bcb4aaf2f7a6accb29a7, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -4
   timeBetweenSpawn: 20
@@ -10321,11 +10321,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 4757641061228809767, guid: ce90ed39e07968f499f98f676109bc33, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: 2.9
   minY: -3
-  timeBetweenSpawn: 2
+  timeBetweenSpawn: 1
 --- !u!1 &1627320976
 GameObject:
   m_ObjectHideFlags: 0
@@ -11637,8 +11637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab:
   - {fileID: 905390402521498653, guid: 9fa646083c21df3478ccc47375f786a0, type: 3}
-  maxX: 2
-  minX: -3.38
+  maxX: 0
+  minX: 0
   maxY: -2.9
   minY: -2.9
   timeBetweenSpawn: 10
