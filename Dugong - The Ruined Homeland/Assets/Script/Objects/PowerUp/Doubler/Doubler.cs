@@ -20,15 +20,19 @@ public class Doubler : MonoBehaviour
     }
    
     IEnumerator DoublerEffect(){
+        
+        //Set powerupTimer bar value
+        PowerUpTimer.GetComponent<PowerUpTimer>().setTimer(duration,0);
+
         yield return new WaitForSeconds(1f);
 
         animator.SetBool("isDoubler", true);
         addBonusScore();
         StartCoroutine(ignoreCollision());
 
-        //Set powerupTimer bar value
-        PowerUpTimer.GetComponent<PowerUpTimer>().setTimer(duration,0);
-        
+        yield return new WaitForSeconds(0.4f);
+        PowerUpTimer.SetActive(true);
+
         yield return new WaitForSeconds(duration);
        
         animator.SetBool("isDoubler", false);
