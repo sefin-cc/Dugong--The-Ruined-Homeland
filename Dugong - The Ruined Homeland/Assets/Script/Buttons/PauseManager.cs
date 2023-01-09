@@ -46,6 +46,7 @@ public class PauseManager : MonoBehaviour
     public void PauseGame(){
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+        AudioListener.pause = true;
         isPaused = true;
     }
 //Disables the pause panel and continues the game
@@ -54,6 +55,7 @@ public class PauseManager : MonoBehaviour
         dialogPanel.GetComponent<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         showUI();
         isPaused = false;
     }

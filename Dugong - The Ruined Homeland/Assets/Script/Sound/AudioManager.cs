@@ -39,8 +39,6 @@ public class AudioManager : MonoBehaviour
             LoadSound();
         }
         else{
-            //Change volume of the UI
-            FindObjectOfType<AudioManagerUI>().loadVolumeUIsounds();
             LoadSound();
         }
 

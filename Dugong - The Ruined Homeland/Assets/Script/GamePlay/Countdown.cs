@@ -17,6 +17,7 @@ public class Countdown : MonoBehaviour
         StartCoroutine(CountdownToStart());
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
         countdownDisplay.text = "";
+        AudioListener.pause = true;
     }
 
     IEnumerator CountdownToStart()
@@ -37,6 +38,7 @@ public class Countdown : MonoBehaviour
         Time.timeScale = 1f;
         
         yield return new WaitForSecondsRealtime(1f);
+        AudioListener.pause = false;
         pauseManager.GetComponent<PauseManager>().showUI(); 
         countdownDisplay.gameObject.SetActive(false);
     }

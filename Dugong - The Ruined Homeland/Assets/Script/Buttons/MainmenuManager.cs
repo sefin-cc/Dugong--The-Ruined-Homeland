@@ -12,6 +12,7 @@ public class MainmenuManager : MonoBehaviour
 
     void Start(){
         Time.timeScale = 1f;
+        AudioListener.pause = false;
     }
 
     //Onclick Buttons from menu

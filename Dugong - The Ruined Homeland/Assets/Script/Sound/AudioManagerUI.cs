@@ -7,6 +7,7 @@ public class AudioManagerUI : MonoBehaviour
 {
     public Sound[] uiSounds;
     public static AudioManagerUI instance;
+    float volumeValue;
 
     //Play a cross all scenes
     void Awake()
@@ -43,18 +44,15 @@ public class AudioManagerUI : MonoBehaviour
     //Called in AudioManager
     public void changeVolumeUIsounds(float value)
     { 
-        foreach (Sound ui in uiSounds)
-        {
-           ui.source.volume = value;
-        } 
-   
-    }  
-    public void loadVolumeUIsounds()
-    { 
-        foreach (Sound ui in uiSounds)
-        {
-           ui.source.volume = PlayerPrefs.GetFloat("soundsVolume");
-        } 
-   
+        volumeValue = value;
+        try{
+            foreach (Sound ui in uiSounds)
+            {
+                ui.source.volume = volumeValue;
+            } 
+        }catch(Exception e){
+
+        }
+       
     }  
 }

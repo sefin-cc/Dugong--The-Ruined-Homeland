@@ -80,6 +80,16 @@ MonoBehaviour:
     volume: 1
     loop: 0
     source: {fileID: 0}
-  bgm: []
+  bgm:
+  - name: MainMenuBGM
+    clip: {fileID: 8300000, guid: 74106bee1f0ef2a46bf1b61e0a2827c5, type: 3}
+    volume: 0.266
+    loop: 1
+    source: {fileID: 0}
+  - name: stage1BGM
+    clip: {fileID: 8300000, guid: ce00953ad17690e45afae1d50ca22eba, type: 3}
+    volume: 0.266
+    loop: 1
+    source: {fileID: 0}
   volumeSliderSounds: {fileID: 0}
   volumeSliderBgm: {fileID: 0}
