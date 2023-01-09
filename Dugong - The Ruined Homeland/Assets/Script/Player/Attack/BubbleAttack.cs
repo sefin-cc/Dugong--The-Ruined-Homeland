@@ -17,7 +17,7 @@ public class BubbleAttack : MonoBehaviour
     }
 
     IEnumerator throwDistance(){
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.1f);
         Destroy(gameObject);
     }
 
