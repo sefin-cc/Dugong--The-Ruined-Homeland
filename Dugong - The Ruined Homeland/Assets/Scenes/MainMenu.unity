@@ -3207,9 +3207,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2059463334}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4708,26 +4708,14 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1877862286}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 744358145}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: changeVolumesounds
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1284924812}
-        m_TargetAssemblyTypeName: AudioManagerUI, Assembly-CSharp
         m_MethodName: changeVolumesounds
         m_Mode: 1
         m_Arguments:
@@ -5280,17 +5268,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263171762}
   m_CullTransparentMesh: 1
---- !u!114 &1284924812 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3718100834634812397, guid: fbc13a1398e82744b9c596048c5ceba8, type: 3}
-  m_PrefabInstance: {fileID: 884645339}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71523a2d2cca01648bdd8e87ff83f645, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1298152898
 GameObject:
   m_ObjectHideFlags: 0
@@ -8837,10 +8814,6 @@ PrefabInstance:
       propertyPath: volumeSliderSounds
       value: 
       objectReference: {fileID: 1076672636}
-    - target: {fileID: 5279002794753569725, guid: 1e68822c4ffb1a6418e9722634c50a5d, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5279002794753569726, guid: 1e68822c4ffb1a6418e9722634c50a5d, type: 3}
       propertyPath: m_Name
       value: 'AudioManager '
@@ -9149,6 +9122,7 @@ GameObject:
   - component: {fileID: 1908732182}
   - component: {fileID: 1908732181}
   - component: {fileID: 1908732180}
+  - component: {fileID: 1908732183}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9222,6 +9196,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908732183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908732179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7fb7c2edd917444b0c71e57b774339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmName: MainMenuBGM
 --- !u!1 &1910589201
 GameObject:
   m_ObjectHideFlags: 0

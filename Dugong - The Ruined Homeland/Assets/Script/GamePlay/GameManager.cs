@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         doubleScore = 1;
         
+        
         powerUpAnimationText.SetActive(true);
         levelClearedPanel.SetActive(false);
 
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
 
         gameOver.SetActive(true);
+        AudioListener.pause = true;
         Time.timeScale = 0f;
         
         Debug.Log("Game Over: ");

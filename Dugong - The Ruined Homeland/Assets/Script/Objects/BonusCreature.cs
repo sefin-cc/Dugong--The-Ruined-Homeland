@@ -17,6 +17,7 @@ public class BonusCreature : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D target){
         if (target.tag =="Player"){   
             BonusCreatureAnim.SetTrigger("isHelp");
+            FindObjectOfType<AudioManager>().Play("PickUpItem");
             FindObjectOfType<GameManager>().updateScore(point);
         }
     }
