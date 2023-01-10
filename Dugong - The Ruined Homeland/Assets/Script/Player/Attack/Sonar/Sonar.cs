@@ -25,13 +25,17 @@ public class Sonar : MonoBehaviour
     }
 
     IEnumerator sonarEffect(){
-
+        //Set powerupTimer bar value
+        PowerUpTimer.GetComponent<PowerUpTimer>().setTimer(duration,0);
+        
+        yield return new WaitForSeconds(1f);
 
         sonarAttackBtn.SetActive(true);
         basicAttackBtn.SetActive(false);
         StartCoroutine(ignoreCollision());
-        
-        PowerUpTimer.GetComponent<PowerUpTimer>().setTimer(duration,0);
+
+        yield return new WaitForSeconds(0.4f);
+        PowerUpTimer.SetActive(true);
 
         yield return new WaitForSeconds(duration);
 
