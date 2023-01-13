@@ -8407,7 +8407,7 @@ MonoBehaviour:
   anim: {fileID: 1125429948}
   beatName: {fileID: 1976573441}
   beatScore: {fileID: 1169321118}
-  goalBeatScore: 200
+  goalBeatScore: 450
   currentBeatName: Balyena
 --- !u!95 &1125429948
 Animator:
@@ -10213,7 +10213,7 @@ MonoBehaviour:
   minX: 0
   maxY: 2.9
   minY: -3
-  timeBetweenSpawn: 1.7
+  timeBetweenSpawn: 1.5
 --- !u!4 &1611531084
 Transform:
   m_ObjectHideFlags: 0
@@ -11721,7 +11721,7 @@ MonoBehaviour:
   minX: 0
   maxY: -2.9
   minY: -2.9
-  timeBetweenSpawn: 10
+  timeBetweenSpawn: 9
 --- !u!4 &1967498856
 Transform:
   m_ObjectHideFlags: 0
