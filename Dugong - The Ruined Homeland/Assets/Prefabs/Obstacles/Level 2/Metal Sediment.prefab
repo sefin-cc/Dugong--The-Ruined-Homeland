@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5720149247537760043}
   currentHealth: 0
-  maxHealth: 5
+  maxHealth: 10
   point: 5
   collider2: {fileID: 5720149248521731631}
 --- !u!1 &5720149247790135741
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5720149247790135737}
   currentHealth: 0
-  maxHealth: 5
+  maxHealth: 10
   point: 5
   collider2: {fileID: 5720149249156806964}
 --- !u!1 &5720149248014026837
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5720149248014026833}
   currentHealth: 0
-  maxHealth: 5
+  maxHealth: 10
   point: 5
   collider2: {fileID: 5720149248813507507}
 --- !u!1 &5720149248206374667
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 5720149249148966768}
-  speed: 2
+  speed: 2.5
 --- !u!1 &5720149249156806922
 GameObject:
   m_ObjectHideFlags: 0

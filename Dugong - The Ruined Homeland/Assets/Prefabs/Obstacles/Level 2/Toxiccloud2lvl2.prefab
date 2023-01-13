@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 3734452546555946261}
-  speed: 2
+  speed: 2.5
   range: 4
 --- !u!114 &7431791145217908960
 MonoBehaviour:
