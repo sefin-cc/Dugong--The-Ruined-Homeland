@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerUpAnimation : MonoBehaviour
 {
     public Animator powerUpanim;
-    public Animator cameraAnim;
+    public GameObject camera;
     public GameObject pauseManager;
 
     public Animator playerAnim;
@@ -17,7 +17,7 @@ public class PowerUpAnimation : MonoBehaviour
         Physics2D.IgnoreLayerCollision(6,8);
         playerAnim.GetComponent<Animator>().SetLayerWeight(1,1);
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
-        cameraAnim.SetTrigger("isPowerUp");
+        camera.GetComponent<Animator>().SetTrigger("isPowerUp");
         powerUpanim.SetTrigger("isPowerUp");
     }
 

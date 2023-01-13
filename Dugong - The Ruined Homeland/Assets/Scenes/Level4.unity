@@ -11022,11 +11022,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpanim: {fileID: 1833537365}
-  cameraAnim: {fileID: 519420033}
+  camera: {fileID: 519420028}
   pauseManager: {fileID: 1901735260}
   playerAnim: {fileID: 24282231}
   joystick: {fileID: 1459905868}
-  PowerUpTimer: {fileID: 1572328569}
 --- !u!1 &1838282142
 GameObject:
   m_ObjectHideFlags: 0
