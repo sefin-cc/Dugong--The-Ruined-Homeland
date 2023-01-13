@@ -24,11 +24,11 @@ public class HighscoreTable : MonoBehaviour
             // There's no stored table, initialize
             Debug.Log("Initializing table with default values...");
             AddHighscoreEntry(0, "DUGONG");
-            AddHighscoreEntry(20, "PUGITA");
-            AddHighscoreEntry(80, "KABIBE");
-            AddHighscoreEntry(150, "MAMENG");
-            AddHighscoreEntry(200, "BALYENA");
-            AddHighscoreEntry(300, "PAWIKAN");
+            AddHighscoreEntry(40, "PUGITA");
+            AddHighscoreEntry(170, "KABIBE");
+            AddHighscoreEntry(250, "MAMENG");
+            AddHighscoreEntry(450, "BALYENA");
+            AddHighscoreEntry(700, "PAWIKAN");
             
             // Reload
             jsonString = PlayerPrefs.GetString("highscoreTable");
@@ -104,11 +104,11 @@ public class HighscoreTable : MonoBehaviour
             PlayerPrefs.Save();    
 
             AddHighscoreEntry(0, "DUGONG");
-            AddHighscoreEntry(20, "PUGITA");
-            AddHighscoreEntry(80, "KABIBE");
-            AddHighscoreEntry(150, "MAMENG");
-            AddHighscoreEntry(200, "BALYENA");
-            AddHighscoreEntry(300, "PAWIKAN");
+            AddHighscoreEntry(40, "PUGITA");
+            AddHighscoreEntry(170, "KABIBE");
+            AddHighscoreEntry(250, "MAMENG");
+            AddHighscoreEntry(450, "BALYENA");
+            AddHighscoreEntry(700, "PAWIKAN");
             
         
         PlayerPrefs.SetInt("Saved", 1);

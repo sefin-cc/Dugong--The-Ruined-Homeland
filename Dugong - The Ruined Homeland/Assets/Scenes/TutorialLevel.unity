@@ -8295,7 +8295,7 @@ MonoBehaviour:
   anim: {fileID: 1125429948}
   beatName: {fileID: 1976573441}
   beatScore: {fileID: 1169321118}
-  goalBeatScore: 20
+  goalBeatScore: 40
   currentBeatName: Pugita
 --- !u!95 &1125429948
 Animator:
@@ -13247,7 +13247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6713278357239419961, guid: 41389c6963509d84aaf3360a2e1456cd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6713278357239419966, guid: 41389c6963509d84aaf3360a2e1456cd, type: 3}
       propertyPath: m_LocalScale.x

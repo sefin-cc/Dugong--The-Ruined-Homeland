@@ -8407,7 +8407,7 @@ MonoBehaviour:
   anim: {fileID: 1125429948}
   beatName: {fileID: 1976573441}
   beatScore: {fileID: 1169321118}
-  goalBeatScore: 200
+  goalBeatScore: 450
   currentBeatName: Balyena
 --- !u!95 &1125429948
 Animator:
