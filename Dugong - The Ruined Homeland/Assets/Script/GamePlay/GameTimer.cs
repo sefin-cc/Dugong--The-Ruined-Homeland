@@ -8,6 +8,7 @@ public class GameTimer : MonoBehaviour
 {
     public int countdownTime;
     public TMP_Text   countdownDisplay;
+    public Animator countdown;
 
 
 
@@ -24,6 +25,7 @@ public class GameTimer : MonoBehaviour
         while(countdownTime > 0)
         {
             if(countdownTime == 10){
+                countdown.SetTrigger("isTenSeconds");
                 FindObjectOfType<AudioManager>().Play("ClockTick");
             }
             countdownDisplay.text = countdownTime.ToString();
