@@ -10346,7 +10346,7 @@ MonoBehaviour:
   minX: 0
   maxY: 2.9
   minY: -3
-  timeBetweenSpawn: 1
+  timeBetweenSpawn: 0.5
 --- !u!1 &1627320976
 GameObject:
   m_ObjectHideFlags: 0
