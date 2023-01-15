@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6163292148671482564}
   currentHealth: 0
-  maxHealth: 15
+  maxHealth: 25
   point: 20
   collider2: {fileID: 6163292150204828778}
 --- !u!50 &6163292148671482563
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b940afd88de9cb4d9aa95a27726816b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
 --- !u!1 &6163292150204828776
 GameObject:
   m_ObjectHideFlags: 0

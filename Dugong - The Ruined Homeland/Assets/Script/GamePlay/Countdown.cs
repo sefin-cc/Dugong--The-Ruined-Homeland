@@ -35,11 +35,11 @@ public class Countdown : MonoBehaviour
         anim.SetTrigger("playCountDown");
         FindObjectOfType<AudioManagerUI>().uiPlay("CountdownGo");
         countdownDisplay.text = "GO!";
-        Time.timeScale = 1f;
-        
+
         yield return new WaitForSecondsRealtime(1f);
-        AudioListener.pause = false;
+        Time.timeScale = 1f;
         pauseManager.GetComponent<PauseManager>().showUI(); 
+        AudioListener.pause = false;
         countdownDisplay.gameObject.SetActive(false);
     }
 }

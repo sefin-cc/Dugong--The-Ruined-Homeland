@@ -10227,7 +10227,7 @@ MonoBehaviour:
   minX: 0
   maxY: 2.9
   minY: -3
-  timeBetweenSpawn: 1.5
+  timeBetweenSpawn: 1
 --- !u!4 &1611531084
 Transform:
   m_ObjectHideFlags: 0
@@ -11386,8 +11386,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: "One thing I know is that the coral where I\u2019ve put my kids in have
-        been damaged!"
+      value: "One thing I know is that the coral where I\u2019ve put my kids has
+        been damaged!\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
@@ -11401,8 +11401,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[5]
-      value: "But, I\u2019ll let other of fishkind to know about your initiative
-        to clean the beach. I hope others will follow your example.\r"
+      value: "But, I\u2019ll let our fellow sea creatures know about your initiative
+        to clean the seas. I hope others will follow your example.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[6]

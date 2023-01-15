@@ -13342,18 +13342,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: Dugong? Thanks really, for clearing out the way for me, I need to go
-        back home to my family.
+      value: "Dugong? Thanks for clearing out the way for me, I need to go back home
+        to my family.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: You see, I got stranded here while looking for new places to live. Turns
-        out this place is no good.
+      value: "You see, I got stranded here while looking for new places to live.
+        As it turns out, this place is no good.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
       value: It needs more cleaning, honestly. I also think there are other creatures
-        stranded around here.
+        stranded around here, so I suggest that you look around more in this area.
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]

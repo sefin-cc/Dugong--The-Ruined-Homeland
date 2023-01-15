@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacle: {fileID: 5720149249148966768}
-  speed: 2.5
+  speed: 3
 --- !u!1 &5720149249156806922
 GameObject:
   m_ObjectHideFlags: 0
