@@ -2377,8 +2377,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6971786071392531511, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: "I\u2019ll always be grateful to you, even though you\u2019ve lost your
-        family, you never lost hope.\r\n"
+      value: "I\u2019ll always be grateful to you, even though you\u2019ve seen the
+        worst of humanity, you never lost hope.\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab246033dfbf8841b1303891ebd0051, type: 3}
