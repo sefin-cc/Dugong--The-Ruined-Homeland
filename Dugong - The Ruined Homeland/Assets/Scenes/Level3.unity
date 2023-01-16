@@ -10211,7 +10211,7 @@ GameObject:
   - component: {fileID: 1611531086}
   m_Layer: 0
   m_Name: ObstacleSpawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11720,7 +11720,7 @@ GameObject:
   - component: {fileID: 1967498855}
   m_Layer: 0
   m_Name: MoreObstaclesSpawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

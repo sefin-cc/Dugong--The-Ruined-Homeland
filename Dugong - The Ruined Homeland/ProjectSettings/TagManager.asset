@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Scoring
   - Projectile
+  - Spawner
   layers:
   - Default
   - TransparentFX

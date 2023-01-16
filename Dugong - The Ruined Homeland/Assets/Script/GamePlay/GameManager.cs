@@ -29,14 +29,13 @@ public class GameManager : MonoBehaviour
     public static float doubleScore ;
 
     int sceneIndex;
-    
+    public GameObject[] obstacleSpawner;
 
 
     void Start(){
         //Reset values
         score = 0;
         doubleScore = 1;
-        
 
         powerUpAnimationText.SetActive(true);
         levelClearedPanel.SetActive(false);
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviour
         Player.GetComponent<CapsuleCollider2D>().enabled = true;
         Player.GetComponent<PlayerAnimation>().enabled = false;  
         scoreTextPanel.SetActive(true);
+
     }
 
     public void GameOver()
@@ -54,8 +54,6 @@ public class GameManager : MonoBehaviour
         camera.GetComponent<Animator>().enabled = false;
         Destroy(powerUpAnimationText);
 
-        //Reset and save highscore
-        // HighscoreTable.GetPlayerScore((int)score);
         score = 0;
         
         //Hide btns
@@ -83,6 +81,8 @@ public class GameManager : MonoBehaviour
         scoreTextPanel.SetActive(false);
         gameTimer.SetActive(false);
 
+        disableSpawners();
+
         //Reset, Display and save highscore
         finalScoreText.text = ((int)score).ToString();
         HighScoreChecker.GetPlayerScore((int)score);
@@ -108,6 +108,13 @@ public class GameManager : MonoBehaviour
         scoreText.text = ((int)score).ToString();
     }
 
+    void disableSpawners(){
+        obstacleSpawner = GameObject.FindGameObjectsWithTag("Spawner");
+		foreach(GameObject g in obstacleSpawner){
+			g.SetActive(false);
+		}
+    }
+
     public void doubleScoreAdd(int doubleScoreAdd){
          doubleScore = doubleScoreAdd;
     }
@@ -116,6 +123,7 @@ public class GameManager : MonoBehaviour
          score += (points * doubleScore);
     }
 
+    
 
 
 }
