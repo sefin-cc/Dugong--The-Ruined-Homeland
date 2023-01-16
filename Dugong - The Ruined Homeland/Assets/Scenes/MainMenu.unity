@@ -3290,13 +3290,13 @@ MonoBehaviour:
     width: 220
     name: Dugong
     sentences: Dugongs, also known as "sea cows," peacefully graze on sea grasses
-    indentifiers: 1
+    indentifiers: 0
   - images: {fileID: 21300000, guid: 30b905a9774dccf4081a5880d2a43eb0, type: 3}
     height: 115.552
     width: 220
     name: Dugong
     sentences: ' in shallow coastal waters of the Indian and western Pacific Oceans.'
-    indentifiers: 1
+    indentifiers: 0
   - images: {fileID: 21300000, guid: 55d9d187a32a1ac4da8de016a56b192a, type: 3}
     height: 172.1339
     width: 258.1918
@@ -3316,47 +3316,47 @@ MonoBehaviour:
     name: Kabibe
     sentences: 'Seashells or Kabibe in tagalog are frequently used in the Philippines
       to embellish clothing, home decor, and other products. '
-    indentifiers: 1
+    indentifiers: 2
   - images: {fileID: 21300000, guid: 1ea5881eec80bfa499cb67940eff5ba2, type: 3}
     height: 115.552
     width: 173.322
     name: Mameng
     sentences: 'One of the largest, most vibrant, Mameng are long-lived reef fish
       that '
-    indentifiers: 2
+    indentifiers: 3
   - images: {fileID: 21300000, guid: 1ea5881eec80bfa499cb67940eff5ba2, type: 3}
     height: 115.552
     width: 173.322
     name: Mameng
     sentences: 'can reach heights of six feet with a life expectancy of almost 30
       years. '
-    indentifiers: 2
+    indentifiers: 3
   - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
     height: 115.552
     width: 214.37
     name: Balyena
     sentences: 'Pawikan, or Hawksbill Turtle, is one of the Philippines'' most critically
       endangered species. '
-    indentifiers: 3
+    indentifiers: 4
   - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
     height: 115.552
     width: 214.37
     name: Balyena
     sentences: "The pawikan prefers to live in or near coral reefs in the ocean.\r"
-    indentifiers: 3
+    indentifiers: 4
   - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
     height: 115.552
     width: 159.58
     name: Pawikan
     sentences: 'In the Philippines, there are 27 species of whales and dolphins belonging
       to five different families. '
-    indentifiers: 4
+    indentifiers: 5
   - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
     height: 115.552
     width: 159.58
     name: Pawikan
     sentences: One of the endangered species is the pygmy blue.
-    indentifiers: 4
+    indentifiers: 5
   nameText: {fileID: 1060314689}
   sentenceText: {fileID: 1439340143}
   image: {fileID: 533042714}
@@ -6960,28 +6960,28 @@ MonoBehaviour:
     name: Freedom Island
     sentences: "The Las Pi\xF1as-Para\xF1aque Critical Habitat and Ecotourism Area
       (LPPCHEA) is a nature reserve south of Manila Bay "
-    indentifiers: 1
+    indentifiers: 0
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
     height: 140.91
     width: 389.849
     name: Freedom Island
     sentences: that covers approximately 175 hectares of wetland ecosystem. The largest
       issue with Freedom Islands is the massive amount
-    indentifiers: 1
+    indentifiers: 0
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
     height: 140.91
     width: 389.849
     name: Freedom Island
     sentences: ' of trash that covers it. All of the garbage washed up on Freedom
       Island by the waves endangers not only the birds,'
-    indentifiers: 1
+    indentifiers: 0
   - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
     height: 140.91
     width: 389.849
     name: Freedom Island
     sentences: "who may mistake it for food, but also the fish and other marine life.
       The massive fish kill has been blamed on polluted water.\r"
-    indentifiers: 1
+    indentifiers: 0
   - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
     height: 140.91
     width: 389.849

@@ -63,6 +63,7 @@ public class DisplayInformation : MonoBehaviour
     void displayPage(){
         savedScene = PlayerPrefs.GetInt("Saved");
         Debug.Log("page count: "+ pageCount);
+         Debug.Log("savedScene: "+ savedScene);
 
         
         rt.sizeDelta = new Vector2(info[pageCount].width, info[pageCount].height);
@@ -72,7 +73,13 @@ public class DisplayInformation : MonoBehaviour
         nameText.text = info[pageCount].name;
         sentenceText.text = info[pageCount].sentences;
 
-        if(savedScene <= 2){
+        if(savedScene == 1){
+          //  tutorial level
+            if(info[pageCount].indentifiers > 0){
+               lockedPage();
+            }
+            Debug.Log("info[pageCount].indentifiers: "+ info[pageCount].indentifiers);
+        } else if(savedScene == 2){
           //  lvl1
             if(info[pageCount].indentifiers > 1){
                 lockedPage();
@@ -85,6 +92,11 @@ public class DisplayInformation : MonoBehaviour
         } else if(savedScene == 4){
           //  lvl3
             if(info[pageCount].indentifiers > 3){
+               lockedPage();
+            }
+        }else if(savedScene == 5){
+          //  lvl4
+            if(info[pageCount].indentifiers > 4){
                lockedPage();
             }
         }
