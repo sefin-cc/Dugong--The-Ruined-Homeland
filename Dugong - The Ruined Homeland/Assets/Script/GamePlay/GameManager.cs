@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public GameObject scoreTextPanel;
 
-    public GameObject playButton;
+    public GameObject gameTimer;
     public GameObject gameOver;
     public GameObject levelClearedPanel;
 
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         doubleScore = 1;
         
-        
+
         powerUpAnimationText.SetActive(true);
         levelClearedPanel.SetActive(false);
 
@@ -81,16 +81,15 @@ public class GameManager : MonoBehaviour
         //Hide btns
         pauseManager.GetComponent<PauseManager>().hidePaused(); 
         scoreTextPanel.SetActive(false);
+        gameTimer.SetActive(false);
 
         //Reset, Display and save highscore
         finalScoreText.text = ((int)score).ToString();
         HighScoreChecker.GetPlayerScore((int)score);
         score = 0;
         
-       // Player.GetComponent<CapsuleCollider2D>().enabled = false;
         Player.GetComponent<PlayerAnimation>().enabled = true;   
 
-       
         Debug.Log("Level Cleared ");
 
         sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;       

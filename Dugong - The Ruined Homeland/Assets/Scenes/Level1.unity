@@ -12731,6 +12731,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1459905868}
     - target: {fileID: 8228282395071182048, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 894364710}
+    - target: {fileID: 8228282395071182048, guid: d90bd49a2cdd5104c99b829592e416ef, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1838282144}

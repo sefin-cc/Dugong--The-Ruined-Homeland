@@ -11689,7 +11689,7 @@ MonoBehaviour:
   finalScoreText: {fileID: 661864740}
   scoreText: {fileID: 1838282144}
   scoreTextPanel: {fileID: 1998822404}
-  playButton: {fileID: 0}
+  gameTimer: {fileID: 894364710}
   gameOver: {fileID: 1145632449}
   levelClearedPanel: {fileID: 1263666901}
   powerUpAnimationText: {fileID: 1833537363}
