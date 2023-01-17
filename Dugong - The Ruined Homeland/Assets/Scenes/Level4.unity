@@ -8345,7 +8345,7 @@ MonoBehaviour:
   anim: {fileID: 1125429948}
   beatName: {fileID: 1976573441}
   beatScore: {fileID: 1169321118}
-  goalBeatScore: 700
+  goalBeatScore: 1000
   currentBeatName: Pawikan
 --- !u!95 &1125429948
 Animator:
@@ -11498,6 +11498,7 @@ MonoBehaviour:
   Player: {fileID: 24282215}
   joystick: {fileID: 1459905868}
   pauseManager: {fileID: 1901735260}
+  obstacleSpawner: []
 --- !u!114 &1901735266
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -26,9 +26,9 @@ public class HighscoreTable : MonoBehaviour
             AddHighscoreEntry(0, "DUGONG");
             AddHighscoreEntry(40, "PUGITA");
             AddHighscoreEntry(170, "KABIBE");
-            AddHighscoreEntry(250, "MAMENG");
-            AddHighscoreEntry(450, "BALYENA");
-            AddHighscoreEntry(700, "PAWIKAN");
+            AddHighscoreEntry(300, "MAMENG");
+            AddHighscoreEntry(800, "BALYENA");
+            AddHighscoreEntry(1000, "PAWIKAN");
             
             // Reload
             jsonString = PlayerPrefs.GetString("highscoreTable");
@@ -106,9 +106,9 @@ public class HighscoreTable : MonoBehaviour
             AddHighscoreEntry(0, "DUGONG");
             AddHighscoreEntry(40, "PUGITA");
             AddHighscoreEntry(170, "KABIBE");
-            AddHighscoreEntry(250, "MAMENG");
-            AddHighscoreEntry(450, "BALYENA");
-            AddHighscoreEntry(700, "PAWIKAN");
+            AddHighscoreEntry(300, "MAMENG");
+            AddHighscoreEntry(800, "BALYENA");
+            AddHighscoreEntry(1000, "PAWIKAN");
             
         
         PlayerPrefs.SetInt("Saved", 1);
