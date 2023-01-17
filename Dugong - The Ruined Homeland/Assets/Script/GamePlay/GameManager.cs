@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameTimer;
     public GameObject gameOver;
     public GameObject levelClearedPanel;
+    public GameObject destroyObstacle;
 
 
     public GameObject powerUpAnimationText;  
@@ -89,6 +90,9 @@ public class GameManager : MonoBehaviour
         score = 0;
         
         Player.GetComponent<PlayerAnimation>().enabled = true;   
+
+        //Destroy all obstacle
+        destroyObstacle.SetActive(true);
 
         Debug.Log("Level Cleared ");
 
