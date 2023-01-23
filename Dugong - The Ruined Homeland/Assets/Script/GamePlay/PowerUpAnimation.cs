@@ -21,6 +21,10 @@ public class PowerUpAnimation : MonoBehaviour
         powerUpanim.SetTrigger("isPowerUp");
     }
 
+    public void playSoundText(){
+        FindObjectOfType<AudioManager>().Play("PowerUpText");
+    }
+
     void startAnimPowerUpText ()
     {
         Time.timeScale = 0.2f;
