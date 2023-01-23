@@ -80,6 +80,16 @@ MonoBehaviour:
     volume: 1
     loop: 0
     source: {fileID: 0}
+  - name: PowerUpText
+    clip: {fileID: 8300000, guid: 89701a73de47cfb46bcee0517c586e7f, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DoublerInvinsibility
+    clip: {fileID: 8300000, guid: 7ce1810606114bd4a9c94441893b880c, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
   bgm:
   - name: MainMenuBGM
     clip: {fileID: 8300000, guid: 74106bee1f0ef2a46bf1b61e0a2827c5, type: 3}
@@ -88,6 +98,11 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: stage1BGM
     clip: {fileID: 8300000, guid: ce00953ad17690e45afae1d50ca22eba, type: 3}
+    volume: 0.266
+    loop: 1
+    source: {fileID: 0}
+  - name: stage2BGM
+    clip: {fileID: 8300000, guid: 314ec3479749e6348ab62fbe79dce929, type: 3}
     volume: 0.266
     loop: 1
     source: {fileID: 0}

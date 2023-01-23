@@ -33,6 +33,7 @@ public class Doubler : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         PowerUpTimer.SetActive(true);
 
+        FindObjectOfType<AudioManager>().Play("DoublerInvinsibility");
         yield return new WaitForSeconds(duration);
        
         animator.SetBool("isDoubler", false);
