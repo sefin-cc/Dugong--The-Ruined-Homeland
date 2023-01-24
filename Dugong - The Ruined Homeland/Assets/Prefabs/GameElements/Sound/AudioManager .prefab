@@ -106,5 +106,10 @@ MonoBehaviour:
     volume: 0.266
     loop: 1
     source: {fileID: 0}
+  - name: stage3BGM
+    clip: {fileID: 8300000, guid: d460f1ce9c528b94fb8a50d9d3ce7003, type: 3}
+    volume: 0.266
+    loop: 1
+    source: {fileID: 0}
   volumeSliderSounds: {fileID: 0}
   volumeSliderBgm: {fileID: 0}

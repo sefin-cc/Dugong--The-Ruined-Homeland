@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 685
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 350}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 445
     height: 371
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 191
     height: 371
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -241,8 +241,8 @@ MonoBehaviour:
     y: 0
     width: 730
     height: 371
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 15}
@@ -440,21 +440,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 58d8ffff6af3ffff04f4ffff5ef5ffff0cf6ffff2afbffff
+      m_ExpandedIDs: 54edffff8cedfffff6efffffbaf0ffff7ef1ffff4cf2ffff08f3ffff5cf3ffff10faffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Introduction
-        m_OriginalName: Introduction
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -2790
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -1474,23 +1474,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sound/BGM
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets
+  - Assets/Sound/BGM
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\Users\ACER\GitHub\Dugong--The-Ruined-Homeland\Dugong - The
     Ruined Homeland
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 566b0000
-    m_LastClickedID: 27478
-    m_ExpandedIDs: 00000000fa6a0000fc6a0000fe6a0000006b0000026b0000046b0000066b0000086b00000a6b00000c6b00000e6b0000106b0000126b0000146b0000166b0000186b00001a6b00001c6b00001e6b0000206b0000226b0000246b0000266b0000286b00002a6b00002c6b00002e6b0000306b0000326b0000346b0000366b0000386b00003a6b00003c6b0000566b00008270000000ca9a3b
+    scrollPos: {x: 0, y: 1953}
+    m_SelectedIDs: c46c0000
+    m_LastClickedID: 27844
+    m_ExpandedIDs: 000000007a6600007c6600007e66000080660000826600008466000086660000886600008a6600008c6600008e66000090660000926600009466000096660000986600009a6600009c6600009e660000a0660000a2660000a4660000a6660000a8660000aa660000ac660000ae660000b0660000b2660000b4660000b6660000b8660000ba660000bc660000be660000c466000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1518,7 +1518,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa6a0000fc6a0000fe6a0000006b0000026b0000046b0000066b0000086b00000a6b00000c6b00000e6b0000106b0000126b0000146b0000166b0000186b00001a6b00001c6b00001e6b0000206b0000226b0000246b0000266b0000286b00002a6b00002c6b00002e6b0000306b0000326b0000346b0000366b0000386b00003a6b00003c6b0000
+    m_ExpandedIDs: 000000007a6600007c6600007e66000080660000826600008466000086660000886600008a6600008c6600008e66000090660000926600009466000096660000986600009a6600009c6600009e660000a0660000a2660000a4660000a6660000a8660000aa660000ac660000ae660000b0660000b2660000b4660000b6660000b8660000ba660000bc660000be660000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
