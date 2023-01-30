@@ -29,18 +29,18 @@ public class LevelSelector : MonoBehaviour
         lvl3Btn.interactable = false;
         lvl4Btn.interactable = false;
  
-        if(savedScene >= 2){
+        if(savedScene >= 3){
             lvl1Btn.interactable = true;
         }
-        if(savedScene >= 3){
+        if(savedScene >= 4){
             lvl2Btn.interactable = true;
         }
 
-        if(savedScene >= 4){
+        if(savedScene >= 5){
             lvl3Btn.interactable = true;
         }
 
-        if(savedScene >= 5){
+        if(savedScene >= 6){
             lvl4Btn.interactable = true;
         }
     }
@@ -66,25 +66,25 @@ public class LevelSelector : MonoBehaviour
 
     public void levelOne(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(2);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
 
 
     }
     
     public void levelTwo(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(3);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
    
     }
 
     public void levelThree(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(4);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
  
     } 
     public void levelFour(){
         FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
-        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(5);
+        FindObjectOfType<LoadingScreenManager>().startLoadingScreen(6);
       
     }
 }
