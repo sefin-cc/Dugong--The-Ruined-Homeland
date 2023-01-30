@@ -87,6 +87,8 @@ public class GameManager : MonoBehaviour
         //Reset, Display and save highscore
         finalScoreText.text = ((int)score).ToString();
         HighScoreChecker.GetPlayerScore((int)score);
+        PlayerPrefs.SetInt("Score", (int)score);
+        PlayerPrefs.Save();
         score = 0;
         
         Player.GetComponent<PlayerAnimation>().enabled = true;   

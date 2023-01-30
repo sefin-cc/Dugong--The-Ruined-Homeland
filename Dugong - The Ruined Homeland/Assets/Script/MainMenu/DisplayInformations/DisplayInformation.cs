@@ -73,30 +73,38 @@ public class DisplayInformation : MonoBehaviour
         nameText.text = info[pageCount].name;
         sentenceText.text = info[pageCount].sentences;
 
-        if(savedScene == 1){
+
+        Debug.Log("info[pageCount].indentifiers: "+ info[pageCount].indentifiers);
+        if(savedScene <= 1){
           //  tutorial level
             if(info[pageCount].indentifiers > 0){
                lockedPage();
             }
-            Debug.Log("info[pageCount].indentifiers: "+ info[pageCount].indentifiers);
-        } else if(savedScene == 2){
+            
+        } else if(savedScene == 3){
           //  lvl1
             if(info[pageCount].indentifiers > 1){
                 lockedPage();
             }
-        } else if(savedScene == 3){
+        } else if(savedScene == 4){
           //  lvl2
             if(info[pageCount].indentifiers > 2){
                lockedPage();
             }
-        } else if(savedScene == 4){
+        } else if(savedScene == 5){
           //  lvl3
             if(info[pageCount].indentifiers > 3){
                lockedPage();
             }
-        }else if(savedScene == 5){
+        }else if(savedScene == 6){
           //  lvl4
             if(info[pageCount].indentifiers > 4){
+               lockedPage();
+            }
+        }
+        else if(savedScene == 7){
+          //  Cutscene2
+            if(info[pageCount].indentifiers > 5){
                lockedPage();
             }
         }

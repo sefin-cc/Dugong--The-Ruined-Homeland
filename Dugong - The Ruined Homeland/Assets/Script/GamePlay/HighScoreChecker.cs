@@ -17,6 +17,8 @@ public class HighScoreChecker : MonoBehaviour
                 Debug.Log("New HighScore ");
                 updatePlayerScore(playerScore, "DUGONG");
                
+                PlayerPrefs.SetInt("DugongHighScore", (int)playerScore);
+                PlayerPrefs.Save();
             }
         }
     }
