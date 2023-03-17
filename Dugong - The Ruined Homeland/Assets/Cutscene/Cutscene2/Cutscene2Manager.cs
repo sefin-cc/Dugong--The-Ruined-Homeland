@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.Playables;
 
 public class Cutscene2Manager : MonoBehaviour
 {
     public GameObject skipBtn;
     public GameObject LevelCompletePanel;
+
+    public GameObject introduction;
+    public GameObject VideoPlayer;
+
     public TMP_Text LevelCompleteScore;
     public TMP_Text ShareScore;
-    public PlayableDirector currentTimeline;
+   
     int sceneIndex;
-    
     
     void Start()
     {
@@ -46,10 +48,28 @@ public class Cutscene2Manager : MonoBehaviour
     }
 
     public void skipBtnFunction(){
-        FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
-        currentTimeline.time = currentTimeline.duration; //Go to last frame
-        currentTimeline.Pause();
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
+
+        Destroy(introduction);
+        Destroy(VideoPlayer);
+
+        skipBtn.SetActive(false);
+
+        StartCoroutine(showLevelCompletePanel());
+    }
+
+    public void endVideo(){
+        Destroy(VideoPlayer);
+        skipBtn.SetActive(false);
+
+        StartCoroutine(showLevelCompletePanel());
+    }
+
+    IEnumerator showLevelCompletePanel()
+    {
+        yield return new WaitForSeconds(1f);
+        FindObjectOfType<AudioManagerUI>().uiPlay("LevelComplete");
         LevelCompletePanel.SetActive(true);
     }
-     
+
 }
