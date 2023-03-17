@@ -8,10 +8,6 @@ public class ShareManager : MonoBehaviour
     public GameObject sharePanel;
     private string shareMessage;
     static int playerScore;
-
-    void Start(){
-        sharePanel.SetActive(false);
-    }
     
     public void shareButton(){
         shareMessage = "I can't believe I scored " + playerScore.ToString() + " points in Dugong: The Ruined Homeland!";
@@ -27,6 +23,7 @@ public class ShareManager : MonoBehaviour
     }
 
     public void showSharePanel(){
+        Debug.Log("IamtappedShowpanel");
         sharePanel.SetActive(true);
     }
 
