@@ -11596,6 +11596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalScoreText: {fileID: 661864740}
+  shareScoreText: {fileID: 661864740}
   scoreText: {fileID: 1838282144}
   scoreTextPanel: {fileID: 1998822404}
   gameTimer: {fileID: 894364710}

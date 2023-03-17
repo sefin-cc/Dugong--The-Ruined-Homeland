@@ -17,6 +17,8 @@ public class SkipButton : MonoBehaviour
     {
         yield return new WaitForSeconds(15f);
         skipBtn.SetActive(true);
+        yield return new WaitForSeconds(25f);
+        skipBtn.SetActive(false);
     }
 
     public void skipBtnFunction(){
