@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     public TMP_Text finalScoreText;
+    public TMP_Text shareScoreText;
     public TMP_Text scoreText;
     public GameObject scoreTextPanel;
 
@@ -86,7 +87,9 @@ public class GameManager : MonoBehaviour
 
         //Reset, Display and save highscore
         finalScoreText.text = ((int)score).ToString();
+        shareScoreText.text = ((int)score).ToString();
         HighScoreChecker.GetPlayerScore((int)score);
+        ShareManager.GetPlayerScore((int)score);
         PlayerPrefs.SetInt("Score", (int)score);
         PlayerPrefs.Save();
         score = 0;

@@ -44,6 +44,7 @@ public class TutorialLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioListener.pause = false;
         StartCoroutine(startDialogueOne());
     }
 
