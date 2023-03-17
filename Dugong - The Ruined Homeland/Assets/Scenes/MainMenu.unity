@@ -1106,19 +1106,19 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1327964138}
   - {fileID: 420788968}
   - {fileID: 533042713}
   - {fileID: 1476323582}
   - {fileID: 1451652543}
   - {fileID: 1060314688}
-  - {fileID: 1327964138}
   - {fileID: 1439340142}
   m_Father: {fileID: 1835781480}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &420788967
@@ -1152,11 +1152,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404003511}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 179}
+  m_AnchoredPosition: {x: -187.82, y: 160}
   m_SizeDelta: {x: 389.849, y: 140.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420788969
@@ -1236,7 +1236,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.639, y: 637.11}
+  m_SizeDelta: {x: 1043.358, y: 586.889}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443422159
 MonoBehaviour:
@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f71a75dd594adc0409bfe820516c2847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97fe95033abe154458abe47fd14e0eb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2004,11 +2004,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404003511}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.9, y: 173}
+  m_AnchoredPosition: {x: -187.82, y: 154.86}
   m_SizeDelta: {x: 173.322, y: 115.552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &533042714
@@ -2080,12 +2080,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1187532929}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -37}
-  m_SizeDelta: {x: 499.911, y: 287.665}
+  m_AnchoredPosition: {x: 0, y: -85.165}
+  m_SizeDelta: {x: 765.48, y: 267.523}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537042200
 MonoBehaviour:
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae98b0914d147b14c9215c3715f3089e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 975200c25fdb3cf48b5628ebeb3de87e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2256,10 +2256,10 @@ RectTransform:
   m_Father: {fileID: 1835781480}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -7.999939, y: 100.6}
-  m_SizeDelta: {x: 317.763, y: 71.946}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -94, y: -80}
+  m_SizeDelta: {x: 120.00098, y: 110.77002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550600126
 MonoBehaviour:
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2016aa738fccb2140a58ac1582bdf0b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12c31667e18aade4d9596d067f86e103, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2672,11 +2672,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1187532929}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -205.778, y: -31.065}
+  m_AnchoredPosition: {x: -371, y: -80}
   m_SizeDelta: {x: 108.5514, y: 94.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &687578703
@@ -3262,7 +3262,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 874.56616, y: 994.57715}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &739968375
 CanvasRenderer:
@@ -3289,26 +3289,16 @@ MonoBehaviour:
     height: 115.552
     width: 220
     name: Dugong
-    sentences: Dugongs, also known as "sea cows," peacefully graze on sea grasses
-    indentifiers: 0
-  - images: {fileID: 21300000, guid: 30b905a9774dccf4081a5880d2a43eb0, type: 3}
-    height: 115.552
-    width: 220
-    name: Dugong
-    sentences: ' in shallow coastal waters of the Indian and western Pacific Oceans.'
+    sentences: Dugongs, also known as "sea cows," peacefully graze on sea grasses 
+      in shallow coastal waters of the Indian and western Pacific Oceans.
     indentifiers: 0
   - images: {fileID: 21300000, guid: 55d9d187a32a1ac4da8de016a56b192a, type: 3}
     height: 172.1339
     width: 258.1918
     name: Pugita
-    sentences: 'The octopus, also known as the pugita has a large bulbous head, large
-      eyes, and eight distinct arms. '
-    indentifiers: 1
-  - images: {fileID: 21300000, guid: 55d9d187a32a1ac4da8de016a56b192a, type: 3}
-    height: 172.1339
-    width: 258.1918
-    name: Pugita
-    sentences: ' Free divers catch Octopus vulgaris, the common Philippine octopus.'
+    sentences: The octopus, also known as the pugita has a large bulbous head, large
+      eyes, and eight distinct arms.  Free divers catch Octopus vulgaris, the common
+      Philippine octopus.
     indentifiers: 1
   - images: {fileID: 21300000, guid: 8593e492ada90ed4786259660a72d266, type: 3}
     height: 125
@@ -3322,40 +3312,22 @@ MonoBehaviour:
     width: 173.322
     name: Mameng
     sentences: 'One of the largest, most vibrant, Mameng are long-lived reef fish
-      that '
-    indentifiers: 3
-  - images: {fileID: 21300000, guid: 1ea5881eec80bfa499cb67940eff5ba2, type: 3}
-    height: 115.552
-    width: 173.322
-    name: Mameng
-    sentences: 'can reach heights of six feet with a life expectancy of almost 30
-      years. '
+      that can reach heights of six feet with a life expectancy of almost 30 years. '
     indentifiers: 3
   - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
     height: 115.552
     width: 214.37
     name: Balyena
-    sentences: 'Pawikan, or Hawksbill Turtle, is one of the Philippines'' most critically
-      endangered species. '
-    indentifiers: 4
-  - images: {fileID: 21300000, guid: e10a1bc0b8f616e4785fd9303f2f2ab6, type: 3}
-    height: 115.552
-    width: 214.37
-    name: Balyena
-    sentences: "The pawikan prefers to live in or near coral reefs in the ocean.\r"
+    sentences: "Pawikan, or Hawksbill Turtle, is one of the Philippines' most critically
+      endangered species. The pawikan prefers to live in or near coral reefs in the
+      ocean.\r"
     indentifiers: 4
   - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
     height: 115.552
     width: 159.58
     name: Pawikan
-    sentences: 'In the Philippines, there are 27 species of whales and dolphins belonging
-      to five different families. '
-    indentifiers: 5
-  - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
-    height: 115.552
-    width: 159.58
-    name: Pawikan
-    sentences: One of the endangered species is the pygmy blue.
+    sentences: In the Philippines, there are 27 species of whales and dolphins belonging
+      to five different families. One of the endangered species is the pygmy blue.
     indentifiers: 5
   nameText: {fileID: 1060314689}
   sentenceText: {fileID: 1439340143}
@@ -3530,7 +3502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 130.2, y: 158}
+  m_AnchoredPosition: {x: -49.161, y: 161}
   m_SizeDelta: {x: 98.322, y: 137.924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839015853
@@ -4002,12 +3974,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1187532929}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 280}
-  m_SizeDelta: {x: 452.5403, y: 71.568}
+  m_AnchoredPosition: {x: 213.27193, y: 160}
+  m_SizeDelta: {x: 307.41, y: 125.829}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894903718
 MonoBehaviour:
@@ -4063,7 +4035,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4092,7 +4064,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -138.673, y: 0, z: -131.6077, w: 0}
+  m_margin: {x: -0.9329072, y: 0, z: -6.3894806, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4519,12 +4491,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404003511}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.99998, y: 279.99997}
-  m_SizeDelta: {x: 452.5403, y: 71.568}
+  m_AnchoredPosition: {x: 213.2719, y: 160}
+  m_SizeDelta: {x: 307.41, y: 125.829}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1060314689
 MonoBehaviour:
@@ -4580,7 +4552,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4609,7 +4581,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -138.673, y: 0, z: -131.6077, w: 0}
+  m_margin: {x: -1.7275234, y: 0, z: -1.5094299, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4760,10 +4732,10 @@ RectTransform:
   m_Father: {fileID: 443422158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -8, y: 100.6}
-  m_SizeDelta: {x: 317.763, y: 71.946}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -94, y: -80}
+  m_SizeDelta: {x: 120.001, y: 110.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076753368
 MonoBehaviour:
@@ -4841,7 +4813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2016aa738fccb2140a58ac1582bdf0b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12c31667e18aade4d9596d067f86e103, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5098,18 +5070,18 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 537042199}
   - {fileID: 1776109815}
   - {fileID: 687578702}
   - {fileID: 1263171763}
   - {fileID: 894903717}
-  - {fileID: 537042199}
   - {fileID: 1910589202}
   m_Father: {fileID: 443422158}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1213451358
@@ -5223,11 +5195,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1187532929}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 179}
+  m_AnchoredPosition: {x: -187.82, y: 160}
   m_SizeDelta: {x: 389.849, y: 140.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263171764
@@ -5432,12 +5404,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404003511}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.99998, y: -37}
-  m_SizeDelta: {x: 499.911, y: 287.665}
+  m_AnchoredPosition: {x: 0, y: -85.165}
+  m_SizeDelta: {x: 765.48, y: 267.523}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327964139
 MonoBehaviour:
@@ -5459,7 +5431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae98b0914d147b14c9215c3715f3089e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 975200c25fdb3cf48b5628ebeb3de87e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6181,8 +6153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -27}
-  m_SizeDelta: {x: -240.02194, y: 158.63602}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1396446543
 GameObject:
@@ -6661,8 +6633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.000004, y: 13.999985}
-  m_SizeDelta: {x: 452.5403, y: 113.1351}
+  m_AnchoredPosition: {x: 0, y: -85.165}
+  m_SizeDelta: {x: 696.895, y: 228.126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439340143
 MonoBehaviour:
@@ -6711,14 +6683,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: -10
@@ -6747,7 +6719,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 37.26837, y: -15.050995, z: -31.251099, w: -147.04112}
+  m_margin: {x: -2.1228027, y: 3.9151006, z: -2.0725403, w: -10.838852}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6793,11 +6765,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404003511}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -205.77808, y: -31.064972}
+  m_AnchoredPosition: {x: -371, y: -80}
   m_SizeDelta: {x: 108.5514, y: 94.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451652544
@@ -6931,7 +6903,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 874.56616, y: 994.57715}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1468015227
 CanvasRenderer:
@@ -6958,108 +6930,32 @@ MonoBehaviour:
     height: 140.91
     width: 389.849
     name: Freedom Island
-    sentences: "The Las Pi\xF1as-Para\xF1aque Critical Habitat and Ecotourism Area
-      (LPPCHEA) is a nature reserve south of Manila Bay "
-    indentifiers: 0
-  - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Freedom Island
-    sentences: that covers approximately 175 hectares of wetland ecosystem. The largest
-      issue with Freedom Islands is the massive amount
-    indentifiers: 0
-  - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Freedom Island
-    sentences: ' of trash that covers it. All of the garbage washed up on Freedom
-      Island by the waves endangers not only the birds,'
-    indentifiers: 0
-  - images: {fileID: 21300000, guid: d8b50b0b77b61574181fe1068e3c3c8f, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Freedom Island
-    sentences: "who may mistake it for food, but also the fish and other marine life.
-      The massive fish kill has been blamed on polluted water.\r"
+    sentences: "Location: Las Pi\xF1as Para\xF1aque City\n\r\nBenefit: It serve as
+      a sanctuary for many marine lifeforms and more than 80 species of local and
+      migratory birds.\r\n\nIssue: Plastic Pollution\r"
     indentifiers: 0
   - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
     height: 140.91
     width: 389.849
     name: Lingayen Gulf
-    sentences: 'A semi-enclosed body of water located in the northern part of the
-      Philippines is a major fishing and tourism area in the country. '
-    indentifiers: 2
-  - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Lingayen Gulf
-    sentences: Pollution coming from point and nonpoint sources is identified and
-      includes high microbial levels from domestic sewage, trace metals from mining
-      activities
-    indentifiers: 2
-  - images: {fileID: 21300000, guid: f123095a26d6c3342851f2e92e42c96a, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Lingayen Gulf
-    sentences: 'and siltation and sedimentation resulting from logging and mining
-      operations and explorations.
-
-'
+    sentences: "Location: Lingayen Pangasinan\n\r\nBenefit: Fishing and salt-making\n\r\nIssue:
+      Trace metal and siltation and sedimentation resulting from logging and mining
+      operations and explorations. \r"
     indentifiers: 2
   - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
     height: 140.91
     width: 389.849
     name: Boracay Beach
-    sentences: One of the best tourist destinations in the Visayas and has the best
-      beaches in the Philippines.
-    indentifiers: 3
-  - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Boracay Beach
-    sentences: It is known for its white sand, crystal clear and turquoise waters,
-      breathtaking sunset, and more.
-    indentifiers: 3
-  - images: {fileID: 21300000, guid: 8b3b5ce4bf0cd844c964785754f7c89f, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Boracay Beach
-    sentences: 'One of the issues on the island of Boracay has been pollution due
-      to poor sewage and waste control system. '
+    sentences: "Location: Boracay, Aklan, Western Visayan\r\n\nBenefit: Tourist attraction\r\n\nIssue:
+      Severely polluted due to improper sewage management.\r"
     indentifiers: 3
   - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
     height: 140.91
     width: 389.849
     name: Dolomite Beach
-    sentences: 'It is a man-made beach developed by beach nourishment along Manila
-      in Manila Bay, Philippines. '
-    indentifiers: 4
-  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Dolomite Beach
-    sentences: It is designed to protect the coastal area for the Manila Bay Rehabilitation
-      project.
-    indentifiers: 4
-  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Dolomite Beach
-    sentences: 'Dolomite sand washing off the beach is comparable to dumping foreign
-      sediments, which are the most prevalent contaminants in any marine environment. '
-    indentifiers: 4
-  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Dolomite Beach
-    sentences: 'By potentially burying marine life and plants, reducing the amount
-      of oxygen in the water, and obstructing their '
-    indentifiers: 4
-  - images: {fileID: 21300000, guid: 78a7ec572e2b1a643b0b81d2a369ce63, type: 3}
-    height: 140.91
-    width: 389.849
-    name: Dolomite Beach
-    sentences: ability to get sunlight, they can disrupt their natural ecosystems.
+    sentences: "Location: Malate, Manila\r\n\nBenefit: Tourist attraction\r\n\nIssue:
+      Because dolomite is not a part of the natural beach, it falls apart and creates
+      sand smog, and disrupts marine life.\r"
     indentifiers: 4
   nameText: {fileID: 894903718}
   sentenceText: {fileID: 1910589203}
@@ -7292,11 +7188,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404003511}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 252.1308, y: -29}
+  m_AnchoredPosition: {x: 370, y: -80}
   m_SizeDelta: {x: 108.5514, y: 94.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476323583
@@ -8307,11 +8203,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1187532929}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 252.1308, y: -29}
+  m_AnchoredPosition: {x: 370, y: -80}
   m_SizeDelta: {x: 108.5514, y: 94.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776109816
@@ -8715,7 +8611,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1132.639, y: 637.11}
+  m_SizeDelta: {x: 1043.358, y: 586.889}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835781481
 MonoBehaviour:
@@ -8737,7 +8633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f71a75dd594adc0409bfe820516c2847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97fe95033abe154458abe47fd14e0eb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9244,8 +9140,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 14}
-  m_SizeDelta: {x: 452.5403, y: 113.1351}
+  m_AnchoredPosition: {x: 0, y: -85.165}
+  m_SizeDelta: {x: 696.895, y: 228.126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1910589203
 MonoBehaviour:
@@ -9267,7 +9163,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Location: Malate, Manila\r\n\nBenefit: Tourist attraction\r\n\nIssue:
+    Because dolomite is not a part of the natural beach, it falls apart and creates
+    sand smog, and disrupts marine life.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4ef3f9b36c339b42934cf50b4106cc2, type: 2}
   m_sharedMaterial: {fileID: 7772689843160284283, guid: e4ef3f9b36c339b42934cf50b4106cc2, type: 2}
@@ -9276,7 +9174,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281216558
+    rgba: 4281025108
   m_fontColor: {r: 0.3301887, g: 0.2574641, b: 0.16976683, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -9294,14 +9192,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: -10
@@ -9330,7 +9228,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 37.26837, y: -15.050995, z: -31.251099, w: -147.04112}
+  m_margin: {x: 2.3605804, y: 3.4296188, z: -4.5569463, w: -1.2496262}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9551,7 +9449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 140, y: 10.99999}
+  m_AnchoredPosition: {x: -39.329, y: 17.836}
   m_SizeDelta: {x: 98.32202, y: 137.924}
   m_Pivot: {x: 0.5999978, y: 0.58554274}
 --- !u!114 &2001719849
