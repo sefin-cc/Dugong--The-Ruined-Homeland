@@ -22,7 +22,7 @@ public class SkipButton : MonoBehaviour
     }
 
     public void skipBtnFunction(){
-        FindObjectOfType<AudioManagerUI>().uiPlay("buttonSound");
+        FindObjectOfType<AudioManagerUI>().uiPlay("ButtonPress");
         nextScene.SetActive(true);
     }
 }
