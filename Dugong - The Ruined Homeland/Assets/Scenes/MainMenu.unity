@@ -3318,16 +3318,16 @@ MonoBehaviour:
     height: 115.552
     width: 214.37
     name: Balyena
-    sentences: "Pawikan, or Hawksbill Turtle, is one of the Philippines' most critically
-      endangered species. The pawikan prefers to live in or near coral reefs in the
-      ocean.\r"
+    sentences: In the Philippines, there are 27 species of whales and dolphins belonging
+      to five different families. One of the endangered species is the pygmy blue.
     indentifiers: 4
   - images: {fileID: 21300000, guid: 076b31e89337d8f49a5d0d29ae40b44d, type: 3}
     height: 115.552
     width: 159.58
     name: Pawikan
-    sentences: In the Philippines, there are 27 species of whales and dolphins belonging
-      to five different families. One of the endangered species is the pygmy blue.
+    sentences: "Pawikan, or Hawksbill Turtle, is one of the Philippines' most critically
+      endangered species. The pawikan prefers to live in or near coral reefs in the
+      ocean.\r"
     indentifiers: 5
   nameText: {fileID: 1060314689}
   sentenceText: {fileID: 1439340143}
