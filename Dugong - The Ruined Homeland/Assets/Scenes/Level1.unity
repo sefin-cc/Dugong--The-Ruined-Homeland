@@ -12916,22 +12916,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2239244576985935189, guid: adeb6bf27f2569b46bfddabc17145b03, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2239244578124096609}
-    - target: {fileID: 2239244576985935189, guid: adeb6bf27f2569b46bfddabc17145b03, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: hideSharePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 2239244577932881761, guid: adeb6bf27f2569b46bfddabc17145b03, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2239244578124096609}
-    - target: {fileID: 2239244577932881761, guid: adeb6bf27f2569b46bfddabc17145b03, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: shareButton
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adeb6bf27f2569b46bfddabc17145b03, type: 3}
 --- !u!114 &2239244578124096608 stripped

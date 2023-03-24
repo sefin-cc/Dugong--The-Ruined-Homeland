@@ -6,12 +6,17 @@ using System.IO;
 public class ShareManager : MonoBehaviour
 {
     public GameObject sharePanel;
+    public GameObject button;
     private string shareMessage;
     static int playerScore;
+
+   
     
     public void shareButton(){
+        button.SetActive(false);
         shareMessage = "I can't believe I scored " + playerScore.ToString() + " points in Dugong: The Ruined Homeland!";
         StartCoroutine(TakeScreenshotAndShare());
+     
     }
 
     public static void GetPlayerScore(int score){
@@ -45,5 +50,7 @@ public class ShareManager : MonoBehaviour
             .SetSubject( "Dugong: The Ruined Homeland" ).SetText(shareMessage)
             .SetCallback( ( result, shareTarget ) => Debug.Log( "Share result: " + result + ", selected app: " + shareTarget ) )
             .Share();
+
+        button.SetActive(true);    
     }
 }
